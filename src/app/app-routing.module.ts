@@ -11,7 +11,7 @@ import { AppsComponent } from './pages/apps/apps.component';
 import { CallRatesComponent } from './pages/call-rates/call-rates.component';
 
 const routes: Routes = [
-  { path: 'index', component: IndexComponent },
+  { path: '', component: IndexComponent },
   { path: 'call-rates', component: CallRatesComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'why-vinota', component: WhyVinotaComponent },
@@ -20,6 +20,7 @@ const routes: Routes = [
   { path: 'knowledge-base', component: KnowledgeBaseComponent },
   { path: 'about-country', component: AboutCountryComponent },
   { path: 'apps', component: AppsComponent },
+  { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 
 @NgModule({
