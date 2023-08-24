@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+<body>
+    <!-- HEADER -->
+    <div id="page" class="page">
+        <header id="header" class="main-header white-scroll">
+            <div class="header-wrapper flex align-center justify-content-between">
+              <div class="logo">
+                <a routerLink="/index"><img src="../../../assets/images/Vinota-Logo-New-white12345.png" /></a>
+              </div>
+              <span class="nav-icon">
+                <a></a>
+              </span>
+              <nav class="nav-bar">
+                <a routerLink="/index">Home</a>
+                <a routerLink="/call-rates">Rates</a>
+                <a routerLink="/apps">Apps</a>
+                <a type="button" (click)="navigateToSection('support_section')">Support</a>
+                <a href="https://hello.vinota.com/register">Join</a>
+                <a href="https://hello.vinota.com/login" style="border-radius: 7px;
+          background: #04AA6D;
+          color: white;">Top-up</a>
+              </nav>
+              <div></div>
+            </div>
+            <a href="https://hello.vinota.com/login" class="login-button">Login</a>
+          </header>
+        <!-- WHY VINOTA DESCRIPTION -->
+
+        <section class="bg--scroll hero-section">
+            <div class="banner-wrapper">
+                <div class="banner-content">
+                    <div class="content">
+                        <div class="lg-screen wow fadeInUp">
+                            <div class="row">
+                                <div class="col-7">
+                                    <div class="wow fadeInUp page-main-title-blue-lg">Why VINOTA</div>
+                                    <p class="paragraph-gap">Vinota stands out as the ultimate choice for seamless
+                                        global communication.
+                                        With our unparalleled quality, affordable rates, and worldwide connectivity, we
+                                        redefine how you
+                                        connect with the world.
+                                    </p>
+                                    <p class="wow fadeInUpBig">
+                                        You can connect globally without breaking the bank. Embark on a journey of
+                                        seamless communication.
+                                        Get
+                                        started now and experience the future of global connectivity.
+                                        Enhance Your International Calling Experience
+                                    </p>
+                                    <h2 class="wow fadeInLeft"></h2>
+                                    <a class="wow fadeInUpBig">Start Calling Now</a>
+                                </div>
+                                <div class="col-5"><img
+                                    src="../../../assets/images/page-first-image/2975662.jpg"
+                                    class="banner-content-img wow fadeInLeft" /></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sm-screen">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="wow fadeInUp page-main-title-blue-lg">Why VINOTA</div>
+                                <p class="wow fadeInUpBig">Vinota stands out as the ultimate choice for seamless global
+                                    communication.
+                                    With our unparalleled quality, affordable rates, and worldwide connectivity, we
+                                    redefine how you
+                                    connect with the world.
+                                    <br>
+                                    You can connect globally without breaking the bank. Embark on a journey of seamless
+                                    communication. Get
+                                    started now and experience the future of global connectivity.
+                                    Enhance Your International Calling Experience
+                                </p>
+                                <h2 class="wow fadeInLeft"></h2>
+                                <a class="wow fadeInUpBig">Start Calling Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="support_section">
+            <div [class.not-active]="changeClass">
+              <br>
+              <br>
+              <br>
+              <br>
+              <div class="support">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-sm-12 col-lg-2 col-xl-3">
+                      <div class="footer-links fl-1 ">
+                        <ul class="foo-links clearfix">
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
+                              APPs</a></li>
+                          <span class="support-description">
+                            <p>Explore the Great Features of the Vinota App
+                            </p>
+                          </span>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 col-xl-3">
+                      <div class="footer-links fl-2">
+                        <ul class="foo-links clearfix">
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
+                          </li>
+                          <span class="support-description">
+                            <p>Visit Support Tickets
+                            </p>
+                          </span>
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                              routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
+                          <span class="support-description">
+                            <p>Everything You Need to Know About Vinota</p>
+                          </span>
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
+                            </a></li>
+                          <span class="support-description">
+                            <p>All Your Questions Answered</p>
+                          </span>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 col-xl-3">
+                      <div class="footer-links fl-3">
+                        <ul class="foo-links clearfix">
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
+                          <span class="support-description">
+                            <p>Get in Touch with Us
+                            </p>
+                          </span>
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                              routerLink="/contact-us"> CONTACT US </a></li>
+                          <span class="support-description">
+                            <p>Get in touch with us</p>
+                          </span>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-sm-12 col-lg-2 col-xl-3">
+                      <div class="footer-links fl-3">
+                        <ul class="foo-links clearfix">
+                          <li> <img class="support-icon-sm"
+                              src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
+                          <span class="support-description">
+                            <p>We love to hear from you</p>
+                          </span>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        <!-- DOWNLOAD IT SECTION -->
+
+        <div class="link-stripe">
+            <div class="pink-bar">
+                <div class="w">
+                    <div class="icons">
+                        <span class="animate__animated animate__fadeInUp">Download it from</span>
+                        <a class="animate__animated animate__fadeInUp"><img
+                                src="../../../assets/images/new/app-store-x200.png"></a>
+                        <a class="animate__animated animate__fadeInUp"><img
+                                src="../../../assets/images/new/google-play-x200.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CARDS ROW -->
+
+        <section class="features-section">
+            <div class="container">
+                <div class="fbox-wrapper text-center">
+                    <div class="row ">
+                        <div class="col-md-3">
+                            <div class="review-card wow fadeInUp">
+                                <div class="content">
+                                    <div class="fbox-img">
+                                        <div class="sim-voice-image-section">
+                                            <img src="../../../assets/images/about-us-images-blue/affb.jpg" alt="" class="img-fluid"
+                                            alt="feature-image">
+                                        </div>
+                                    </div>
+                                    <h6 class="s-22 w-700">Affordability</h6>
+                                    <div class="fbox-txt">
+                                        <p>Experience crystal-clear voice quality, connect with loved ones worldwide,
+                                            and save on your
+                                            international calls with our affordable rates.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="review-card wow fadeInUp">
+                                <div class="content">
+                                    <div class="fbox-img">
+                                        <div class="sim-voice-image-section">
+                                            <img src="../../../assets/images/about-us-images-blue/innv.jpg" alt="" class="img-fluid"
+                                                alt="feature-image">
+                                        </div>
+                                    </div>
+                                    <h6 class="s-22 w-700">Innovativeness </h6>
+                                    <div class="fbox-txt">
+                                        <p>Discover the innovative features that set Vinota apart. From adaptive routing
+                                            for optimal call
+                                            delivery to intuitive interfaces, we're constantly pushing boundaries to
+                                            enhance your calling
+                                            experience.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="review-card wow fadeInUp">
+                                <div class="content">
+                                    <div class="fbox-img">
+                                        <div class="sim-voice-image-section">
+                                            <img src="../../../assets/images/about-us-images-blue/qlty-r.jpg" alt="" class="img-fluid"
+                                                alt="feature-image">
+                                        </div>
+                                    </div>
+                                    <h6 class="s-22 w-700">Quality </h6>
+                                    <div class="fbox-txt">
+                                        <p> Enjoy premium call quality that ensures every conversation is clear, crisp,
+                                            and immersive.
+                                            Experience the difference with our commitment to excellence.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="review-card wow fadeInUp">
+                                <div class="content">
+                                    <div class="fbox-img">
+                                        <div class="sim-voice-image-section">
+                                            <img src="../../../assets/images/about-us-images-blue/qlty-r.jpg" alt="" class="img-fluid"
+                                            alt="feature-image">
+                                        </div>
+                                    </div>
+                                    <h6 class="s-22 w-700">Reliability </h6>
+                                    <div class="fbox-txt">
+                                        <p>Trust in reliable network infrastructure for seamless connectivity. Say
+                                            goodbye to call drops and
+                                            hello to uninterrupted conversations with your friends and family.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- ============================================= section 3  ============================================= -->
+
+        <section id="lnk-1" class="lg-screen">
+            <div class="container hd-section-bottom">
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-5">
+                        <div class="sim-shape">
+                            <div class="sim-content">
+                                <div class="carousel">
+                                    <div class="carousel-container">
+                                    <div class="carousel-item" [class.active]="isActive == 1">
+                                    <div class="page-sub-title-gray-sm">Superior Quality, Uninterrupted Conversations</div>
+                                        <p>Connect like never before with Vinota's cutting-edge technology, delivering a
+                                            crystal-clear
+                                            voice that captures every word, tone, and emotion. Feel closer to loved
+                                            ones, friends, and
+                                            colleagues, no matter the distance.</p>
+                                      </div>
+                                      <div class="carousel-item" [class.active]="isActive == 2">
+                                    <div class="page-sub-title-gray-sm">Seamless Connections Made Simple</div>
+                                        <p>Vinota's user-friendly interface ensures effortless navigation and easy
+                                            access to all the
+                                            features you need. Connect with the world effortlessly, focusing on
+                                            meaningful connections
+                                            without any hassle or complexity.</p>
+                                      </div>
+                                      <div class="carousel-item" [class.active]="isActive == 3">
+                                    <div class="page-sub-title-gray-sm">Unparalleled Support and Assistance</div>
+
+                                        <p> Our dedicated team is here for you round-the-clock. Get personalized
+                                            assistance, resolve
+                                            technical issues, and enjoy a smooth and hassle-free experience. Feel
+                                            reassured with our
+                                            reliable support service, just a message away.</p>
+                                      </div>
+
+                                </div>
+                            </div>
+
+                                <a class="prev" (click)="pre()">&#10094;</a>&nbsp;
+                                <a class="next"(click)="next()">&#10095;</a>&nbsp;
+                                <br>
+                                <div style="text-align:center">
+                                    <span class="dot" onclick="currentSlide(1)"></span>
+                                    <span class="dot" onclick="currentSlide(2)"></span>
+                                    <span class="dot" onclick="currentSlide(3)"></span>
+                                </div>
+
+
+                                <!-- <div class="body-slider">
+                <div class="main-wrapper">
+                  <div class="slider-wrapper">
+                    <div class="dots">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                    </div>
+                    <div class="slides wow fadeInUpBig">
+                      <h2 class="s-32">Superior Quality, Uninterrupted Conversations</h2>
+                      <p>Connect like never before with Vinota's cutting-edge technology, delivering a crystal-clear
+                        voice that captures every word, tone, and emotion. Feel closer to loved ones, friends, and
+                        colleagues, no matter the distance.</p>
+                    </div>
+                    <div class="slides wow fadeInUpBig">
+                      <h2 class="s-32">Seamless Connections Made Simple</h2>
+                      <p>Vinota's user-friendly interface ensures effortless navigation and easy access to all the
+                        features you need. Connect with the world effortlessly, focusing on meaningful connections
+                        without any hassle or complexity.</p>
+                    </div>
+                    <div class="slides wow fadeInUpBig">
+                      <h2 class="s-32">Unparalleled Support and Assistance</h2>
+                      <p> Our dedicated team is here for you round-the-clock. Get personalized assistance, resolve
+                        technical issues, and enjoy a smooth and hassle-free experience. Feel reassured with our
+                        reliable support service, just a message away.</p>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+                </div>
+              </div> -->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-7 text-sim-under-section">
+                        <div class="flex">
+                            <div class="flex-item card-section-2">
+                                <div class="wow fadeInUp">
+                                    <div class="statistic-block">
+                                        <div class="statistic-block-digit text-center ">
+                                            <div class="page-sub-title-blue-md wow fadeInUpBig">Start Your
+                                                Seamless Connectivity with
+                                                Vinota</div>
+                                            <div class=" wow fadeInUpBig">
+                                                <p>Your Gateway to Seamless Global Connectivity. With Vinota, you can
+                                                    experience crystal clear
+                                                    voice quality, affordable rates, and unlimited connectivity to
+                                                    countries worldwide. Our
+                                                    user-friendly app interface ensures a hassle-free international call
+                                                    experience, while our
+                                                    reliable support team is available 24/7 to assist you. Join the
+                                                    Vinota community and unlock
+                                                    a
+                                                    world of limitless possibilities. Download the app now and connect
+                                                    with confidence.
+                                                </p>
+                                                <div class="d-flex justify-content-center">
+                                                    <img src="../../../assets/images/55.png" alt=""
+                                                        class="download-img" />
+                                                    <img src="../../../assets/images/56.png" alt=""
+                                                        class="download-img" />
+                                                    <img src="../../../assets/images/60.png" alt=""
+                                                        class="download-img" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- ============================================= section 3  ============================================= -->
+
+        <section id="lnk-1" class="sm-screen">
+            <div class=" hd-section-bottom">
+                <div class="row d-flex align-items-center">
+                    <div class="col">
+                        <section class="hd-voice-row">
+                            <div class="hd-row-background ">
+                                <div class="container ">
+                                    <div class="page-sub-title-blue-md">Start Your Seamless Connectivity with Vinota</div>
+                                    <div class="blue-background-text">
+                                        <p>Your Gateway to Seamless Global Connectivity. With Vinota, you can experience
+                                            crystal clear
+                                            voice quality, affordable rates, and unlimited connectivity to countries
+                                            worldwide. Our
+                                            user-friendly app interface ensures a hassle-free international call
+                                            experience, while our
+                                            reliable support team is available 24/7 to assist you. Join the Vinota
+                                            community and unlock
+                                            a
+                                            world of limitless possibilities. Download the app now and connect with
+                                            confidence.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                        <!-- <div class="flex">
+              <div class="flex-item card-section-2">
+                <div class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <div class="statistic-block-digit text-center ">
+                      <h2 class="s-32 start-your-seamless-text">Start Your Seamless Connectivity with Vinota</h2>
+                      <div>
+                        <p>Your Gateway to Seamless Global Connectivity. With Vinota, you can experience crystal clear
+                          voice quality, affordable rates, and unlimited connectivity to countries worldwide. Our
+                          user-friendly app interface ensures a hassle-free international call experience, while our
+                          reliable support team is available 24/7 to assist you. Join the Vinota community and unlock
+                          a
+                          world of limitless possibilities. Download the app now and connect with confidence.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+                    </div>
+                    <div class="col">
+                        <div class="sim-shape">
+                            <div class="sim-content">
+                                <section id="reviews-1" class="pt-50 reviews-section">
+                                    <div class="container">
+                                        <div class="row justify-content-center">
+                                            <div class="col-md-10 col-lg-5">
+                                            </div>
+                                        </div>
+                                        <div class="owl-carousel owl-theme reviews-1-wrapper">
+                                            <div>
+                                                <div class="author-data">
+                                    <div class="page-sub-title-gray-md">Superior Quality, Uninterrupted Conversations</div>
+                                                    <br>
+                                                    <div class="review-author">
+                                                        <p>Connect like never before with Vinota's cutting-edge
+                                                            technology, delivering a crystal-clear
+                                                            voice that captures every word, tone, and emotion. Feel
+                                                            closer to loved ones, friends, and
+                                                            colleagues, no matter the distance.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="author-data">
+                                    <div class="page-sub-title-gray-md">Seamless Connections Made Simple</div>
+                                                    <br>
+                                                    <div class="review-author">
+                                                        <p>Vinota's user-friendly interface ensures effortless
+                                                            navigation and easy access to all the
+                                                            features you need. Connect with the world effortlessly,
+                                                            focusing on meaningful connections
+                                                            without any hassle or complexity.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div>
+                                                <div class="author-data">
+                                    <div class="page-sub-title-gray-md">Unparalleled Support and Assistance</div>
+                                                    <br>
+                                                    <div class="review-author">
+                                                        <p> Our dedicated team is here for you round-the-clock. Get
+                                                            personalized assistance, resolve
+                                                            technical issues, and enjoy a smooth and hassle-free
+                                                            experience. Feel reassured with our
+                                                            reliable support service, just a message away.</p>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- =============================================  Connect smarter  ============================================= -->
+
+        <section class="one-call-card">
+            <div class="container">
+                <div class="one-call-card-bg">
+                    <div class="content">
+                        <h2 class="s-46 wow fadeInUpBig">CONNECT <span style="color:#3399cc">SMARTER</span>, COMMUNICATE
+                            <span style="color:rgb(21, 189, 91)">BETTER </span>
+                        </h2>
+                        <a class="wow fadeInUpBig">Start Calling Now</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--- =============================================  footer  ============================================= -->
+
+    </div> <!-- END PAGE CONTENT -->
+
+
+    <!--============================================= EXTERNAL SCRIPTS ============================================= -->
+
+
+    <script src="js/jquery-3.7.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/jquery.easing.js"></script>
+    <script src="js/jquery.appear.js"></script>
+    <script src="js/menu.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/pricing-toggle.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/request-form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/lunar.js"></script>
+    <script src="js/wow.js"></script>
+    <!-- Custom Script -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

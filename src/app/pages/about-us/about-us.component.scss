@@ -1,0 +1,184 @@
+.hero-section {
+  padding-top: 8em;
+  padding-bottom: 6em;
+}
+
+@media all and (max-width: 768px) {
+  .hero-section {
+    padding-top: 0em;
+    padding-bottom: 4em;
+  }
+}
+
+.banner-wrapper {
+  position: relative;
+}
+
+
+.banner-wrapper .banner-content h2,
+.banner-wrapper .banner-content p,
+.banner-wrapper .banner-content span {
+  margin: 0;
+  line-height: 1.2em;
+  display: block;
+}
+
+.banner-wrapper .banner-content p {
+  /* font-weight: 600; */
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+
+
+.banner-wrapper .banner-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .banner-wrapper .banner-bg {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}
+
+.s-22 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.s-23 {
+  color: var(--primary-color) !important;
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.download-btn {
+  padding-top: 1em;
+  padding-bottom: 1em;
+
+}
+
+.sim-card-img {
+  object-fit: contain;
+  height: 100%;
+  width: 200px;
+}
+
+
+.side-img img {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.icon-img-sm {
+  object-fit: contain;
+  height: 50px;
+  width: 55px;
+}
+
+.icon-img-lg {
+  object-fit: contain;
+  height: 60px;
+  width: 55px;
+}
+
+.fbox-txt-end {
+  text-align: end;
+}
+
+.fbox-txt-start {
+  text-align: start;
+}
+
+.content-section {
+  padding-top: 7em;
+  padding-bottom: 4em;
+}
+
+@media all and (max-width: 768px) {
+  .content-section {
+    padding-top: 0em;
+    padding-bottom: 4em;
+  }
+}
+
+
+.text-sim-under-section .flex {
+  flex-wrap: wrap;
+  height: 100%;
+}
+
+.text-sim-under-section .card-section-2 {
+  padding: 1em 2em;
+  flex: 1 1 50%;
+  height: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .text-sim-under-section .card-section-2 {
+    flex: 1 1 100%;
+  }
+}
+
+.review-card {
+  position: relative;
+  height: 100%;
+
+}
+
+@media all and (max-width: 768px) {
+  .review-card {
+    margin-bottom: 2.5em;
+    margin: 1em 10px 2em;
+  }
+}
+
+.review-card .content {
+  padding: 2em 0.5em 2em 0.5em;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.review-card .content .fbox-txt {
+  margin-top: 20px;  
+  margin-bottom: 30px;
+}
+
+.review-card .content .fbox-txt p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.review-card::before {
+  content: "";
+  background: linear-gradient(310deg, transparent 45px 0px, white 0);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+
+
+.about-us-description-card {
+  padding-bottom: 1em;
+}
+
+@media all and (max-width: 768px) {
+  .about-us-hidden-col {
+    display: none;
+  }
+}

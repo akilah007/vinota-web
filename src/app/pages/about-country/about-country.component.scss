@@ -1,0 +1,142 @@
+@media all and (max-width: 768px) {
+  .hero-section {
+    margin-top: 64px;
+  }
+}
+
+.hero-section {
+  padding-top: 8em;
+  padding-bottom: 0em;
+}
+
+@media all and (max-width: 768px) {
+  .hero-section {
+    padding-top: 0em
+  }
+}
+
+.banner-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+@media all and (max-width: 768px) {
+  .banner-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+}
+
+.banner-wrapper .banner-content {
+  padding-top: 1em;
+  position: relative;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100%;
+  /* display: flex; */
+  align-items: center;
+  z-index: 3;
+
+}
+
+.banner-wrapper .banner-content h2,
+.banner-wrapper .banner-content p,
+.banner-wrapper .banner-content span {
+  margin: 0;
+  line-height: 1;
+  display: block;
+}
+
+
+.banner-content .banner-content-img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+  height: 75%;
+  object-fit: fill;
+  float: right;
+}
+
+.banner-wrapper .banner-content h2 {
+  font-size: 4.5em;
+  letter-spacing: 1px;
+  max-width: 60%;
+  font-weight: 700;
+  margin: 5px 0 24px;
+  color: black;
+}
+
+
+@media all and (max-width: 768px) {
+  .banner-wrapper .banner-bg {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}
+
+
+.btn {
+  background-color: var(--primary-color);
+}
+
+.description-col a {
+  display: inline-block;
+  background: var(--secondary-color);
+  color: white;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 48px;
+  padding: 0 24px;
+}
+
+.clock-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
+}
+
+.get-start-btn {
+  padding-top: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.description-text {
+  text-align: center;
+}
+
+.content-section {
+  margin-top: -60px;
+  padding-bottom: 4em;
+}
+
+.text-sim-under-section-img {
+  width: 665px;
+  padding-left: 110px;
+}
+
+@media all and (max-width: 768px) {
+  .text-sim-under-section-img {
+    width: 365px;
+    padding-left: 0px;
+  }
+}
+
+.app-section-text {
+  padding-left: 0px;
+}
+
+@media all and (max-width: 768px) {
+  .app-section-text {
+    padding-left: 20px;
+  }
+}
+
+.review-card {
+  position: relative;
+}

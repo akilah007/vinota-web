@@ -1,0 +1,15 @@
+/** Ionic CSS Variables **/
+:root {
+  /** primary **/
+  --primary-color: #E30051;
+  --secondary-color: #ec0658;
+}
+
+@media (prefers-color-scheme: dark) {
+  /*
+   * Dark Colors
+   * -------------------------------------------
+   */
+}
+
+/*# sourceMappingURL=variables.css.map */

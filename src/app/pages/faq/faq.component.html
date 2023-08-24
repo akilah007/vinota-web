@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<body>
+
+  <!-- PRELOADER SPINNER============================================= -->
+  <div id="page" class="page">
+    <!-- ============================================= HEADER ============================================= -->
+    <header id="header" class="main-header white-scroll">
+      <div class="header-wrapper flex align-center justify-content-between">
+        <div class="logo">
+          <a routerLink="/index"><img src="../../../assets/images/Vinota-Logo-New-white12345.png" /></a>
+        </div>
+        <span class="nav-icon">
+          <a></a>
+        </span>
+        <nav class="nav-bar">
+          <a routerLink="/index">Home</a>
+          <a routerLink="/call-rates">Rates</a>
+          <a routerLink="/apps">Apps</a>
+          <a type="button" (click)="navigateToSection('support_section')">Support</a>
+          <a href="https://hello.vinota.com/register">Join</a>
+          <a href="https://hello.vinota.com/login" style="border-radius: 7px;
+    background: #04AA6D;
+    color: white;">Top-up</a>
+        </nav>
+        <div></div>
+      </div>
+      <a href="https://hello.vinota.com/login" class="login-button">Login</a>
+    </header>
+
+    <!--- ============================================= section 2 Download floating stripe  ============================================= -->
+    <div class="link-stripe">
+      <div class="pink-bar">
+        <div class="w">
+          <div class="icons">
+            <span class="animate__animated animate__fadeInUp">Download it from</span>
+            <a class="animate__animated animate__fadeInUp"><img src="../../../assets/images/new/app-store-x200.png"></a>
+            <a class="animate__animated animate__fadeInUp"><img src="../../../assets/images/new/google-play-x200.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- ============================================= section 3  Why our Customer Love us? ============================================= -->
+    <section class="bg--scroll hero-section">
+      <div class="banner-wrapper">
+        <div class="banner-content">
+          <div class="content">
+            <span class="wow fadeInUp page-main-title-blue-lg">FAQs</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="support_section">
+      <div [class.not-active]="changeClass">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="support">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-1 ">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
+                        APPs</a></li>
+                    <span class="support-description">
+                      <p>Explore the Great Features of the Vinota App
+                      </p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-2">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
+                    </li>
+                    <span class="support-description">
+                      <p>Visit Support Tickets
+                      </p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                        routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
+                    <span class="support-description">
+                      <p>Everything You Need to Know About Vinota</p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
+                      </a></li>
+                    <span class="support-description">
+                      <p>All Your Questions Answered</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-3">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
+                    <span class="support-description">
+                      <p>Get in Touch with Us
+                      </p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                        routerLink="/contact-us"> CONTACT US </a></li>
+                    <span class="support-description">
+                      <p>Get in touch with us</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-3">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
+                    <span class="support-description">
+                      <p>We love to hear from you</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section class="content-section">
+      <div class="row d-flex align-items-center">
+        <div class="col-md-12 text-sim-under-section">
+          <div class="flex">
+            <div class="flex-item card-section-2">
+              <div class="wow fadeInUp">
+                <div class="statistic-block">
+                  <div class="statistic-block-digit">
+                    <h2 class="page-sub-title-gray-md">Calling</h2>
+                    <div>
+                      <h3>How do I make an international call with Vinota?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;To make an international call with Vinota, simply open the app, enter the country code followed
+                        by the phone number, and press the call button. You can also check the rates within the app.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Can I use Vinota to call both mobile and landline numbers?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Yes, Vinota allows you to make calls to both mobile and landline numbers worldwide.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>What are the calling rates for different countries?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Vinota offers competitive calling rates for various countries. You can find the detailed
+                        calling rates on our website or within the Vinota app.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Is it possible to make conference calls with Vinota?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Currently, Vinota supports one-on-one calling. Conference call features may be added in future
+                        updates.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Can I use Vinota to call someone who doesn't have the app?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Yes, you can use Vinota to call anyone, even if they don't have the app.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-item card-section-2">
+              <div class="wow fadeInUp">
+                <div class="statistic-block">
+                  <!-- Digit -->
+                  <div class="statistic-block-digit ">
+                    <h2 class="page-sub-title-gray-md">Technical Issues</h2>
+                    <div>
+                      <h3>I'm experiencing poor call quality. What can I do?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Ensure a stable internet connection and check your device's signal strength. If the issue
+                        persists, contact our support team for further assistance.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Vinota app is not connecting. What should I check?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Make sure you have a reliable internet connection. If the problem continues, try restarting the
+                        app or reinstalling it. If the issue persists, reach out to our support team.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>What should I do if I come across any technical issues?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Please send us a detailed description of the issue you are facing with your Vinota number to <a
+                          href="support@vinota">support@vinota</a>.com or visit the "Contact Us" section on our website.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Is Vinota compatible with all mobile devices and operating systems?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Vinota is compatible with most popular mobile devices and operating systems, including iOS and
+                        Android. Check the app store for specific compatibility requirements.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Can I make calls with Vinota without an internet connection?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;To make calls from the Vinota App, an internet connection is needed. However, you can use a
+                        Vinota Access Number to make calls without the internet.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="flex-item card-section-2">
+              <div class="wow fadeInUp">
+                <div class="statistic-block">
+                  <!-- Digit -->
+                  <div class="statistic-block-digit">
+                    <h2 class="s-46 page-sub-title-gray-md">Billing</h2>
+                    <div>
+                      <h3>How can I check my Vinota account balance?</h3>
+                      <p><span class="star-mark">★</span>&nbsp;You can view your Vinota credit balance within the app.</p>
+                    </div>
+                    <div>
+                      <h3>What are the payment methods accepted by Vinota?</h3>
+                      <p><span class="star-mark">★</span>&nbsp;Vinota accepts various payment methods, including card payments and PayPal. </p>
+                    </div>
+                    <div>
+                      <h3>How do I add credits to my Vinota account?</h3>
+                      <p><span class="star-mark">★</span>&nbsp;To add credits, go to the options section within the app and select the option to add credits. Follow the instructions to complete the payment process
+                        .</p>
+                    </div>
+                    <div>
+                      <h3>Can I get a refund for unused credits?</h3>
+                      <p><span class="star-mark">★</span>&nbsp;Refund policies may vary. Please refer to our refund policy on the website or contact our support team for more information.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Where can I find the details of my past transactions?</h3>
+                      <p><span class="star-mark">★</span>&nbsp;You can find the details of your past transactions in the Options > Payment History section of the Vinota app.
+                      </p>
+                    </div>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="flex-item card-section-2">
+              <div class="wow fadeInUp">
+                <div class="statistic-block">
+                  <!-- Digit -->
+                  <div class="statistic-block-digit">
+                    <h2 class="s-46 page-sub-title-gray-md">General</h2>
+                    <div>
+                      <h3 >Is Vinota available in my country?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Vinota is available in multiple countries worldwide. Please check our website or app store for
+                        a list of supported countries.</p>
+                    </div>
+                    <div>
+                      <h3>How long will my credit be valid?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Vinota credit has lifetime validity as long as you remain an active Vinota user.</p>
+                    </div>
+                    <div>
+                      <h3>Can I use Vinota while traveling abroad?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Yes, you can use Vinota while traveling abroad, as long as you have an internet connection.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>Are my calls with Vinota encrypted and secure?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;Yes, Vinota prioritizes the security and privacy of your calls. Our app utilizes encryption
+                        protocols to protect your communication.
+                      </p>
+                    </div>
+                    <div>
+                      <h3>How can I contact Vinota customer support for further assistance?
+                      </h3>
+                      <p><span class="star-mark">★</span>&nbsp;You can reach our customer support team by visiting the "Contact Us" section on our website or
+                        by accessing the support options within the Vinota app.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- END PAGE CONTENT -->
+</body>
+
+</html>

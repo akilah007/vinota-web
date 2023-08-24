@@ -1,0 +1,488 @@
+<html lang="en">
+
+<body>
+  <div id="page" class="page">
+    <!-- ============================================= HEADER ============================================= -->
+    <header id="header" class="main-header white-scroll">
+      <div class="header-wrapper flex align-center justify-content-between">
+        <div class="logo">
+          <a routerLink="/index"><img src="../../../assets/images/Vinota-Logo-New-white12345.png" /></a>
+        </div>
+        <span class="nav-icon">
+          <a></a>
+        </span>
+        <nav class="nav-bar">
+          <a href="call-rates">Rates</a>
+          <a routerLink="/apps">Apps</a>
+          <a type="button" (click)="navigateToSection('support_section')">Support</a>
+          <a href="https://hello.vinota.com/register">Join</a>
+          <a href="https://hello.vinota.com/login" style="border-radius: 7px;
+          background: #04AA6D;
+          color: white;">Top-up</a>
+        </nav>
+        <div></div>
+      </div>
+      <a href="https://hello.vinota.com/login" class="login-button">Login</a>
+    </header>
+
+    <!--- =============================================   Hello ============================================= -->
+
+    <section class="bg--scroll hero-section-main">
+      <div class="banner-wrapper">
+        <div class="banner-content">
+          <div class="content">
+            <div class="wow fadeInUp page-main-title-blue-lg">Hello!</div>
+            <p class="wow fadeInUpBig">UNITING THE WORLD, ONE CALL AT A TIME</p>
+            <h2 class="wow fadeInLeft">Enjoy the Freedom of International Calling</h2>
+            <a class="wow fadeInUpBig">Get Started</a>
+          </div>
+        </div>
+        <div class="banner-bg">
+          <div class="banner-mask"></div>
+          <video loop muted autoplay>
+            <source src="../../../assets/videos/shutterstock-1056283940.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </section>
+    <div id="support_section">
+      <div [class.not-active]="changeClass">
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="support">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-1 ">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
+                        APPs</a></li>
+                    <span class="support-description">
+                      <p>Explore the Great Features of the Vinota App
+                      </p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-2">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
+                    </li>
+                    <span class="support-description">
+                      <p>Visit Support Tickets
+                      </p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                        routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
+                    <span class="support-description">
+                      <p>Everything You Need to Know About Vinota</p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
+                      </a></li>
+                    <span class="support-description">
+                      <p>All Your Questions Answered</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-3">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
+                    <span class="support-description">
+                      <p>Get in Touch with Us
+                      </p>
+                    </span>
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                        routerLink="/contact-us"> CONTACT US </a></li>
+                    <span class="support-description">
+                      <p>Get in touch with us</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12 col-lg-2 col-xl-3">
+                <div class="footer-links fl-3">
+                  <ul class="foo-links clearfix">
+                    <li> <img class="support-icon-sm"
+                        src="../../../assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
+                    <span class="support-description">
+                      <p>We love to hear from you</p>
+                    </span>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--- ============================================= DOWNLOAD IT BUTTONS ============================================= -->
+    <div class="link-stripe">
+      <div class="pink-bar">
+        <div class="w">
+          <div class="icons">
+            <span class="animate__animated animate__fadeInUp">Download it from</span>
+            <a class="animate__animated animate__fadeInUp"><img src="../../../assets/images/new/app-store-x200.png"></a>
+            <a class="animate__animated animate__fadeInUp"><img
+                src="../../../assets/images/new/google-play-x200.png"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- =============================================  SIM SHAPE TEXT LIST ============================================= -->
+
+    <section id="lnk-1" class="content-section">
+      <div class="container hd-section-bottom">
+        <div class="row d-flex align-items-center">
+          <div class="col-md-5">
+            <div class="sim-shape">
+              <div class="sim-content">
+                <div class="title">
+                  <p>What makes us uniquely exceptional? </p>
+                </div>
+                <div>
+                  <ul class="icon-list">
+                    <li><img src="../../../assets/images/cheap_international_calls_start_calling.png" alt=""
+                        class="check-circle" />
+                      Secure Premium Voice Quality</li>
+                    <li><img src="../../../assets/images/rates_world_wide.png" alt="" class="check-circle" />
+                      Lowest Call Rates Worldwide
+                    </li>
+                    <li>
+                      <img src="../../../assets/images/cheap_international_calls_payment.png" alt=""
+                        class="check-circle" /> Pay with
+                      Ease
+                    </li>
+                    <li><img src="../../../assets/images/cheap_international_calls_credit_lifetime.png" alt=""
+                        class="check-circle" />
+                      Lifetime Credits </li>
+                    <li><img src="../../../assets/images/cheap_international_calls_tower.png" alt=""
+                        class="check-circle" />
+                      No Call Dropping</li>
+                    <li><img src="../../../assets/images/cheap_international_calls_net_world.png" alt=""
+                        class="check-circle" />
+                      Consistent Rates Worldwide</li>
+                    <li><img src="../../../assets/images/cheap_international_calls_transfer.png" alt=""
+                        class="check-circle" />
+                      Transfer Funds with Ease
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- desktop cards -->
+          <div class="col-md-7 text-sim-under-section">
+            <div class="flex">
+              <div class="flex-item card-section-2">
+                <div class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center ">
+                      <h2 class="s-46 statistic-number"><span class="count-element">95</span>%</h2>
+                      <div>
+                        <h3>Customer Satisfaction</h3>
+                        <p>We are proud to tell you that more than 95% of our
+                          customers are satisfied with Vinota</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item card-section-2">
+                <div class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center ">
+                      <h2 class="s-46 statistic-number"><span class="count-element">200</span>+</h2>
+                      <div>
+                        <h3>Countries Connected</h3>
+                        <p>Vinota has 200+ countries directly connected to
+                          deliver best rate to customers.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item card-section-2">
+                <div class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center">
+                      <h2 class="s-46 statistic-number"><span class="count-element">24</span>/7</h2>
+                      <div>
+                        <h3>True Customer Support</h3>
+                        <p>Vinota offers true 24/7 customer support</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex-item card-section-2">
+                <div class="wow fadeInUp">
+                  <div class="statistic-block">
+                    <!-- Digit -->
+                    <div class="statistic-block-digit text-center">
+                      <h2 class="s-46 statistic-number"><span class="count-element">80</span>%</h2>
+                      <div>
+                        <h3>Cheaper call charges</h3>
+                        <p>You can save upto 80% on your call charges with Vinota</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ============================================= section 5  Top Destinations============================================= -->
+
+
+    <section class="pt-50 reviews-section" style="margin-bottom:70px; ">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-10 col-lg-5">
+            <div class="section-title">
+              <h4 class="page-sub-title-gray-md">Top Destinations</h4>
+            </div>
+          </div>
+        </div>
+        <div class="owl-carousel owl-theme reviews-1-wrapper">
+          <div  routerLink="/about-country">
+            <div class="author-data">
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/mx.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> Mexico </h4>
+                <h5>USD 0.0016/ min</h5>
+                <h6>3125 mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+          <div routerLink="/about-country">
+            <div class="author-data">
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/pk.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> Pakistan </h4>
+                <h5>USD 0.0016/ min</h5>
+                <h6> USD 0.0005 / Min</h6>
+              </div>
+            </div>
+          </div>
+          <div routerLink="/about-country">
+            <div class="author-data" >
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/au.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> Australia </h4>
+                <h5>USD 0.0126/ min</h5>
+                <h6>397 mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+          <div routerLink="/about-country">
+            <div class="author-data" >
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/us.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> United States </h4>
+                <h5>USD 0.0159/ min</h5>
+                <h6>314 mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+          <div routerLink="/about-country">
+            <div class="author-data" >
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/in.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4>India</h4>
+                <h5>USD 0.0159/ min</h5>
+                <h6> 314 mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+          <div routerLink="/about-country">
+            <div class="author-data">
+              <div class="country-img">
+                <img src="../../../assets/images/country_flags/bd.png" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> Bangladesh </h4>
+                <h5>USD 0.0210/ min</h5>
+                <h6> 238 mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ============================================= section 5  international calls============================================= -->
+
+    <section id="features-2" class="features-section pt-50">
+      <div class="container">
+        <div class="fbox-wrapper text-center">
+          <div class="row row-cols-1 row-cols-md-3">
+            <div class="col">
+              <div class="review-card wow fadeInUp">
+                <div class="content">
+                  <div class="fbox-img">
+                    <div class="sim-voice-image-section">
+                      <img src="../../../assets/images/lady.png" alt="" class="img-fluid" alt="feature-image">
+                      <div class="star-wrapper">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    </div>
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <p>This is the best app for international calls for me. I
+                      am getting lot of benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="review-card wow fadeInUp">
+                <div class="content">
+                  <div class="fbox-img">
+                    <div class="sim-voice-image-section">
+                      <img src="../../../assets/images/rate-mn.png" alt="" class="img-fluid" alt="feature-image">
+                      <div class="star-wrapper">
+                          <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                          <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                          <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                          <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                          <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <p>This is the best app for international calls for me. I
+                      am getting lot of benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="review-card wow fadeInUp">
+                <div class="content">
+                  <div class="fbox-img">
+                    <div class="sim-voice-image-section">
+                      <img src="../../../assets/images/girl_n.png" alt="" class="img-fluid" alt="feature-image">
+                      <div class="star-wrapper">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                        <img src="../../../assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Text -->
+                  <div class="fbox-txt">
+                    <p>This is the best app for international calls for me. I
+                      am getting lot of benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                      This is the best app for international calls for me. I am getting lot of
+                      benefits from using it.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--- ============================================= section 6  Try before you buy ============================================= -->
+
+    <section class="girl-with-image-section">
+      <div class="container flex justify-content-end align-items-end floating-image-content">
+        <div class="floating-content">
+          <h3 class="wow fadeInLeft" id="dynamic_title"></h3>
+          <div class="sim-bottom">
+            <div class="sim-bottom-content text-center">
+              <p class="wow fadeInUp" id="dynamic_description"></p>
+              <img class="wow fadeIn" src="../../../assets/images/desktop-pc.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="girl-with-image">
+          <span class="effect wow fadeInUp"></span>
+          <img class="img-fluid wow fadeInLeft" src="../../../assets/images/bottom-girl.png" alt="hero-image">
+        </div>
+      </div>
+    </section>
+
+    <!--- ============================================= section 7  ============================================= -->
+    <section class="sign-up-today-card">
+      <div class="container">
+        <div class="sign-up-today-card-bg">
+          <div class="content">
+            <h6>Ready for your free call? <br />Listen. Laugh. Live. Love.</h6>
+            <p>Download today and experience Seamless Connectivity</p>
+            <div class="button-wrapper">
+              <a class="wow fadeInUp"><img src="./../../../assets/images/new/app-store-x200.png"></a>
+              <a class="wow fadeInUp"><img src="./../../../assets/images/new/google-play-x200.png"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div> <!-- END PAGE CONTENT -->
+</body>
+</html>
