@@ -22,11 +22,11 @@
 
 html {
   -webkit-font-smoothing: antialiased;
-  font-size: 16px;
+  /* font-size: 16px; */
 } 
 
 body {
-     font-family:  Arial;
+     /* font-family:  Arial; */
   color: #6c757d;
   line-height: 1.6666;
   /* font-weight: 400; */
@@ -3090,76 +3090,6 @@ span.sm-info {
   background-position: center center;   
   background-size: cover;
 }
-
-.hero-section.blur--purple:after {
-  position: absolute;
-  content: '';
-  z-index: -1;
-  width: 100%;
-  height: 100%;
-  top: -30%;
-  left: 0;
-  background-image: url(../images/blur-purple.png);
-  background-repeat: no-repeat;
-  background-position: center center;   
-  background-size: cover;
-  background-attachment: scroll;
-  opacity: 0.2;
-}
-
-/*------------------------------------------*/
-/*  HERO LOGO
-/*------------------------------------------*/
-
-.hero-logo {
-  margin-bottom: 40px;
-}
-
-.hero-square-logo {
-  margin-bottom: 20px;
-}
-
-#hero-22 .hero-logo {
-  margin-bottom: 30px;
-}
-
-.hero-logo img {
-  width: auto;
-  max-width: inherit;
-  max-height: 36px;
-}
-
-.hero-square-logo img {
-  width: auto;
-  max-width: inherit;
-  max-height: 90px;
-}
-
-/*------------------------------------------*/
-/*  HERO APP LOGO
-/*------------------------------------------*/
-
-.hero-app-logo {
-  margin-bottom: 35px;
-}
-
-#hero-25 .hero-app-logo {
-  margin-bottom: 25px;
-}
-
-.hero-app-logo img {
-  width: auto;
-  max-width: inherit;
-  max-height: 100px;
-}
-
-#hero-25 .hero-app-logo img {
-  max-height: 110px;
-}
-
-/*------------------------------------------*/
-/*  HERO DIGITS
-/*------------------------------------------*/
 
 #hd-1-1, #hd-1-2 {
   display: inline-block;
@@ -9212,7 +9142,7 @@ img.footer-logo-dark {
 
 #login,
 #signup {
-  background: url(../images/login.jpg);
+  /* background: url(../images/login.jpg); */
   background-position: bottom left;
   min-height: 100vh;
   padding-top: 80px;
@@ -9220,7 +9150,7 @@ img.footer-logo-dark {
 }
 
 #reset-password {
-  background: url(../images/reset-password.jpg);
+  /* background: url(../images/reset-password.jpg); */
   background-position: center center;
   min-height: 100vh;
   padding-top: 80px;
@@ -9237,12 +9167,12 @@ img.footer-logo-dark {
 }
 
 #login .register-page-wrapper {
-  background: url(../images/login-wrapper.jpg);
+  /* background: url(../images/login-wrapper.jpg); */
   background-position: left top;
 }
 
 #signup .register-page-wrapper {
-  background: url(../images/login-wrapper.jpg);
+  /* background: url(../images/login-wrapper.jpg); */
   background-position: right center;
 }
 

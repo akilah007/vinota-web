@@ -24,7 +24,7 @@
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: antialiased;
   font-smooth: antialiased;
-  -webkit-text-size-adjust: 100%;
+  /* -webkit-text-size-adjust: 100%; */
   -ms-text-size-adjust: 100%;
   -webkit-font-smoothing: subpixel-antialiased;
   font-smoothing: subpixel-antialiased;
