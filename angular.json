@@ -45,7 +45,24 @@
               "src/assets/css/dropdown-effects/fade-down.css",
               "src/assets/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": [ "node_modules/jquery/dist/jquery.min.js",
+            "src/assets/js/jquery-3.7.0.min.js",
+            "src/assets/js/modernizr.custom.js",
+            "src/assets/js/jquery.easing.js",
+            "src/assets/js/bootstrap.min.js",
+            "src/assets/js/jquery.appear.js",
+            "src/assets/js/menu.js",
+            "src/assets/js/owl.carousel.min.js",
+            "src/assets/js/pricing-toggle.js",
+            "src/assets/js/jquery.magnific-popup.min.js",
+            "src/assets/js/request-form.js",
+            "src/assets/js/jquery.validate.min.js",
+            "src/assets/js/jquery.ajaxchimp.min.js",
+            "src/assets/js/popper.min.js",
+            "src/assets/js/lunar.js",
+            "src/assets/js/wow.js",
+            "src/assets/js/quick-form.js",
+            "src/assets/js/custom.js"]
           },
           "configurations": {
             "production": {
