@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "vinota-1287": {
+      "hosting": {
+        "vinota-v2-angular": [
+          "vinota-com"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "vinota-1287"
+  }
+}

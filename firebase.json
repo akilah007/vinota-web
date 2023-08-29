@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "vinota-v2-angular",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    }
+  ]
+}

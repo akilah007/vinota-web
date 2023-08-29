@@ -13,6 +13,11 @@ import { KnowledgeBaseComponent } from './pages/knowledge-base/knowledge-base.co
 import { AboutCountryComponent } from './pages/about-country/about-country.component';
 import { AppsComponent } from './pages/apps/apps.component';
 import { APP_BASE_HREF } from '@angular/common';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAnalytics,getAnalytics,ScreenTrackingService,UserTrackingService } from '@angular/fire/analytics';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
 
 
 @NgModule({
@@ -30,10 +35,17 @@ import { APP_BASE_HREF } from '@angular/common';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAnalytics(() => getAnalytics()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore())
   ],
   // providers: [],
   // providers: [{provide: APP_BASE_HREF, useValue: '/dist/vinota-v2-angular/'}],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [
+    ScreenTrackingService,UserTrackingService
+  ]
 })
 export class AppModule { }
