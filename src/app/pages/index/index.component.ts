@@ -1,6 +1,7 @@
 import { Component, ViewChild, OnInit, Renderer2, ElementRef } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
 import { JsServiceService } from '../../services/js-service.service';
+import { environment } from 'src/environments/environment';
 
 
 @Component({
@@ -10,6 +11,7 @@ import { JsServiceService } from '../../services/js-service.service';
 })
 export class IndexComponent implements OnInit {
   public changeClass = true;
+  imageURL = environment.imageURL;
 
 
   constructor(private viewportScroller: ViewportScroller, private dynamicScriptLoader: JsServiceService) { }

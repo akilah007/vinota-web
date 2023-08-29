@@ -22,7 +22,7 @@
 
 html {
   -webkit-font-smoothing: antialiased;
-  /* font-size: 16px; */
+  /* font-size: 115.6%; */
 } 
 
 body {
@@ -596,7 +596,7 @@ p.p-xl { font-size: 1.2rem; }      /* 19.2px */
 .s-43 { font-size: 2.6875rem; }  /* 43px */
 .s-44 { font-size: 2.75rem; }    /* 44px */
 .s-45 { font-size: 2.8125rem; }  /* 45px */
-.s-46 { font-size: 2.875rem; }   /* 46px */
+.s-46 { font-size: 2.875rem;font-weight: 600; }   /* 46px */
 .s-47 { font-size: 2.9375rem; }  /* 47px */
 .s-48 { font-size: 3rem; }       /* 48px */
 .s-50 { font-size: 2.125rem; }   /* 50px */
@@ -1894,9 +1894,9 @@ p.video-txt-sm {
   text-align: center;
 }
 
-.section-title h2 {
+/* .section-title h2 {
   margin-bottom: 0;
-}
+} */
 
 .section-title h2.w-700 {
   letter-spacing: -0.5px;

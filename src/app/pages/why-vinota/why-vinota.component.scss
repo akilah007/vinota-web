@@ -5,16 +5,6 @@
   color: #6c757d;
 }
 
-.hero-section {
-  padding-top: 8em;
-}
-
-@media all and (max-width: 768px) {
-  .hero-section {
-    padding-top: 0em;
-  }
-}
-
 
 @media all and (max-width: 768px) {
   .banner-wrapper {
@@ -23,7 +13,9 @@
     height: fit-content;
   }
 }
-
+.banner-wrapper .banner-content a {
+  margin-top: 7px;
+}
 
 .page-sub-title-blue-md {
   margin: 10px;
@@ -177,15 +169,15 @@
   line-height: 1.3;
   font-weight: 600;
 }
-.sm-screen {
-  padding-top: 2em;
-  padding-bottom: 4em;
-}
+// .sm-screen {
+//   padding-top: 2em;
+//   padding-bottom: 4em;
+// }
 
-.lg-screen {
-  padding-top: 0em;
-  margin-bottom: 4em;
-}
+// .lg-screen {
+//   padding-top: 0em;
+//   margin-bottom: 4em;
+// }
 
 .card-section-2 {
   margin-bottom: 10px;
@@ -240,55 +232,7 @@
     flex: 1 1 100%;
   }
 }
-.review-card h6 {
-  padding: 15px;
-}
 
-.review-card {
-  position: relative;
-  height: 100%;
-
-}
-
-@media all and (max-width: 768px) {
-  .review-card {
-    margin-bottom: 50px;
-    height: auto;
-
-  }
-}
-
-
-.review-card .content {
-  padding: 40px 5px 80px;
-  position: relative;
-  z-index: 1;
-}
-
-
-
-.review-card .content .fbox-txt p {
-  font-size: 0.9em;
-  line-height: 1.5;
-}
-
-.review-card::before {
-  content: "";
-  background: linear-gradient(315deg, transparent 61px 0px, white 0);
-  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 30px;
-}
-
-.download-btn {
-  padding-top: 1em;
-  padding-bottom: 1em;
-
-}
 
 .download-img {
   width: 30%;
@@ -300,15 +244,13 @@
   }
 }
 
-.blue-background-text {
-  color: black;
-  text-align: center;
+
+.sim-card-img {
+  object-fit: contain;
+  width: 190px;
+  height: 190px;
 }
 
-.hd-voice-row {
-  padding-top: 3em;
-  padding-bottom: 4em;
-}
 
 .features-section {
   padding-top: 1em;
@@ -319,17 +261,19 @@
 
 @media all and (max-width: 768px) {
   .features-section {
-    padding-top: 4em;
+    padding-top: 2em;
     padding-bottom: 0em;
 
   }
 }
-.fbox-img img {
-  object-fit: contain;
-  height: 150px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  border-radius: 10px;
+.one-call-card .one-call-card-bg {
+  padding-top: 3em;
+  padding-bottom: 4em;
+}
+.slide-text-sim{
+  padding-bottom: 4em;
+}
+.banner-content .banner-content-img {
+ 
+  height: 90%;
 }

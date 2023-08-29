@@ -213,16 +213,17 @@ p {
   font-family: var(--app-font-family) !important;
 }
 
-// titles
-.sim-card-title-blue-md {
-  font-size: 1.4375rem;
-  color: var(--primary-color);
-  margin-bottom: 8px;
+@media all and (max-width: 768px) {
+  p {
+    line-height: 1.2 !important;
+  }
 }
+// titles
+
 
 .page-sub-title-gray-xsm {
   font-weight: 600;
-  font-size: 1.4rem;
+  font-size: 1.4em;
   color: #353f4f;
   margin-bottom: 0.8em;
   text-align: center;
@@ -237,7 +238,7 @@ p {
 }
 .page-sub-title-gray-md {
   color: #353f4f;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
   font-size: 2.75em;
   text-align: center;
   line-height: 1.2;
@@ -247,22 +248,39 @@ p {
 @media all and (max-width: 768px) {
   .page-sub-title-gray-md {
     margin-bottom: 15px;
+  font-size: 2.2em;
+
   }
 }
-
+.page-sub-title-blue-xsm {
+  font-size: 1.3em;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+  font-weight: 600;
+}
 .page-sub-title-blue-sm {
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 2em;
   color: var(--primary-color);
-  margin-bottom: 0.8em;
+  margin-bottom: 0.5em;
+  line-height: 1;
 }
+@media all and (max-width: 768px) {
+  .page-sub-title-blue-sm  {
+    font-weight: 600;
+    font-size: 1.6em;
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+    line-height: 1;
 
+  }
+}
 .page-sub-title-blue-md {
   color: var(--primary-color);
   margin: 0;
   line-height: 1.3;
   font-weight: 600;
-  font-size: 1.65rem;
+  font-size: 2.5rem;
 }
 @media all and (max-width: 768px) {
   .page-sub-title-blue-md {
@@ -276,9 +294,8 @@ p {
 .page-main-title-blue-lg {
   font-size: 3.5em;
   font-weight: 600;
-  // margin-bottom: 15px;
+  margin-bottom: 10px;
   color: var(--primary-color);
-  margin: 0;
   line-height: 1.2em;
   display: block;
 }
@@ -287,9 +304,10 @@ p {
   .page-main-title-blue-lg {
     font-size: 2.5em;
     font-weight: 600;
-    // margin-bottom: 15px;
-  margin: 0;
+    margin-bottom: 7px;
     color: var(--primary-color);
+    line-height: 1.2em;
+    display: block;
   }
 }
 
@@ -300,6 +318,12 @@ p {
   width: 30px;
 }
 
+@media all and (max-width: 768px) {
+  .download-btn {
+    padding-top: 0em;
+    padding-bottom: 0em;
+  }
+}
 // aligns
 
 .flex {
@@ -627,7 +651,35 @@ p {
 
 
 // com
+.hero-section {
+  padding-top: 8em;
+  padding-bottom: 2em;
+}
+@media all and (max-width: 768px) {
+  .hero-section {
+  padding-top: 6em;
+    padding-bottom: 2em;
+  }
+}
+.banner-wrapper {
+  position: relative;
+}
 
+.banner-wrapper .banner-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .banner-wrapper .banner-bg {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}
 .banner-wrapper .banner-content .paragraph-gap {
   margin-bottom: 10px;
 }
@@ -645,14 +697,12 @@ p {
   z-index: 3;
 }
 .banner-wrapper .banner-content p {
-  /* font-weight: 600; */
-  font-size: 1em;
-  letter-spacing: 1px;
+  line-height: 1.25;
+  font-size:1em;
   margin-bottom: 10px;
-  /* opacity: 0.7; */
+  letter-spacing: 1px;
 }
-.banner-wrapper .banner-content h2,
-.banner-wrapper .banner-content p
+.banner-wrapper .banner-content h2
  {
   // margin: 0;
   line-height: 1.2em;
@@ -666,6 +716,9 @@ p {
   margin: 5px 0 24px;
   color: black;
 }
+.contact-info-card .description-section a,
+.freedom-to-connect-buttons a,
+.freedom-to-connect-buttons a,
 .banner-wrapper .banner-content a {
   display: inline-block;
   background: var(--secondary-color);
@@ -676,12 +729,13 @@ p {
   line-height: 48px;
   padding: 0 24px;
 }
+
 .banner-content .banner-content-img {
   border-radius: 30px;
   clip-path: polygon(22% 0%, 100% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%, 0% 75%, 0% 35%);
   float: right;
   width: 100%;
-  height: 90%;
+  height: auto;
   object-fit: contain;
 }
 
@@ -691,15 +745,11 @@ p {
     padding-right: 10px;
   }
 
-  .banner-wrapper .banner-content span {
-    font-size: 2.5em;
-  }
-
   .banner-wrapper .banner-content p {
     line-height: 1.25;
-    font-size: 0.9em;
+    font-size: 1em;
     margin-bottom: 10px;
-    letter-spacing: 0px;
+    letter-spacing: 1px;
   }
 
   .banner-wrapper .banner-content h2 {
@@ -722,9 +772,7 @@ p {
     aspect-ratio: 16/9;
   }
 }
-img {
-  vertical-align: middle;
-}
+
 .my-vinota-img {
   width: 100%;
   height: 100%;
@@ -756,8 +804,8 @@ img {
   }
 }
 .section-gap{
-  padding-top: 8em;
-    padding-bottom: 8em;
+  padding-top: 7em;
+    padding-bottom: 7em;
 }
 .not-active{
   display: none;
@@ -775,7 +823,8 @@ img {
 .download-img {
   object-fit: contain;
   display: block;
-  width: 25%;
+  width: 100%;
+  height: 75px;
 }
 
 @media all and (max-width: 768px) {
@@ -784,7 +833,8 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 33%;
+    width: 100%;
+    height: 80px;
   }
 }
 
@@ -1021,7 +1071,7 @@ img {
 .one-call-card .one-call-card-bg {
   position: relative;
   text-align: center;
-  padding-top: 6em;
+  padding-top: 7em;
   padding-bottom: 4em;
 }
 
@@ -1041,7 +1091,7 @@ img {
   .one-call-card .one-call-card-bg {
     position: relative;
     text-align: center;
-    padding-top: 4em;
+    padding-top: 2em;
     padding-bottom: 4em;
   }
 }
@@ -1188,8 +1238,7 @@ img {
   border-color: #125688;
 }
 
-// sign up today
-
+// SIGN UP TODAY / FOOTER CARD
 
 .sign-up-today-card {
   padding-bottom: 4em;
@@ -1255,9 +1304,8 @@ img {
 }
 
 
+// HOME PAGE GIRL WITH IMAGE
 
-
-// girl-with-image
 .girl-with-image-section {
   padding: 8em 0;
 }
@@ -1320,8 +1368,60 @@ img {
   border-radius: 40px 0 40px 40px;
 }
 
+// REVIEW CARD SMALL / IMAGE WITH TEXT
 
-// footer
+.review-card-sm {
+  position: relative;
+  height: 100%;
+
+}
+@media all and (max-width: 768px) {
+  .review-card-sm {
+    position: relative;
+    height: fit-content;
+  
+  }
+}
+@media all and (max-width: 768px) {
+  .review-card-sm {
+    padding: 10px;
+    margin: 1em 10px 2em;
+  }
+}
+
+.review-card-sm .content {
+  padding: 2em 0.5em 2em 0.5em;
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+
+.review-card-sm .content .fbox-txt {
+  margin-top: 20px;  
+}
+.fbox-wrapper p,
+.review-card-sm .content p {
+  font-size: 0.9em;
+}
+
+.review-card-sm::before {
+  content: "";
+  background: linear-gradient(310deg, transparent 45px 0px, white 0);
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+}
+.sim-card-img {
+  object-fit: contain;
+  width: 190px;
+  height: 190px;
+}
+
+// FOOTER
 .footer {
   background-color: #1b3546;
   padding-top: 4em;
@@ -1394,3 +1494,4 @@ img {
 .footer .bottom-footer .sm-links a ion-icon {
   font-size: 1.25em;
 }
+

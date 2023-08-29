@@ -1,17 +1,7 @@
-.hero-section {
-  padding-top: 8em;
-  padding-bottom: 0em;
-}
 
-@media all and (max-width: 768px) {
-  .hero-section {
-    padding-top: 0em;
-    padding-bottom: 3em;
-  }
-}
 
 .contact-info-card {
-  padding-top: 3em;
+  padding-top: 0em;
   padding-bottom: 0em;
 }
 
@@ -22,53 +12,12 @@
   }
 }
 
-.banner-wrapper {
-  position: relative;
-}
-
-* {
-  box-sizing: border-box
-}
-
-img {
-  vertical-align: middle;
-}
-
 @media all and (max-width: 768px) {
   .banner-wrapper {
     display: flex;
     flex-direction: column-reverse;
     height: fit-content;
   }
-}
-.banner-wrapper .banner-content h2,
-.banner-wrappern .banner-content p {
-  margin: 0;
-  line-height: 1.2em;
-  display: block;
-}
-
-
-.banner-wrapper .banner-content p {
-  margin-bottom: 10px;
-  font-size: 1em;
-  letter-spacing: 1px;
-  /* opacity: 0.7; */
-}
-
-
-
-.contact-info-card .description-section a,
-.banner-wrapper .banner-content a {
-  display: inline-block;
-  background: var(--secondary-color);
-  color: white;
-  border-radius: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 48px;
-  width: auto;
-  padding: 0 24px;
 }
 
 @media all and (max-width: 768px) {
@@ -78,7 +27,10 @@ img {
   }
 
 }
-
+.banner-content .banner-content-img {
+ 
+  height: 90%;
+}
 .free-call-btn {
   text-align: center;
   margin-top: 10px;
@@ -91,10 +43,17 @@ img {
 }
 
 .hd-voice-row {
-  padding-top: 8em;
+  padding-top: 7em;
   padding-bottom: 4em;
 }
+@media all and (max-width: 768px) {
 
+  .hd-voice-row {
+    padding-top: 4em;
+    padding-bottom: 4em;
+  }
+
+}
 svg {
   fill: #4ac8f2
 }
@@ -105,15 +64,25 @@ svg {
 
 .social-media-images {
   margin-bottom: 1.5em;
+  margin-top: 1.5em;
 }
 
 .description-section p {
-  margin-bottom: 10px;
-  font-size: 1em;
-  line-height: 1.2em
+  margin-bottom: 5px;
+  line-height: 1.25;
+  font-size: 0.9em;
 }
 
 .contact-text {
   color: #6c757d;
   ;
+}
+.banner-content .banner-content-img {
+  height: 80%;
+}
+.page-sub-title-gray-sm{
+  text-align: center;
+}
+svg{
+    margin: 2px 1px 2px 2px;
 }

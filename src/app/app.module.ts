@@ -12,6 +12,7 @@ import { CallRatesComponent } from './pages/call-rates/call-rates.component';
 import { KnowledgeBaseComponent } from './pages/knowledge-base/knowledge-base.component';
 import { AboutCountryComponent } from './pages/about-country/about-country.component';
 import { AppsComponent } from './pages/apps/apps.component';
+import { APP_BASE_HREF } from '@angular/common';
 
 
 @NgModule({
@@ -31,7 +32,8 @@ import { AppsComponent } from './pages/apps/apps.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  // providers: [],
+  // providers: [{provide: APP_BASE_HREF, useValue: '/dist/vinota-v2-angular/'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
