@@ -11,25 +11,29 @@
     height: fit-content;
   }
 }
-
+.page-main-title-blue-lg {
+  color: black;
+  margin-bottom: 0;
+}
 .search-title {
-  margin-top: 5px;
+  margin: 0 0 15px;
+  font-family: var(--app-font-family);
+  letter-spacing: 1px;
+  font-weight: 600;
 }
 
-.search-icon {
-  font-size: 1rem;
-  color: #6c757d;
-  top: 1.3rem;
-  left: .75rem
+//.search-icon {
+//  font-size: 1rem;
+//  color: #6c757d;
+//  top: 1.3rem;
+//  left: .75rem
+//}
+.search-icon-new {
+  margin: 0 15px;
+  font-size: 1.25em;
+  //padding: 0 10px;
 }
-
 @media all and (max-width: 768px) {
-  .search-icon {
-    font-size: 1rem;
-    color: #6c757d;
-    top: 1.3rem;
-    left: 1.45rem;
-  }
 }
 
 @media all and (max-width: 768px) {
@@ -40,12 +44,12 @@
 
 
 .banner-wrapper .banner-content h2 {
-  font-size: 3.5em;
+  font-size: 3em;
   letter-spacing: 1px;
   max-width: 100%;
   font-weight: 700;
-  margin: 7px 0 14px;
-  color: black;
+  margin: 0 0 14px;
+  color: var(--primary-color);
 }
 
 // .banner-wrapper .banner-content a {
@@ -72,10 +76,6 @@
   line-height: 48px;
   padding: 0 24px;
   margin-bottom: 4em;
-}
-.country-flags-list{
-  display: none;
-  margin-top: -2em;
 }
 
 .quick-form {
@@ -139,29 +139,93 @@
   margin-top: -8px;
 }
 @media all and (max-width: 768px) {
+  .col-sm-12 {
+    width: 100%;
+  }
   .flag-top{
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
-.country-flags-list {
-  color:var(--primary-color);
-  font-weight: 500;
-  font-size: 1em;
-  letter-spacing: 1px;
-  line-height: 1;
+.country-flags-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 1280px;
-  margin: 0 auto;
+  margin: 0 auto 3em;
+  h2 {
+    border-bottom: rgba(32, 167, 255, 0.3) solid 1px;
+    color: var(--primary-color);
+  }
 }
-.flag-align{
-  float:left;
-  margin-right: 10px;
+.country-flags-list {
+  //flex: 1 1 100%;
+  //border-bottom: rgba(0, 0, 0, 0.1) solid 1px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+  @media all and (max-width: 768px) {
+    padding: 0 15px;
+  }
+  h2 {
+    flex: 1 1 100%;
+    margin-bottom: .5em;
+  }
+  .flag-item {
+    cursor: pointer;
+    color: black;
+    flex: 1 1 100%;
+    width: 100%;
+    max-width: 25%;
+    display: flex;
+    align-items: center;
+    margin: 0 0 1em;
+    transition: .3s;
+    @media all and (max-width: 768px) {
+      max-width: 50%;
+    }
+    &:hover {
+      color: var(--primary-color);
+      img {
+        transform: scale(1.2);
+        transform-origin: 50% 50%;
+      }
+      p {
+        transform: translateX(10px);
+      }
+    }
+    img {
+       margin-right: 10px;
+      transition: .3s;
+    }
+    p {
+      margin: 0;
+      font-weight: 600;
+      line-height: 1.25;
+      font-size: .85em;
+      transition: .3s;
+    }
+  }
 }
 
 .country-letters {
   text-align: center;
   color: rgb(0, 0, 0);
   margin-bottom: 10px;
+  .link {
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px;
+    margin: 0 4px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover,
+    &.s {
+      color: var(--primary-color) !important;
+      transform: scale(1.5);
+    }
+  }
 }
 @media all and (max-width: 768px) {
   .country-letters {
@@ -171,20 +235,50 @@
   }
 }
 
-.reviews-section{
-  padding-top: 4em;
-}
-@media all and (max-width: 768px) {
-  .reviews-section{
-    padding-top: 2em;
-    padding-bottom: 2em;
-
-  }
-}
 
 .content-section {
   padding: 4em 0;
 }
 .banner-content .banner-content-img {
   height: 100%;
+}
+.p {
+  font-weight: bold !important;
+}
+.input-full-width {
+  display: block;
+  border: 2px solid var(--primary-color);
+  box-shadow: 0 0 4px rgba(32, 167, 255, 0.39);
+  width: 100%;
+  max-width: 480px;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+  ._b {
+    display: flex !important;
+    align-items: center;
+    height: 56px;
+    color: white;
+    background: var(--primary-color);
+  }
+}
+.input-country-name {
+  font-weight: 600;
+  //display: block;
+  line-height: 1;
+}
+.input-rate {
+  //display: block;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+.input-option-img {
+  vertical-align: middle;
+  margin-right: 24px;
+}
+
+[dir='rtl'] .input-option-img {
+  margin-right: 0;
+  margin-left: 15px;
 }

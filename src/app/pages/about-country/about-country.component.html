@@ -1,173 +1,107 @@
-<!doctype html>
-<html lang="en">
-<body>
-  <!-- HEADER ============================================= -->
-  <div id="page" class="page">
-    <header id="header" class="main-header white-scroll">
-      <div class="header-wrapper flex align-center justify-content-between">
-        <div class="logo">
-          <a routerLink="/index"><img src="../../../assets/images/Vinota-Logo-New-white12345.png" /></a>
-        </div>
-        <span class="nav-icon">
-          <a></a>
-        </span>
-        <nav class="nav-bar">
-          <a routerLink="/">Home</a>
-          <a routerLink="/call-rates">Rates</a>
-          <a routerLink="/apps">Apps</a>
-          <a type="button" (click)="navigateToSection('support_section')">Support</a>
-          <a href="https://hello.vinota.com/register">Join</a>
-          <a href="https://hello.vinota.com/login" style="border-radius: 7px;
-    background: #04AA6D;
-    color: white;">Top-up</a>
-        </nav>
-        <div></div>
-      </div>
-      <a href="https://hello.vinota.com/login" class="login-button">Login</a>
-    </header>
 
-    <!--- ============================================= COUNTRY DESCRIPTION  ============================================= -->
-    <section class="bg--scroll hero-section">
-      <div class="banner-wrapper">
-        <div class="banner-content">
-          <div class="content">
-            <div class="row">
-              <div class="col-8">
-                <div class="wow fadeInUp page-main-title-blue-lg">Hello </div>
-                <!-- <p class="wow fadeInUpBig">Checkout our award winning APP. Available on Apple, Google and Amazon. Clean, simple and powerful</p> -->
-                <h2 class="wow fadeInLeft">Mexico</h2>
-                <a class="wow fadeInUpBig">Get Started</a>
-              </div>
-              <!-- <div class="col-4"><img src="../../../assets/images/png/mx.png" class="banner-content-img" /></div> -->
-            </div>
+<!--- ============================================= COUNTRY DESCRIPTION  ============================================= -->
+<section class="bg--scroll hero-section">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <div class="content">
+        <div class="row">
+          <div>
+            <div class="wow fadeInUp page-main-title-blue-lg">Hello </div>
+            <!-- <p class="wow fadeInUpBig">Checkout our award winning APP. Available on Apple, Google and Amazon. Clean, simple and powerful</p> -->
+            <!--                <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="96">-->
+            <h2 class="wow fadeInLeft"><img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="96"> {{countryName}}</h2>
+            <a class="wow fadeInUpBig link-btn"  href="https://hello.vinota.com/register" target="_blank">Get Started</a>
           </div>
-        </div>
-
-      </div>
-    </section>
-
-    <!--- =============================================DOWNLOAD BUTTONS  ============================================= -->
-    <div class="link-stripe">
-      <div class="pink-bar">
-        <div class="w">
-          <div class="icons">
-            <span class="animate__animated animate__fadeInUp">Download it from</span>
-            <a class="animate__animated animate__fadeInUp"><img src="../../../assets/images/new/app-store-x200.png"></a>
-            <a class="animate__animated animate__fadeInUp"><img src="../../../assets/images/google-play-x200.png"></a>
-          </div>
+          <!-- <div class="col-4"><img src="../../../assets/images/png/mx.png" class="banner-content-img" /></div> -->
         </div>
       </div>
     </div>
 
-    <!--- ============================================= RATE CHART  ============================================= -->
-    <section id="lnk-1" class="content-section">
-      <div class="container">
-        <div class="row d-flex align-items-center apps-section">
-          <div class="col-md-8">
-            <p>
-              Last Update : 2023/10/10
-            </p>
-          </div>
-          <div class="col-md-4">
-            <select class="form-select" aria-label="Default select example">
-              <option selected>US Dollar</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-          <div class="col-md-8">
-            <div class="table-responsive">
-              <table class="table ">
-                <thead>
-                  <tr>
-                    <th scope="col"></th>
-                    <th scope="col">CALL</th>
-                    <th scope="col">SMS</th>
-                    <th scope="col">MINS/5 USD</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>LANDLINE</td>
-                    <td>0.2074</td>
-                    <td>0.16</td>
-                    <td>25</td>
-                  </tr>
-                  <tr>
-                    <td>MOBILE</td>
-                    <td>0.2074</td>
-                    <td>0.16</td>
-                    <td>25</td>
-                  </tr>
-                  <tr>
-                    <td>MOBILE - AWCC</td>
-                    <td>0.2074</td>
-                    <td>0.16</td>
-                    <td>25</td>
-                  </tr>
-                  <tr>
-                    <td>MOBILE - ETISALAT</td>
-                    <td>0.2074</td>
-                    <td>0.16</td>
-                    <td>25</td>
-                  </tr>
-                  <tr>
-                    <td>MOBILE - OTHER</td>
-                    <td>0.2074</td>
-                    <td>0.16</td>
-                    <td>25</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-          <div class="col-md-4 description-col">
-            <img src="../../../assets/images/clock_1.png" alt="" class="clock-img" />
-            <div class="row">
-              <div class="description-text">
+  </div>
+</section>
 
-                <div class="col-md-12">32 minutes to mobiles or 25 minutes to landline in Afghanistan for 5 USD</div>
-                <div class="w-100"></div>
-                <div class="col-md-12">Signup Now,
-                  It takes less than 1 min to JOIN
-                  <div class="w-100"></div>
-                  <div class="get-start-btn"> <a class="wow fadeInUpBig">Get Started</a></div>
-                </div>
-              </div>
+
+<!--- ============================================= RATE CHART  ============================================= -->
+<section id="lnk-1" class="content-section">
+  <div class="container">
+    <div class="row d-flex align-items-center apps-section">
+      <div class="col-md-8">
+        <p>
+          Last Update : {{date | date:'yyyy/MM/dd'}}
+        </p>
+      </div>
+      <div class="col-md-4">
+        <!--            <select class="form-select" aria-label="Default select example">-->
+        <!--              <option selected>US Dollar</option>-->
+        <!--              <option value="1">One</option>-->
+        <!--              <option value="2">Two</option>-->
+        <!--              <option value="3">Three</option>-->
+        <!--            </select>-->
+      </div>
+      <div class="col-md-8">
+        <div class="table-responsive">
+          <table class="table ">
+            <thead>
+            <tr>
+              <th scope="col"></th>
+              <th class="text-right" scope="col">CALL</th>
+              <th class="text-right" scope="col">SMS</th>
+              <th class="text-center" scope="col">MINS/5 USD</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let x of rates">
+              <td><img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="30"> {{x.name}}</td>
+              <td class="text-right">{{x.rate | currency}}</td>
+              <td class="text-right">{{x.sms | currency}}</td>
+              <td class="text-center">{{5/x.usd5 | number: '1.0-0'}}</td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-md-4 description-col">
+        <img src="../../../assets/images/clock_1.png" alt="" class="clock-img" />
+        <div class="row">
+          <div class="description-text">
+
+            <div class="col-md-12">32 minutes to mobiles or 25 minutes to landline in Afghanistan for 5 USD</div>
+            <div class="w-100"></div>
+            <div class="col-md-12">Signup Now,
+              It takes less than 1 min to JOIN
+              <div class="w-100"></div>
+              <div class="get-start-btn"> <a class="wow fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Get Started</a></div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!--- ============================================= HD VOICE CARD  ============================================= -->
+    </div>
+  </div>
+</section>
+<!--- ============================================= HD VOICE CARD  ============================================= -->
 
-    <section class="hd-voice-row">
-      <div class="hd-row-background ">
-        <div class="container ">
-          <div class="row">
-            <div class="col-12">
-              <div class="hd-voice-text">Vinota is the first app that deliver HD quality VOICE</div>
-            </div>
-          </div>
+<section class="hd-voice-row">
+  <div class="hd-row-background ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12">
+          <div class="hd-voice-text">Vinota is the first app that deliver HD quality VOICE</div>
         </div>
       </div>
-    </section>
-    <!--- ============================================= ONE CALL CARD  ============================================= -->
+    </div>
+  </div>
+</section>
+<!--- ============================================= ONE CALL CARD  ============================================= -->
 
 
-    <section class="one-call-card">
-      <div class="container">
-        <div class="one-call-card-bg">
-          <div class="content">
-            <h2 class="s-46 ">UNITING THE <span style="color:#3399cc">WORLD</span>, ONE CALL AT A <span
-                style="color:rgb(21, 189, 91)">TIME</span></h2>
-            <a class="wow fadeInLeft">Get Started</a>
-          </div>
-        </div>
+<section class="one-call-card">
+  <div class="container">
+    <div class="one-call-card-bg">
+      <div class="content">
+        <h2 class="s-46 ">UNITING THE <span style="color:#3399cc">WORLD</span>, ONE CALL AT A <span
+          style="color:rgb(21, 189, 91)">TIME</span></h2>
+        <a class="wow fadeInLeft" href="https://hello.vinota.com/register" target="_blank">Get Started</a>
       </div>
-    </section>
-  </div> <!-- END PAGE CONTENT -->
-</body>
-
-</html>
+    </div>
+  </div>
+</section>

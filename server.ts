@@ -2,7 +2,7 @@ import 'zone.js/node';
 
 import { APP_BASE_HREF } from '@angular/common';
 import { ngExpressEngine } from '@nguniversal/express-engine';
-import * as express from 'express';
+import express from 'express';
 import { existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { AppServerModule } from './src/main.server';
@@ -29,7 +29,7 @@ export function app(): express.Express {
   }));
 
   // All regular routes use the Universal engine
-  server.get('*', (req, res) => {
+  server.get('*', (req: any, res: any) => {
     res.render(indexHtml, { req, providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }] });
   });
 

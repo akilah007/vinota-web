@@ -1,660 +1,611 @@
-<!doctype html>
-<html lang="en">
 
-<body>
-    <!-- HEAER -->
-    <div id="page" class="page">
-        <header id="header" class="main-header white-scroll">
-            <div class="header-wrapper flex align-center justify-content-between">
-                <div class="logo">
-                    <a routerLink="/index"><img src="./assets/images/Vinota-Logo-New-white12345.png" /></a>
-                </div>
-                <span class="nav-icon">
-                    <a></a>
-                </span>
-                <nav class="nav-bar">
-                    <a routerLink="/">Home</a>
-                    <a routerLink="/call-rates">Rates</a>
-                    <a routerLink="/apps">Apps</a>
-                    <a type="button" (click)="navigateToSection('support_section')">Support</a>
-                    <a href="https://hello.vinota.com/register">Join</a>
-                    <a href="https://hello.vinota.com/login" style="border-radius: 7px;
-          background: #04AA6D;
-          color: white;">Top-up</a>
-                </nav>
-                <div></div>
+<!--- ============================================= ABOUT US DESCRIPTION ============================================= -->
+
+<section class="bg--scroll hero-section">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <div class="content">
+        <div class="lg-screen">
+          <div class="row">
+            <div class="col-7">
+              <div class="wow fadeInUp page-main-title-blue-lg">About us</div>
+              <p class="wow fadeInUp fadeInUpBig">Welcome to Vinota, a leading internet telephony
+                service provider
+                that
+                revolutionizes global communication. Since our inception in 2008, we have been
+                committed to offering
+                affordable international calls and connecting people worldwide. With our
+                user-friendly app available
+                for Android and iPhone, Vinota enables users to make affordable and high-quality
+                calls to any mobile
+                or landline number across the globe. Our unique design and simplicity have
+                earned us a reputation as
+                the preferred choice for many users, who regard Vinota as the best calling
+                experience they've ever
+                had.
+              </p>
+              <div class="download-buttons text-center  wow fadeInUp">
+                <a href="https://apps.apple.com/us/app/vinota-international-calling/id1103113535" target="_blank" class="img-btn"><img src="./assets/images/new/app-store-dark.svg" alt="" class="download-img" /></a>
+                <a href="https://play.google.com/store/apps/details?id=org.vinota
+" target="_blank" class="img-btn"> <img src="./assets/images/new/google-play-colored.svg" alt="" class="download-img" /></a>
+                <a href="https://appgallery.huawei.com/app/C107407877" target="_blank" class="img-btn"> <img src="./assets/images/new/app-gallery-light.svg" alt="" class="download-img" /></a>
+              </div>
             </div>
-            <a href="https://hello.vinota.com/login" class="login-button">Login</a>
-        </header>
-
-        <!--- ============================================= ABOUT US DESCRIPTION ============================================= -->
-
-        <section class="bg--scroll hero-section">
-            <div class="banner-wrapper">
-                <div class="banner-content">
-                    <div class="content">
-                        <div class="lg-screen">
-                            <div class="row">
-                                <div class="col-7">
-                                    <div class="wow fadeInUp page-main-title-blue-lg">About us</div>
-                                    <p class="wow fadeInUp fadeInUpBig">Welcome to Vinota, a leading internet telephony
-                                        service provider
-                                        that
-                                        revolutionizes global communication. Since our inception in 2008, we have been
-                                        committed to offering
-                                        affordable international calls and connecting people worldwide. With our
-                                        user-friendly app available
-                                        for Android and iPhone, Vinota enables users to make affordable and high-quality
-                                        calls to any mobile
-                                        or landline number across the globe. Our unique design and simplicity have
-                                        earned us a reputation as
-                                        the preferred choice for many users, who regard Vinota as the best calling
-                                        experience they've ever
-                                        had.
-                                    </p>
-                                    <div class="download-btn text-center  wow fadeInUp">
-                                        <div class="d-flex flex-row">
-                                            <div class="p-2"><img src="./assets/images/55.png" alt=""
-                                                    class="download-img" /></div>
-                                            <div class="p-2"> <img src="./assets/images/56.png" alt=""
-                                                    class="download-img" /></div>
-                                            <div class="p-2"><img src="./assets/images/60.png" alt=""
-                                                    class="download-img" /></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-5">
-                                    <br><img src="./assets/images/page-first-image/2989843.jpg"
-                                        class="banner-content-img wow fadeInLeft" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="sm-screen">
-                            <div class="col-12">
-                                <div class="wow fadeInUp page-main-title-blue-lg">About us</div>
-                                <p class="wow fadeInUpBig fadeInUp">Welcome to Vinota, a leading internet telephony
-                                    service provider
-                                    that
-                                    revolutionizes global communication. Since our inception in 2008, we have been
-                                    committed to offering
-                                    affordable international calls and connecting people worldwide. With our
-                                    user-friendly app available
-                                    for Android and iPhone, Vinota enables users to make affordable and high-quality
-                                    calls to any mobile
-                                    or landline number across the globe. Our unique design and simplicity have earned us
-                                    a reputation as
-                                    the preferred choice for many users, who regard Vinota as the best calling
-                                    experience they've ever
-                                    had.
-                                </p>
-                                <div class="download-btn text-center  wow fadeInUp">
-                                    <div class="d-flex flex-row">
-                                        <div class="p-2"><img src="./assets/images/55.png" alt=""
-                                                class="download-img" /></div>
-                                        <div class="p-2"> <img src="./assets/images/56.png" alt=""
-                                                class="download-img" /></div>
-                                        <div class="p-2"><img src="./assets/images/60.png" alt=""
-                                                class="download-img" /></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="col-5">
+              <br><img src="./assets/images/page-first-image/2989843.jpg"
+                       class="banner-content-img wow fadeInLeft" />
             </div>
-        </section>
-        <div id="support_section">
-            <div [class.not-active]="changeClass">
-                <br>
-                <br>
-                <br>
-                <br>
-                <div class="support">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-sm-12 col-lg-2 col-xl-3">
-                                <div class="footer-links fl-1 ">
-                                    <ul class="foo-links clearfix">
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                                                routerLink="/apps">
-                                                APPs</a></li>
-                                        <span class="support-description">
+          </div>
+        </div>
+        <div class="sm-screen">
+          <div class="col-12">
+            <div class="wow fadeInUp page-main-title-blue-lg">About us</div>
+            <p class="wow fadeInUpBig fadeInUp">Welcome to Vinota, a leading internet telephony
+              service provider
+              that
+              revolutionizes global communication. Since our inception in 2008, we have been
+              committed to offering
+              affordable international calls and connecting people worldwide. With our
+              user-friendly app available
+              for Android and iPhone, Vinota enables users to make affordable and high-quality
+              calls to any mobile
+              or landline number across the globe. Our unique design and simplicity have earned us
+              a reputation as
+              the preferred choice for many users, who regard Vinota as the best calling
+              experience they've ever
+              had.
+            </p>
+            <div class="download-btn text-center  wow fadeInUp">
+              <div class="d-flex flex-row">
+                <div class="p-2"><img src="./assets/images/55.png" alt=""
+                                      class="download-img" /></div>
+                <div class="p-2"> <img src="./assets/images/56.png" alt=""
+                                       class="download-img" /></div>
+                <div class="p-2"><img src="./assets/images/60.png" alt=""
+                                      class="download-img" /></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="support_section">
+  <div [class.not-active]="changeClass">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="support">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-1 ">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/apps">
+                  APPs</a></li>
+                <span class="support-description">
                                             <p>Explore the Great Features of the Vinota App
                                             </p>
                                         </span>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-2 col-xl-3">
-                                <div class="footer-links fl-2">
-                                    <ul class="foo-links clearfix">
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
-                                                SUPPORT TICKETS</a>
-                                        </li>
-                                        <span class="support-description">
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-2">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
+                  SUPPORT TICKETS</a>
+                </li>
+                <span class="support-description">
                                             <p>Visit Support Tickets
                                             </p>
                                         </span>
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                                                routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
-                                        <span class="support-description">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
+                <span class="support-description">
                                             <p>Everything You Need to Know About Vinota</p>
                                         </span>
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                                                routerLink="/faq"> FAQs
-                                            </a></li>
-                                        <span class="support-description">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/faq"> FAQs
+                </a></li>
+                <span class="support-description">
                                             <p>All Your Questions Answered</p>
                                         </span>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-2 col-xl-3">
-                                <div class="footer-links fl-3">
-                                    <ul class="foo-links clearfix">
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
-                                                ADD CREDIT </a></li>
-                                        <span class="support-description">
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-3">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
+                  ADD CREDIT </a></li>
+                <span class="support-description">
                                             <p>Get in Touch with Us
                                             </p>
                                         </span>
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                                                routerLink="/contact-us"> CONTACT US </a></li>
-                                        <span class="support-description">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/contact-us"> CONTACT US </a></li>
+                <span class="support-description">
                                             <p>Get in touch with us</p>
                                         </span>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-lg-2 col-xl-3">
-                                <div class="footer-links fl-3">
-                                    <ul class="foo-links clearfix">
-                                        <li> <img class="support-icon-sm"
-                                                src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
-                                                FEEDBACK </a></li>
-                                        <span class="support-description">
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-3">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a>
+                  FEEDBACK </a></li>
+                <span class="support-description">
                                             <p>We love to hear from you</p>
                                         </span>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </ul>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--- =============================================IMAGE WITH SIM CARDS  ============================================= -->
+
+<section class="features-section lg-screen">
+  <div class="container">
+    <div class="fbox-wrapper ">
+      <div class="row d-flex align-items-center mb-30">
+        <div class="col-md-8">
+          <div class="fbox-txt-end wow fadeInUp">
+            <h6 class="page-sub-title-blue-sm">Our Journey </h6>
+            <p>Vinota was born out of a vision to provide an alternative to traditional calling
+              cards in the UK.
+              In 2008, we launched our services, aiming to disrupt the market and offer
+              cost-effective solutions
+              for international calling. As mobile VOIP technology advanced, we embraced the
+              opportunity and
+              introduced the Vinota mobile app in 2015. Since then, we have continued to
+              expand our reach and
+              serve customers globally. Vinota is a registered business in Australia and the
+              USA.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wow fadeInUp side-img">
+            <img class=""
+                 src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center mb-30">
+        <div class="col-md-4">
+          <div class=" wow fadeInUp side-img">
+            <img
+              src="./assets/images/about-us-images-blue/istockphoto-1324560114-612x612.jpg" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class="fbox-txt-start wow fadeInUp">
+            <div class="">
+              <h6 class="page-sub-title-blue-sm">Our Mission </h6>
+              <p>At Vinota, our mission is simple yet powerful: to provide seamless global
+                connectivity that brings
+                people closer together. We believe that everyone deserves reliable,
+                affordable, and crystal-clear
+                communication, regardless of geographical location. Through our sincere
+                commitment to innovation and
+                customer satisfaction, we aim to empower individuals, families, and
+                businesses to stay connected
+                effortlessly.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center mb-30">
+        <div class="col-md-8">
+          <div class="fbox-txt-end  wow fadeInUp">
+            <h6 class="page-sub-title-blue-sm">Our Commitment to Security and Privacy </h6>
+            <p>We implement stringent measures to safeguard our users' personal information and
+              ensure secure
+              transactions. Vinota is committed to maintaining the highest standards of data
+              protection, giving our
+              users peace of mind when using our services.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wow fadeInUp side-img">
+            <img
+              src="./assets/images/about-us-images-blue/istockphoto-1316316707-612x612.jpg" />
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center mb-30">
+        <div class="col-md-4">
+          <div class="wow fadeInUp side-img">
+            <img
+              src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
+          </div>
+        </div>
+        <div class="col-md-8">
+          <div class=" wow fadeInUp fbox-txt-start">
+            <h6 class="page-sub-title-blue-sm">Our Support
+            </h6>
+            <p>We implement stringent measures to safeguard our users' personal information and
+              ensure secure
+              transactions. Vinota is committed to maintaining the highest standards of data
+              protection, giving our
+              users peace of mind when using our services.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row d-flex align-items-center">
+        <div class="col-md-8">
+          <div class="fbox-txt-end wow fadeInUp">
+            <h6 class="page-sub-title-blue-sm">Join the Vinota Community </h6>
+            <p>We invite you to join the growing Vinota community and experience the power of
+              seamless connectivity.
+              Connect with like-minded individuals, stay in touch with loved ones, and unlock
+              a world of limitless
+              communication possibilities. Together, let's redefine how the world connects.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="wow fadeInUp side-img">
+            <img
+              src="./assets/images/about-us-images-blue/istockphoto-1305286049-612x612.jpg" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- MOBILE VIEW -->
+<section class="features-section sm-screen">
+  <div class="container">
+    <div class="row d-flex align-items-center mb-30">
+      <div class="col-12">
+        <div class="review-card-sm">
+          <div class="content">
+            <h6 class="page-sub-title-blue-sm">Our Journey </h6>
+            <img class="sim-card-img"
+                 src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
+            <p>Vinota was born out of a vision to provide an alternative to traditional calling
+              cards in the UK.
+              In 2008, we launched our services, aiming to disrupt the market and offer
+              cost-effective solutions
+              for international calling. As mobile VOIP technology advanced, we embraced the
+              opportunity and
+              introduced the Vinota mobile app in 2015. Since then, we have continued to expand
+              our reach and
+              serve customers globally. Vinota is a registered business in Australia and the USA.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center mb-30">
+      <div class="col-12">
+        <div class="review-card-sm">
+          <div class="content">
+            <h6 class="page-sub-title-blue-sm">Our mission </h6>
+            <img class="sim-card-img"
+                 src="./assets/images/about-us-images-blue/istockphoto-1324560114-612x612.jpg" />
+            <p>At Vinota, our mission is simple yet powerful: to provide seamless global
+              connectivity that brings
+              people closer together. We believe that everyone deserves reliable, affordable, and
+              crystal-clear
+              communication, regardless of geographical location. Through our sincere commitment
+              to innovation and
+              customer satisfaction, we aim to empower individuals, families, and businesses to
+              stay connected
+              effortlessly.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center mb-30">
+      <div class="col-12">
+        <div class="review-card-sm">
+          <div class="content">
+            <h6 class="page-sub-title-blue-sm">Our commitment to security and privacy </h6>
+            <img class="sim-card-img"
+                 src="./assets/images/about-us-images-blue/istockphoto-1316316707-612x612.jpg" />
+            <p>We implement stringent measures to safeguard our users' personal information and
+              ensure secure
+              transactions. Vinota is committed to maintaining the highest standards of data
+              protection, giving our
+              users peace of mind when using our services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center mb-30">
+      <div class="col-12">
+        <div class="review-card-sm">
+          <div class="content">
+            <h6 class="page-sub-title-blue-sm">Our support</h6>
+            <img class="sim-card-img"
+                 src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
+            <p>We implement stringent measures to safeguard our users' personal information and
+              ensure secure
+              transactions. Vinota is committed to maintaining the highest standards of data
+              protection, giving our
+              users peace of mind when using our services.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row d-flex align-items-center mb-30">
+      <div class="col-12">
+        <div class="review-card-sm">
+          <div class="content">
+            <h6 class="page-sub-title-blue-sm">Join the vinota community </h6>
+            <img class="sim-card-img"
+                 src="./assets/images/about-us-images-blue/istockphoto-1305286049-612x612.jpg" />
+            <p>We invite you to join the growing Vinota community and experience the power of
+              seamless connectivity.
+              Connect with like-minded individuals, stay in touch with loved ones, and unlock a
+              world of limitless
+              communication possibilities. Together, let's redefine how the world connects.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DOWNLOAD IT SECTION -->
+
+
+<section  class="unmatched-quality-section division">
+  <div class="container">
+    <!-- SECTION TITLE -->
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-9">
+        <div class="section-title mb-50">
+          <h2 class="page-sub-title-gray-md">Unmatched Quality of Vinota</h2>
+        </div>
+      </div>
+    </div>
+    <!-- FEATURES-11 WRAPPER -->
+    <div class="fbox-wrapper">
+      <div class="row row-cols-1 row-cols-md-2 rows-3">
+        <div class="col">
+          <div class="fbox-11 fb-1 wow fadeInUp">
+            <div class="fbox-ico-wrap">
+              <div class="shape-ico color--theme">
+                <img class="icon-img-sm"
+                     src="./assets/images/images-sm/icons8-arrows-to-center-64.png" />
+              </div>
+            </div>
+            <div class="fbox-txt">
+              <h6 class="page-sub-title-blue-xsm">Direct-to-Carrier</h6>
+              <p> With our
+                direct relationships with multiple carriers worldwide, we have in-depth
+                knowledge of their rules
+                and
+                regulations. This enables us to maintain compliance and establish the
+                fastest and most secure
+                connection routes for your calls.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fbox-11 fb-2 wow fadeInUp">
+            <div class="fbox-ico-wrap">
+              <div class="shape-ico color--theme">
+                <img class="icon-img-sm"
+                     src="./assets/images/images-sm/icons8-network-80.png" />
+              </div>
+            </div>
+            <div class="fbox-txt">
+              <h6 class="page-sub-title-blue-xsm">Adaptive Routing </h6>
+              <p> Our
+                patent-pending Adaptive Routing technology ensures that your calls are
+                delivered through the
+                optimal
+                path, avoiding any potential delays or queues. We constantly monitor carrier
+                traffic to select the
+                fastest and most reliable alternative routes, ensuring uninterrupted
+                connectivity.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fbox-11 fb-3 wow fadeInUp">
+            <div class="fbox-ico-wrap">
+              <div class="shape-ico color--theme">
+                <img class="icon-img-sm"
+                     src="./assets/images/images-sm/icons8-voice-id-50.png" />
+              </div>
+            </div>
+            <div class="fbox-txt">
+              <h6 class="page-sub-title-blue-xsm">Strong Connectivity </h6>
+              <p> Users
+                can say goodbye to the frustration of call drops. Our robust infrastructure
+                and strong
+                connectivity
+                contribute to providing the best possible signal strength on mobile VOIP
+                calls.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fbox-11 fb-4 wow fadeInUp">
+            <div class="fbox-ico-wrap">
+              <div class="shape-ico color--theme">
+                <img class="icon-img-lg"
+                     src="./assets/images/images-sm/icons8-magic-crystal-ball-80.png" />
+
+              </div>
+            </div>
+            <div class="fbox-txt">
+              <h6 class="page-sub-title-blue-xsm">Crystal Clear Call Quality</h6>
+              <p> We believe that every call should be crystal clear and free from
+                disruptions. Unlike cheap call
+                quality experiences, Vinota guarantees premium call quality every time you
+                make a call. Never
+                again
+                struggle to recognize your friend's voice or deal with distorted audio.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- CARDS ROW -->
+
+<section class="content-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-9">
+        <div class="section-title mb-50">
+          <h2 class="page-sub-title-gray-md">Unmatched Quality of Vinota</h2>
+        </div>
+      </div>
+    </div>
+    <div class="fbox-wrapper text-center">
+      <div class="row ">
+        <div class="col-md-3">
+          <div class="review-card-sm wow fadeInUp mb-30">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img class="sim-card-img"
+                       src="./assets/images/about-us-images-blue/cus-stis.jpg" />
+                </div>
+              </div>
+              <h6 class="page-sub-title-blue-xsm">Customer-Centricity</h6>
+              <div class="fbox-txt">
+                <p> Our
+                  customers are at the heart of everything we do. We prioritize their needs,
+                  listen to their
+                  feedback,
+                  and continually enhance our services to exceed their expectations.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-
-        <!--- =============================================IMAGE WITH SIM CARDS  ============================================= -->
-
-        <section class="features-section lg-screen">
-                <div class="container">
-                    <div class="fbox-wrapper ">
-                        <div class="row d-flex align-items-center mb-30">
-                            <div class="col-md-8">
-                                <div class="fbox-txt-end wow fadeInUp">
-                                    <h6 class="page-sub-title-blue-sm">Our Journey </h6>
-                                    <p>Vinota was born out of a vision to provide an alternative to traditional calling
-                                        cards in the UK.
-                                        In 2008, we launched our services, aiming to disrupt the market and offer
-                                        cost-effective solutions
-                                        for international calling. As mobile VOIP technology advanced, we embraced the
-                                        opportunity and
-                                        introduced the Vinota mobile app in 2015. Since then, we have continued to
-                                        expand our reach and
-                                        serve customers globally. Vinota is a registered business in Australia and the
-                                        USA.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="wow fadeInUp side-img">
-                                    <img class=""
-                                        src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center mb-30">
-                            <div class="col-md-4">
-                                <div class=" wow fadeInUp side-img">
-                                    <img
-                                        src="./assets/images/about-us-images-blue/istockphoto-1324560114-612x612.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class="fbox-txt-start wow fadeInUp">
-                                    <div class="">
-                                        <h6 class="page-sub-title-blue-sm">Our Mission </h6>
-                                        <p>At Vinota, our mission is simple yet powerful: to provide seamless global
-                                            connectivity that brings
-                                            people closer together. We believe that everyone deserves reliable,
-                                            affordable, and crystal-clear
-                                            communication, regardless of geographical location. Through our sincere
-                                            commitment to innovation and
-                                            customer satisfaction, we aim to empower individuals, families, and
-                                            businesses to stay connected
-                                            effortlessly.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center mb-30">
-                            <div class="col-md-8">
-                                <div class="fbox-txt-end  wow fadeInUp">
-                                    <h6 class="page-sub-title-blue-sm">Our Commitment to Security and Privacy </h6>
-                                    <p>We implement stringent measures to safeguard our users' personal information and
-                                        ensure secure
-                                        transactions. Vinota is committed to maintaining the highest standards of data
-                                        protection, giving our
-                                        users peace of mind when using our services.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="wow fadeInUp side-img">
-                                    <img
-                                        src="./assets/images/about-us-images-blue/istockphoto-1316316707-612x612.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center mb-30">
-                            <div class="col-md-4">
-                                <div class="wow fadeInUp side-img">
-                                    <img
-                                        src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
-                                </div>
-                            </div>
-                            <div class="col-md-8">
-                                <div class=" wow fadeInUp fbox-txt-start">
-                                    <h6 class="page-sub-title-blue-sm">Our Support
-                                    </h6>
-                                    <p>We implement stringent measures to safeguard our users' personal information and
-                                        ensure secure
-                                        transactions. Vinota is committed to maintaining the highest standards of data
-                                        protection, giving our
-                                        users peace of mind when using our services.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center">
-                            <div class="col-md-8">
-                                <div class="fbox-txt-end wow fadeInUp">
-                                    <h6 class="page-sub-title-blue-sm">Join the Vinota Community </h6>
-                                    <p>We invite you to join the growing Vinota community and experience the power of
-                                        seamless connectivity.
-                                        Connect with like-minded individuals, stay in touch with loved ones, and unlock
-                                        a world of limitless
-                                        communication possibilities. Together, let's redefine how the world connects.
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="wow fadeInUp side-img">
-                                    <img
-                                        src="./assets/images/about-us-images-blue/istockphoto-1305286049-612x612.jpg" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="col-md-3">
+          <div class="review-card-sm wow fadeInUp mb-30">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img class="sim-card-img"
+                       src="./assets/images/about-us-images-blue/qlty-r.jpg" />
                 </div>
-        </section>
-        <!-- MOBILE VIEW -->
-        <section class="features-section sm-screen">
-            <div class="container">
-                <div class="row d-flex align-items-center mb-30">
-                    <div class="col-12">
-                        <div class="review-card-sm">
-                            <div class="content">
-                                <h6 class="page-sub-title-blue-sm">Our Journey </h6>
-                                <img class="sim-card-img"
-                                    src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
-                                <p>Vinota was born out of a vision to provide an alternative to traditional calling
-                                    cards in the UK.
-                                    In 2008, we launched our services, aiming to disrupt the market and offer
-                                    cost-effective solutions
-                                    for international calling. As mobile VOIP technology advanced, we embraced the
-                                    opportunity and
-                                    introduced the Vinota mobile app in 2015. Since then, we have continued to expand
-                                    our reach and
-                                    serve customers globally. Vinota is a registered business in Australia and the USA.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center mb-30">
-                    <div class="col-12">
-                        <div class="review-card-sm">
-                            <div class="content">
-                                <h6 class="page-sub-title-blue-sm">Our mission </h6>
-                                <img class="sim-card-img"
-                                    src="./assets/images/about-us-images-blue/istockphoto-1324560114-612x612.jpg" />
-                                <p>At Vinota, our mission is simple yet powerful: to provide seamless global
-                                    connectivity that brings
-                                    people closer together. We believe that everyone deserves reliable, affordable, and
-                                    crystal-clear
-                                    communication, regardless of geographical location. Through our sincere commitment
-                                    to innovation and
-                                    customer satisfaction, we aim to empower individuals, families, and businesses to
-                                    stay connected
-                                    effortlessly.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center mb-30">
-                    <div class="col-12">
-                        <div class="review-card-sm">
-                            <div class="content">
-                                <h6 class="page-sub-title-blue-sm">Our commitment to security and privacy </h6>
-                                <img class="sim-card-img"
-                                    src="./assets/images/about-us-images-blue/istockphoto-1316316707-612x612.jpg" />
-                                <p>We implement stringent measures to safeguard our users' personal information and
-                                    ensure secure
-                                    transactions. Vinota is committed to maintaining the highest standards of data
-                                    protection, giving our
-                                    users peace of mind when using our services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center mb-30">
-                    <div class="col-12">
-                        <div class="review-card-sm">
-                            <div class="content">
-                                <h6 class="page-sub-title-blue-sm">Our support</h6>
-                                <img class="sim-card-img"
-                                    src="./assets/images/about-us-images-blue/162285824-internship-abstract-concept-vector-illustration.jpg" />
-                                <p>We implement stringent measures to safeguard our users' personal information and
-                                    ensure secure
-                                    transactions. Vinota is committed to maintaining the highest standards of data
-                                    protection, giving our
-                                    users peace of mind when using our services.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row d-flex align-items-center mb-30">
-                    <div class="col-12">
-                        <div class="review-card-sm">
-                            <div class="content">
-                                <h6 class="page-sub-title-blue-sm">Join the vinota community </h6>
-                                <img class="sim-card-img"
-                                    src="./assets/images/about-us-images-blue/istockphoto-1305286049-612x612.jpg" />
-                                <p>We invite you to join the growing Vinota community and experience the power of
-                                    seamless connectivity.
-                                    Connect with like-minded individuals, stay in touch with loved ones, and unlock a
-                                    world of limitless
-                                    communication possibilities. Together, let's redefine how the world connects.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <h6 class="page-sub-title-blue-xsm">Quality and Reliability </h6>
+              <div class="fbox-txt">
+                <p> We
+                  are dedicated to delivering crystal-clear voice quality and uninterrupted
+                  conversations. Our
+                  advanced technology and robust infrastructure ensure that our users enjoy a
+                  seamless communication
+                  experience.
+                </p>
+              </div>
             </div>
-        </section>
-
-        <!-- DOWNLOAD IT SECTION -->
-
-        <div class="link-stripe">
-            <div class="pink-bar">
-                <div class="w">
-                    <div class="icons">
-                        <span class="animate__animated animate__fadeInUp">Download it from</span>
-                        <a class="animate__animated animate__fadeInUp"><img
-                                src="./assets/images/new/app-store-x200.png"></a>
-                        <a class="animate__animated animate__fadeInUp"><img
-                                src="./assets/images/new/google-play-x200.png"></a>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-
-        <section  class="unmatched-quality-section division">
-            <div class="container">
-                <!-- SECTION TITLE -->
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-title mb-50">
-                            <h2 class="page-sub-title-gray-md">Unmatched Quality of Vinota</h2>
-                        </div>
-                    </div>
+        <div class="col-md-3">
+          <div class="review-card-sm wow fadeInUp  mb-30">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <div class="sim-voice-image-section">
+                    <img class="sim-card-img"
+                         src="./assets/images/about-us-images-blue/affb.jpg" />
+                  </div>
                 </div>
-                <!-- FEATURES-11 WRAPPER -->
-                <div class="fbox-wrapper">
-                    <div class="row row-cols-1 row-cols-md-2 rows-3">
-                        <div class="col">
-                            <div class="fbox-11 fb-1 wow fadeInUp">
-                                <div class="fbox-ico-wrap">
-                                    <div class="shape-ico color--theme">
-                                        <img class="icon-img-sm"
-                                            src="./assets/images/images-sm/icons8-arrows-to-center-64.png" />
-                                    </div>
-                                </div>
-                                <div class="fbox-txt">
-                                    <h6 class="page-sub-title-blue-xsm">Direct-to-Carrier</h6>
-                                    <p> With our
-                                        direct relationships with multiple carriers worldwide, we have in-depth
-                                        knowledge of their rules
-                                        and
-                                        regulations. This enables us to maintain compliance and establish the
-                                        fastest and most secure
-                                        connection routes for your calls.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="fbox-11 fb-2 wow fadeInUp">
-                                <div class="fbox-ico-wrap">
-                                    <div class="shape-ico color--theme">
-                                        <img class="icon-img-sm"
-                                            src="./assets/images/images-sm/icons8-network-80.png" />
-                                    </div>
-                                </div>
-                                <div class="fbox-txt">
-                                    <h6 class="page-sub-title-blue-xsm">Adaptive Routing </h6>
-                                    <p> Our
-                                        patent-pending Adaptive Routing technology ensures that your calls are
-                                        delivered through the
-                                        optimal
-                                        path, avoiding any potential delays or queues. We constantly monitor carrier
-                                        traffic to select the
-                                        fastest and most reliable alternative routes, ensuring uninterrupted
-                                        connectivity.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="fbox-11 fb-3 wow fadeInUp">
-                                <div class="fbox-ico-wrap">
-                                    <div class="shape-ico color--theme">
-                                        <img class="icon-img-sm"
-                                            src="./assets/images/images-sm/icons8-voice-id-50.png" />
-                                    </div>
-                                </div>
-                                <div class="fbox-txt">
-                                    <h6 class="page-sub-title-blue-xsm">Strong Connectivity </h6>
-                                    <p> Users
-                                        can say goodbye to the frustration of call drops. Our robust infrastructure
-                                        and strong
-                                        connectivity
-                                        contribute to providing the best possible signal strength on mobile VOIP
-                                        calls.
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="fbox-11 fb-4 wow fadeInUp">
-                                <div class="fbox-ico-wrap">
-                                    <div class="shape-ico color--theme">
-                                        <img class="icon-img-lg"
-                                            src="./assets/images/images-sm/icons8-magic-crystal-ball-80.png" />
-
-                                    </div>
-                                </div>
-                                <div class="fbox-txt">
-                                    <h6 class="page-sub-title-blue-xsm">Crystal Clear Call Quality</h6>
-                                    <p> We believe that every call should be crystal clear and free from
-                                        disruptions. Unlike cheap call
-                                        quality experiences, Vinota guarantees premium call quality every time you
-                                        make a call. Never
-                                        again
-                                        struggle to recognize your friend's voice or deal with distorted audio.
-                                    </p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <h6 class="page-sub-title-blue-xsm">Affordability </h6>
+              <div class="fbox-txt">
+                <p> We believe
+                  that staying connected should be affordable for everyone. By offering
+                  competitive rates and
+                  cost-effective calling options, we make global communication accessible to
+                  all.
+                </p>
+              </div>
             </div>
-        </section>
-        <!-- CARDS ROW -->
-
-        <section class="content-section">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-9">
-                        <div class="section-title mb-50">
-                            <h2 class="page-sub-title-gray-md">Unmatched Quality of Vinota</h2>
-                        </div>
-                    </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="review-card-sm wow fadeInUp mb-30">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img class="sim-card-img"
+                       src="./assets/images/about-us-images-blue/innv.jpg" />
                 </div>
-                <div class="fbox-wrapper text-center">
-                    <div class="row ">
-                        <div class="col-md-3">
-                            <div class="review-card-sm wow fadeInUp mb-30">
-                                <div class="content">
-                                    <div class="fbox-img">
-                                        <div class="sim-voice-image-section">
-                                            <img class="sim-card-img"
-                                                src="./assets/images/about-us-images-blue/cus-stis.jpg" />
-                                        </div>
-                                    </div>
-                                    <h6 class="page-sub-title-blue-xsm">Customer-Centricity</h6>
-                                    <div class="fbox-txt">
-                                        <p> Our
-                                            customers are at the heart of everything we do. We prioritize their needs,
-                                            listen to their
-                                            feedback,
-                                            and continually enhance our services to exceed their expectations.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="review-card-sm wow fadeInUp mb-30">
-                                <div class="content">
-                                    <div class="fbox-img">
-                                        <div class="sim-voice-image-section">
-                                            <img class="sim-card-img"
-                                                src="./assets/images/about-us-images-blue/qlty-r.jpg" />
-                                        </div>
-                                    </div>
-                                    <h6 class="page-sub-title-blue-xsm">Quality and Reliability </h6>
-                                    <div class="fbox-txt">
-                                        <p> We
-                                            are dedicated to delivering crystal-clear voice quality and uninterrupted
-                                            conversations. Our
-                                            advanced technology and robust infrastructure ensure that our users enjoy a
-                                            seamless communication
-                                            experience.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="review-card-sm wow fadeInUp  mb-30">
-                                <div class="content">
-                                    <div class="fbox-img">
-                                        <div class="sim-voice-image-section">
-                                            <div class="sim-voice-image-section">
-                                                <img class="sim-card-img"
-                                                    src="./assets/images/about-us-images-blue/affb.jpg" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <h6 class="page-sub-title-blue-xsm">Affordability </h6>
-                                    <div class="fbox-txt">
-                                        <p> We believe
-                                            that staying connected should be affordable for everyone. By offering
-                                            competitive rates and
-                                            cost-effective calling options, we make global communication accessible to
-                                            all.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="review-card-sm wow fadeInUp mb-30">
-                                <div class="content">
-                                    <div class="fbox-img">
-                                        <div class="sim-voice-image-section">
-                                            <img class="sim-card-img"
-                                                src="./assets/images/about-us-images-blue/innv.jpg" />
-                                        </div>
-                                    </div>
-                                    <h6 class="page-sub-title-blue-xsm">Innovation </h6>
-                                    <div class="fbox-txt">
-                                        <p>We embrace
-                                            innovation and continuously explore new technologies to enhance our
-                                            services. We stay ahead of the
-                                            curve, adapting to evolving market trends and providing cutting-edge
-                                            solutions.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
+              <h6 class="page-sub-title-blue-xsm">Innovation </h6>
+              <div class="fbox-txt">
+                <p>We embrace
+                  innovation and continuously explore new technologies to enhance our
+                  services. We stay ahead of the
+                  curve, adapting to evolving market trends and providing cutting-edge
+                  solutions.</p>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!--- ============================================= section 4  / hd voice call section  ============================================= -->
+<!--- ============================================= section 4  / hd voice call section  ============================================= -->
 
-        <section class="hd-voice-row">
-            <div class="hd-row-background ">
-                <div class="container ">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="hd-voice-text wow fadeInUp">Vinota is the first app that delivers Premium quality VOICE</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!--- ============================================= section 4  / one call section ============================================= -->
+<section class="hd-voice-row">
+  <div class="hd-row-background ">
+    <div class="container ">
+      <div class="row">
+        <div class="col-12">
+          <div class="hd-voice-text wow fadeInUp">Vinota is the first app that delivers Premium quality VOICE</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--- ============================================= section 4  / one call section ============================================= -->
 
-        <section class="one-call-card">
-            <div class="container">
-                <div class="one-call-card-bg">
-                    <div class="content">
-                        <h2 class="s-46 wow fadeInUp">UNITING THE <span style="color:#3399cc">WORLD</span>, ONE CALL AT
-                            A <span style="color:rgb(21, 189, 91)">TIME</span></h2>
-                        <a class="wow fadeInUpBig">Get Started</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div> <!-- END PAGE CONTENT -->
-</body>
-
-</html>
+<section class="one-call-card">
+  <div class="container">
+    <div class="one-call-card-bg">
+      <div class="content">
+        <h2 class="s-46 wow fadeInUp">UNITING THE <span style="color:#3399cc">WORLD</span>, ONE CALL AT
+          A <span style="color:rgb(21, 189, 91)">TIME</span></h2>
+        <a class="wow fadeInUpBig">Get Started</a>
+      </div>
+    </div>
+  </div>
+</section>

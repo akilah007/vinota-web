@@ -1,40 +1,40 @@
-<html lang="en">
-
-<body>
-  <div id="page" class="page">
-    <!-- ============================================= HEADER ============================================= -->
-    <header id="header" class="main-header white-scroll">
-      <div class="header-wrapper flex align-center justify-content-between">
-        <div class="logo">
-          <a routerLink="/index"><img src="./assets/images/Vinota-Logo-New-white12345.png" /></a>
-        </div>
-        <span class="nav-icon">
-          <a></a>
-        </span>
-        <nav class="nav-bar">
-          <a href="call-rates">Rates</a>
-          <a routerLink="/apps">Apps</a>
-          <a type="button" (click)="navigateToSection('support_section')">Support</a>
-          <a href="https://hello.vinota.com/register">Join</a>
-          <a href="https://hello.vinota.com/login" style="border-radius: 7px;
-          background: #04AA6D;
-          color: white;">Top-up</a>
-        </nav>
-        <div></div>
-      </div>
-      <a href="https://hello.vinota.com/login" class="login-button">Login</a>
-    </header>
-
-    <!--- =============================================   Hello ============================================= -->
-
-    <section class="bg--scroll hero-section-main">
+<section class="bg--scroll hero-section-main">
       <div class="banner-wrapper">
         <div class="banner-content">
           <div class="content">
-            <div class="wow fadeInUp page-main-title-blue-lg">Hello!</div>
+            <div class="wow fadeInUp page-main-title-blue-lg text-changer">
+              <span class="hello"></span>
+            </div>
             <p class="wow fadeInUpBig">UNITING THE WORLD, ONE CALL AT A TIME</p>
             <h2 class="wow fadeInLeft">Enjoy the Freedom of International Calling</h2>
-            <a class="wow fadeInUpBig">Get Started</a>
+            <a class="link-btn wow btn fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Get Started</a>
+
+<!--            CALL RATES -->
+
+            <mat-form-field class="input-full-width" appearance="outline">
+              <input matInput
+                     placeholder="Search rates"
+                     aria-label="State"
+                     type="search"
+                     [formControl]="countryCtrl"
+                     [matAutocomplete]="auto">
+              <mat-autocomplete #auto="matAutocomplete">
+                <mat-option *ngFor="let country of filteredCountries | async; trackBy: trackItems" [value]="country.name" (click)="countrySelected()">
+                  <div class="flex align-center">
+                    <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + country.iso + '.png'" height="44">
+                    <div>
+                      <span class="input-country-name">{{country.name}}</span>
+                      <small class="input-rate">from {{country.rate | currency}}/minute</small>
+                    </div>
+                  </div>
+                </mat-option>
+              </mat-autocomplete>
+
+              <span class="_b" matSuffix><i class="fa fa-search search-icon-new"></i></span>
+            </mat-form-field>
+
+<!--            -->
+
           </div>
         </div>
         <div class="banner-bg">
@@ -128,18 +128,6 @@
     </div>
 
 
-    <!--- ============================================= DOWNLOAD IT BUTTONS ============================================= -->
-    <div class="link-stripe">
-      <div class="pink-bar">
-        <div class="w">
-          <div class="icons">
-            <span class="animate__animated animate__fadeInUp">Download it from</span>
-            <a class="animate__animated animate__fadeInUp"><img src="./assets/images/new/app-store-x200.png"></a>
-            <a class="animate__animated animate__fadeInUp"><img src="./assets/images/new/google-play-x200.png"></a>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <!--- =============================================  SIM SHAPE TEXT LIST ============================================= -->
 
@@ -252,97 +240,7 @@
     <!--- ============================================= section 5  Top Destinations============================================= -->
 
 
-    <section class="pt-50 reviews-section" style="margin-bottom:70px; ">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-5">
-            <div class="section-title">
-              <h4 class="page-sub-title-gray-md">Top Destinations</h4>
-            </div>
-          </div>
-        </div>
-        <div class="owl-carousel owl-theme reviews-1-wrapper">
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/mx.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4> Mexico </h4>
-                <h5>USD 0.0016/ min</h5>
-                <h6>3125 mins for 5 USD </h6>
-              </div>
-            </div>
-          </div>
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/pk.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4> Pakistan </h4>
-                <h5>USD 0.0016/ min</h5>
-                <h6> USD 0.0005 / Min</h6>
-              </div>
-            </div>
-          </div>
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/au.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4> Australia </h4>
-                <h5>USD 0.0126/ min</h5>
-                <h6>397 mins for 5 USD </h6>
-              </div>
-            </div>
-          </div>
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/us.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4> United States </h4>
-                <h5>USD 0.0159/ min</h5>
-                <h6>314 mins for 5 USD </h6>
-              </div>
-            </div>
-          </div>
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/in.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4>India</h4>
-                <h5>USD 0.0159/ min</h5>
-                <h6> 314 mins for 5 USD </h6>
-              </div>
-            </div>
-          </div>
-          <div routerLink="/about-country">
-            <div class="author-data">
-              <div class="country-img">
-                <img src="./assets/images/country_flags/bd.png" alt="review-avatar">
-              </div>
-              <br>
-              <div class="review-author">
-                <h4> Bangladesh </h4>
-                <h5>USD 0.0210/ min</h5>
-                <h6> 238 mins for 5 USD </h6>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <app-top-destinations></app-top-destinations>
 
     <!--- ============================================= section 5  international calls============================================= -->
 
@@ -465,10 +363,10 @@
     <section class="girl-with-image-section">
       <div class="container flex justify-content-end align-items-end floating-image-content">
         <div class="floating-content">
-          <h3 class="wow fadeInLeft" id="dynamic_title"></h3>
+          <h3 class="wow fadeInLeft">{{selectedTitle}}</h3>
           <div class="sim-bottom">
             <div class="sim-bottom-content text-center">
-              <p class="wow fadeInUp" id="dynamic_description"></p>
+              <p class="wow fadeInUp">{{selectedDescription}}</p>
               <img class="wow fadeIn" src="./assets/images/desktop-pc.png" alt="" />
             </div>
           </div>
@@ -488,14 +386,11 @@
             <h6>Ready for your free call? <br />Listen. Laugh. Live. Love.</h6>
             <p>Download today and experience Seamless Connectivity</p>
             <div class="button-wrapper">
-              <a class="wow fadeInUp"><img src="./assets/images/new/app-store-x200.png"></a>
-              <a class="wow fadeInUp"><img src="./assets/images/new/google-play-x200.png"></a>
+              <a class="wow fadeInUp" href="https://apps.apple.com/us/app/vinota-international-calling/id1103113535" target="_blank"><img src="./assets/images/new/app-store-dark.svg"></a>
+              <a class="wow fadeInUp" href="https://play.google.com/store/apps/details?id=org.vinota
+" target="_blank"><img src="./assets/images/new/google-play-colored.svg"></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-  </div> <!-- END PAGE CONTENT -->
-</body>
-
-</html>

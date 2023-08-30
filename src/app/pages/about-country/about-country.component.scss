@@ -15,63 +15,18 @@
   }
 }
 
-.banner-wrapper {
-  position: relative;
-  overflow: hidden;
-}
-
-@media all and (max-width: 768px) {
-  .banner-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    height: fit-content;
-  }
-}
-
-.banner-wrapper .banner-content {
-  padding-top: 1em;
-  position: relative;
-  max-width: 1280px;
-  margin: 0 auto;
-  height: 100%;
-  /* display: flex; */
-  align-items: center;
-  z-index: 3;
-
-}
-
-.banner-wrapper .banner-content h2,
-.banner-wrapper .banner-content p,
-.banner-wrapper .banner-content span {
-  margin: 0;
-  line-height: 1;
-  display: block;
-}
-
-
-.banner-content .banner-content-img {
-  margin-left: auto;
-  margin-right: auto;
-  width: 95%;
-  height: 75%;
-  object-fit: fill;
-  float: right;
-}
 
 .banner-wrapper .banner-content h2 {
   font-size: 4.5em;
   letter-spacing: 1px;
   max-width: 60%;
+  line-height: 1;
   font-weight: 700;
-  margin: 5px 0 24px;
+  margin: 5px 0 15px;
   color: black;
-}
-
-
-@media all and (max-width: 768px) {
-  .banner-wrapper .banner-bg {
-    position: relative;
-    aspect-ratio: 16/9;
+  display: flex;
+  img {
+    margin-right: 15px;
   }
 }
 
@@ -139,4 +94,9 @@
 
 .review-card {
   position: relative;
+}
+td {
+  img {
+    margin-right: 8px;
+  }
 }

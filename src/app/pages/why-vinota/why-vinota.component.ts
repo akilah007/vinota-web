@@ -1,5 +1,4 @@
-import { Component, ViewChild, OnInit,  Renderer2, ElementRef } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import { Component } from '@angular/core';
 @Component({
   selector: 'app-why-vinota',
   templateUrl: './why-vinota.component.html',
@@ -9,15 +8,7 @@ export class WhyVinotaComponent {
   public changeClass = true;
   isActive = 1;
 
-  constructor(private viewportScroller: ViewportScroller) { }
-
-  ngOnInit(): void {
-  }
-
-  public navigateToSection(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
-    this.changeClass = !this.changeClass;
-  }
+  constructor() { }
 
 
   next() {

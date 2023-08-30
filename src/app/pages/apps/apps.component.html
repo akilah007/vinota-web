@@ -1,169 +1,187 @@
-<!doctype html>
-<html lang="en">
-<body>
-  <div id="page" class="page">
-    <header id="header" class="main-header white-scroll">
-      <div class="header-wrapper flex align-center justify-content-between">
-        <div class="logo">
-          <a routerLink="/index"><img src="./assets/images/Vinota-Logo-New-white12345.png" /></a>
-        </div>
-        <span class="nav-icon">
-          <a></a>
-        </span>
-        <nav class="nav-bar">
-          <a routerLink="/">Home</a>
-          <a routerLink="/call-rates">Rates</a>
-          <a routerLink="/apps">Apps</a>
-          <a type="button" (click)="navigateToSection('support_section')">Support</a>
-          <a href="https://hello.vinota.com/register">Join</a>
-          <a href="https://hello.vinota.com/login" style="border-radius: 7px;
-    background: #04AA6D;
-    color: white;">Top-up</a>
-        </nav>
-        <div></div>
-      </div>
-      <a href="https://hello.vinota.com/login" class="login-button">Login</a>
-    </header>
 
-    <!--- ============================================= VINOTA APPS DESCRIPTION  ============================================= -->
-
-    <section class="bg--scroll hero-section">
-      <div class="banner-wrapper">
-        <div class="banner-content">
-          <div class="content">
-            <div class="lg-screen">
-              <div class="row">
-                <div class="col-7">
-                  <div class="wow fadeInUp page-main-title-blue-lg">Vinota Apps</div>
-                  <div class="wow fadeInUpBig">
-                    <p>Connect with Confidence - Install Vinota Today.
-                    </p>
-                    <div class="download-btn text-center  wow fadeInUp">
-                      <div class="d-flex flex-row">
-                          <div class="p-2"><img src="./assets/images/55.png" alt="" class="download-img" /></div>
-                          <div class="p-2"> <img src="./assets/images/56.png" alt="" class="download-img" /></div>
-                          <div class="p-2"><img src="./assets/images/60.png" alt="" class="download-img" /></div>
-                        </div>
-                  </div>
-                    <p class="paragraph-gap">Welcome to the world of Vinota, where seamless global communication is just
-                      a tap away. Our app is designed to empower you with unparalleled benefits that transcend
-                      boundaries.
-                    </p>
-                    <p>Download the Vinota app now and embark on a transformative connectivity journey that will
-                      revolutionize how you stay in touch with the world.
-                    </p>
-                  </div>
-                  <h2 class="wow fadeInLeft"></h2>
-                </div>
-                <div class="col-5">
-                  <div class="sim-video">
-                    <video loop muted autoplay class="video wow fadeInLeft"
-                      src="./assets/videos/shutterstock-1056283940.mp4"></video>
-                  </div>
-                </div>
+<section class="bg--scroll hero-section">
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <div class="content">
+        <div class="row">
+          <div class="col-lg-7 col-12">
+            <div class="wow fadeInUp page-main-title-blue-lg">Vinota Apps</div>
+            <div class="wow fadeInUpBig">
+              <div class="search-title">Connect with Confidence - Install Vinota Today.</div>
+              <div class="download-buttons text-center  wow fadeInUp">
+                <a href="https://apps.apple.com/us/app/vinota-international-calling/id1103113535" target="_blank" class="img-btn"><img src="./assets/images/new/app-store-dark.svg" alt="" class="download-img" /></a>
+                <a href="https://play.google.com/store/apps/details?id=org.vinota
+" target="_blank" class="img-btn"> <img src="./assets/images/new/google-play-colored.svg" alt="" class="download-img" /></a>
+                <a href="https://appgallery.huawei.com/app/C107407877" target="_blank" class="img-btn"> <img src="./assets/images/new/app-gallery-light.svg" alt="" class="download-img" /></a>
               </div>
+              <p>Download the Vinota app now and embark on a transformative connectivity journey that will
+                revolutionize how you stay in touch with the world.
+              </p>
             </div>
-            <div class="sm-screen">
-              <div class="col-12">
-                <div class="wow fadeInUp page-main-title-blue-lg">Vinota Apps</div>
-                <div class="wow fadeInUpBig">
-                  <p>Connect with Confidence - Install Vinota Today.
-                  </p>
-                  <div class="download-btn text-center  wow fadeInUp">
-                    <div class="d-flex flex-row">
-                        <div class="p-2"><img src="./assets/images/55.png" alt="" class="download-img" /></div>
-                        <div class="p-2"> <img src="./assets/images/56.png" alt="" class="download-img" /></div>
-                        <div class="p-2"><img src="./assets/images/60.png" alt="" class="download-img" /></div>
-                      </div>
+            <h2 class="wow fadeInLeft"></h2>
+          </div>
+          <div class="col-lg-5 col-12">
+            <div class="sim-video">
+              <video loop muted autoplay class="video wow fadeInLeft"
+                     src="./assets/videos/shutterstock-1056283940.mp4"></video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div id="support_section">
+  <div [class.not-active]="changeClass">
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="support">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-1 ">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
+                  APPs</a></li>
+                <span class="support-description">
+                      <p>Explore the Great Features of the Vinota App:
+                      </p>
+                    </span>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-2">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
+                </li>
+                <span class="support-description">
+                      <p>Visit Support Tickets:
+                      </p>
+                    </span>
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
+                <span class="support-description">
+                      <p>Everything You Need to Know About Vinota</p>
+                    </span>
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
+                </a></li>
+                <span class="support-description">
+                      <p>All Your Questions Answered</p>
+                    </span>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-3">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
+                <span class="support-description">
+                      <p>Get in Touch with Us
+                      </p>
+                    </span>
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
+                  routerLink="/contact-us"> CONTACT US </a></li>
+                <span class="support-description">
+                      <p>Get in touch with us</p>
+                    </span>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-2 col-xl-3">
+            <div class="footer-links fl-3">
+              <ul class="foo-links clearfix">
+                <li> <img class="support-icon-sm"
+                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
+                <span class="support-description">
+                      <p>We love to hear from you</p>
+                    </span>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--- ============================================= EXPERIENCE THE FRREEDOM CARDS  ============================================= -->
+
+<!-- <section class="features-section division card-section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div>
+        <h2 class="experience-freedom-text wow fadeInUp">Experience the Freedom to Connect</h2>
+      </div>
+    </div>
+    <div class="fbox-wrapper text-center">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="card-bottom">
+            <div class="review-card wow fadeInUp">
+              <div class="content">
+                <div class="shape-ico color-theme">
+                  <img src="images/istockphoto-1278951666-612x612.jpg" alt="" class="card-img" />
                 </div>
-                  <p class="paragraph-gap">Welcome to the world of Vinota, where seamless global communication is just
-                    a tap away. Our app is designed to empower you with unparalleled benefits that transcend
-                    boundaries.
-                  </p>
-                  <p>Download the Vinota app now and embark on a transformative connectivity journey that will
-                    revolutionize how you stay in touch with the world.
-                  </p>
+                <div class="fbox-txt">
+                  <h6 class="s-20 w-700">Enjoy Unbeatable International Call Rates</h6>
+                  <p class="p-sm"> Stay connected globally without breaking the bank. Benefit from our highly
+                    competitive international call rates and maximize your connectivity while minimizing costs.</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <div id="support_section">
-      <div [class.not-active]="changeClass">
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="support">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 col-lg-2 col-xl-3">
-                <div class="footer-links fl-1 ">
-                  <ul class="foo-links clearfix">
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
-                        APPs</a></li>
-                    <span class="support-description">
-                      <p>Explore the Great Features of the Vinota App:
-                      </p>
-                    </span>
-                  </ul>
+        <div class="col-lg-3">
+          <div class="card-bottom">
+            <div class="review-card wow fadeInUp">
+              <div class="content">
+                <div class="shape-ico color-theme">
+                  <img src="images/istockphoto-1341507922-612x612.jpg" alt="" class="card-img" />
+                </div>
+                <div class="fbox-txt">
+                  <h6 class="s-20 w-700">Secure Payment Options</h6>
+                  <p class="p-sm">Experience peace of mind with our secure payment options. Whether you prefer
+                    debit/credit cards or PayPal, rest assured that your transactions are safe and protected. </p>
                 </div>
               </div>
-              <div class="col-sm-12 col-lg-2 col-xl-3">
-                <div class="footer-links fl-2">
-                  <ul class="foo-links clearfix">
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
-                    </li>
-                    <span class="support-description">
-                      <p>Visit Support Tickets:
-                      </p>
-                    </span>
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                        routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
-                    <span class="support-description">
-                      <p>Everything You Need to Know About Vinota</p>
-                    </span>
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
-                      </a></li>
-                    <span class="support-description">
-                      <p>All Your Questions Answered</p>
-                    </span>
-                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card-bottom">
+            <div class="review-card wow fadeInUp">
+              <div class="content">
+                <div class="shape-ico color-theme">
+                  <img src="images/istockphoto-1222981922-612x612.jpg" alt="" class="card-img-buy" />
+                </div>
+                <div class="fbox-txt">
+                  <h6 class="s-20 w-700">Test Before You Buy</h6>
+                  <p class="p-sm"> Discover the exceptional quality of Vinota's calling service with a risk-free
+                    trial. Try now and experience its reliability and performance firsthand.</p>
                 </div>
               </div>
-              <div class="col-sm-12 col-lg-2 col-xl-3">
-                <div class="footer-links fl-3">
-                  <ul class="foo-links clearfix">
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
-                    <span class="support-description">
-                      <p>Get in Touch with Us
-                      </p>
-                    </span>
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                        routerLink="/contact-us"> CONTACT US </a></li>
-                    <span class="support-description">
-                      <p>Get in touch with us</p>
-                    </span>
-                  </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="card-bottom">
+            <div class="review-card wow fadeInUp">
+              <div class="content">
+                <div class="shape-ico color-theme">
+                  <img src="images/istockphoto-1348017895-612x612.jpg" alt="" class="card-img" />
                 </div>
-              </div>
-              <div class="col-sm-12 col-lg-2 col-xl-3">
-                <div class="footer-links fl-3">
-                  <ul class="foo-links clearfix">
-                    <li> <img class="support-icon-sm"
-                        src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
-                    <span class="support-description">
-                      <p>We love to hear from you</p>
-                    </span>
-                  </ul>
+                <div class="fbox-txt">
+                  <h6 class="s-20 w-700">Ransfer Funds with Ease </h6>
+                  <p class="p-sm">Share the benefits of Vinota with your friends and family. Effortlessly transfer
+                    funds between users, ensuring seamless communication for everyone. </p>
                 </div>
               </div>
             </div>
@@ -171,519 +189,375 @@
         </div>
       </div>
     </div>
-    <!--- ============================================= EXPERIENCE THE FRREEDOM CARDS  ============================================= -->
+  </div>
+</section> -->
 
-    <!-- <section class="features-section division card-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div>
-            <h2 class="experience-freedom-text wow fadeInUp">Experience the Freedom to Connect</h2>
-          </div>
-        </div>
-        <div class="fbox-wrapper text-center">
-          <div class="row">
-            <div class="col-lg-3">
-              <div class="card-bottom">
+<!--- ============================================= FREEDOM TO CONNECT CARD  ============================================= -->
+
+<section class="freedom-to-connect-section">
+  <div class="container">
+    <div class="section-title mb-50">
+      <h2 class="page-sub-title-gray-md wow fadeInUp">Experience the Freedom to Connect</h2>
+    </div>
+    <div class="freedom-paragraphs">
+<!--        <div class="col-md-8 col-xs-12 col-sm-12">-->
+
+          <div class="fbox-wrapper text-center">
+            <div class="row row-cols-1 row-cols-md-3">
+              <div class="col">
                 <div class="review-card wow fadeInUp">
                   <div class="content">
-                    <div class="shape-ico color-theme">
-                      <img src="images/istockphoto-1278951666-612x612.jpg" alt="" class="card-img" />
-                    </div>
+                    <!-- Text -->
                     <div class="fbox-txt">
-                      <h6 class="s-20 w-700">Enjoy Unbeatable International Call Rates</h6>
-                      <p class="p-sm"> Stay connected globally without breaking the bank. Benefit from our highly
-                        competitive international call rates and maximize your connectivity while minimizing costs.</p>
+                      <h3>Test Before You Buy</h3>
+                      <p>Discover the exceptional quality of Vinota's calling service with a risk-free trial. Try now and experience its reliability and performance firsthand.</p>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="card-bottom">
                 <div class="review-card wow fadeInUp">
                   <div class="content">
-                    <div class="shape-ico color-theme">
-                      <img src="images/istockphoto-1341507922-612x612.jpg" alt="" class="card-img" />
-                    </div>
+                    <!-- Text -->
                     <div class="fbox-txt">
-                      <h6 class="s-20 w-700">Secure Payment Options</h6>
-                      <p class="p-sm">Experience peace of mind with our secure payment options. Whether you prefer
-                        debit/credit cards or PayPal, rest assured that your transactions are safe and protected. </p>
+                      <h3>Transfer Funds with Ease</h3>
+                      <p>Share the benefits of Vinota with your friends and family. Effortlessly transfer funds between users, ensuring seamless communication for everyone.</p>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3">
-              <div class="card-bottom">
+              <div class="col">
                 <div class="review-card wow fadeInUp">
                   <div class="content">
-                    <div class="shape-ico color-theme">
-                      <img src="images/istockphoto-1222981922-612x612.jpg" alt="" class="card-img-buy" />
-                    </div>
+                    <!-- Text -->
                     <div class="fbox-txt">
-                      <h6 class="s-20 w-700">Test Before You Buy</h6>
-                      <p class="p-sm"> Discover the exceptional quality of Vinota's calling service with a risk-free
-                        trial. Try now and experience its reliability and performance firsthand.</p>
+                      <h3>Enjoy Unbeatable International Call Rates</h3>
+                      <p>Stay connected globally without breaking the bank. Benefit from our highly competitive international call rates and maximize your connectivity while minimizing costs. Secure Payment Options: Experience peace of mind with our secure payment options. Whether you prefer debit/credit cards or PayPal, rest assured that your transactions are safe and protected.</p>
                     </div>
                   </div>
                 </div>
+                <div class="freedom-to-connect-buttons">
+                  <a class="wow fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Get Started</a>
+                  &nbsp;
+                  <a class="wow fadeInUpBig check-rates" [routerLink]="['/call-rates']">Check Our Rates</a>
+                </div>
+              </div>
+              <div class="col col-img">
+                <img src="./assets/images/connect.jpg" alt="" />
               </div>
             </div>
-            <div class="col-lg-3">
-              <div class="card-bottom">
-                <div class="review-card wow fadeInUp">
-                  <div class="content">
-                    <div class="shape-ico color-theme">
-                      <img src="images/istockphoto-1348017895-612x612.jpg" alt="" class="card-img" />
-                    </div>
-                    <div class="fbox-txt">
-                      <h6 class="s-20 w-700">Ransfer Funds with Ease </h6>
-                      <p class="p-sm">Share the benefits of Vinota with your friends and family. Effortlessly transfer
-                        funds between users, ensuring seamless communication for everyone. </p>
-                    </div>
-                  </div>
+          </div>
+        </div>
+
+    <div class="row">
+      <div class="col-12">
+      </div>
+    </div>
+<!--        <div class="col-md-4 col-xs-2 hidden-xs hidden-sm">-->
+<!--          <img src="./assets/images/connect.jpg" class="apps-my-vinota-img wow fadeInLeft" />-->
+<!--        </div>-->
+<!--      </div>-->
+
+  </div>
+</section>
+
+<!--- ============================================= Card row  ============================================= -->
+
+<section class="section-gap">
+  <div class="container">
+    <div class="fbox-wrapper">
+      <div class="row ">
+        <div class="col-md-4">
+          <div class="wow fadeInUp">
+            <div class="content content-right">
+              <div class="card ">
+                <div class="box-icon ">
+                  <a class="box-icon-title" id="a1112" (click)="changeMobileDisplay('signup')">
+                    <span>Signup</span>
+                    <i class="fa-solid fa-user-pen"></i>
+                  </a>
+                  <p>How to signup with vinota using the APP</p>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="box-icon ">
+                  <a class="box-icon-title" id="a111"
+                     (click)="changeMobileDisplay('verification')">
+                    <span>Verify the phone number </span>
+                    <i class="fa-solid fa-clipboard-check"></i>
+                  </a>
+                  <p>Verify your number by Text or Voice to complete the registration</p>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="box-icon ">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('payment')">
+                    <span>Make payment</span>
+                    <i class="fa-solid fa-money-bills"></i>
+                  </a>
+                  <p>Recharge your account by debit or credit cards and PayPal
+                  </p>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="box-icon ">
+                  <a class="box-icon-title" id="a333"
+                     (click)="changeMobileDisplay('check_rates')">
+                    <span>Check Rates</span>
+                    <i class="fa-solid fa-money-bill-trend-up"></i>
+                  </a>
+                  <p>Discover incredibly affordable Vinota international call rates.
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box-icon ">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('search_contact')">
+                    <span>Search contacts</span>
+                    <i class="fa-solid fa-magnifying-glass-plus"></i>
+                  </a>
+                  <p> Search your Contacts to pick a number</p>
+                </div>
+              </div>
+              <div class="card">
+                <div class="box-icon ">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('credit_transfer')">
+                    <span>Credit transfer</span>
+                    <i class="fa-solid fa-money-bill-transfer"></i>
+                  </a>
+                  <p> Transfer credit to your friends</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section> -->
+        <div class="col-md-4">
+          <div class="mobile-view wow fadeInLeft">
+            <div class="smart">
+              <div id="dettaglio">
+                <div id="sensore"></div>
+                <div id="microfono"></div>
 
-    <!--- ============================================= FREEDOM TO CONNECT CARD  ============================================= -->
-
-    <section class="freedom-to-connect-section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-md-10 col-lg-9">
-              <div class="section-title mb-50">
-                  <h2 class="page-sub-title-gray-md wow fadeInUp">Experience the Freedom to Connect</h2>
               </div>
-          </div>
-      </div>
-        <div class="freedom-paragraphs">
-          <div class="row">
-            <div class="col-md-8 col-xs-12 col-sm-12">
-              <h3 class="page-sub-title-blue-sm wow fadeInUp">Test Before You Buy</h3>
-              <p> Discover the exceptional quality of Vinota's
-                calling service
-                with a risk-free trial. Try now and experience its reliability and performance firsthand.
-              </p>
-              <h3 class="page-sub-title-blue-sm wow fadeInUp">Joy Unbeatable International Call Rates</h3>
-              <p> Stay connected globally
-                without
-                breaking the
-                bank. Benefit from our highly competitive international call rates and maximize your connectivity while
-                minimizing costs. Secure Payment Options: Experience peace of mind with our secure payment options.
-                Whether
-                you prefer debit/credit cards or PayPal, rest assured that your transactions are safe and protected.
-              </p>
-              <h3 class="page-sub-title-blue-sm wow fadeInUp">Transfer Funds with Ease</h3>
-              <p>Share the benefits of Vinota with your
-                friends
-                and family.
-                Effortlessly transfer funds between users, ensuring seamless communication for everyone.
-              </p>
-            </div>
-            <div class="col-md-4 col-xs-2 hidden-xs hidden-sm">
-              <img src="./assets/images/connect.jpg" class="apps-my-vinota-img wow fadeInLeft" />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12">
-              <div class="freedom-to-connect-buttons">
-                <a class="wow fadeInUpBig">Get Started</a>
-                &nbsp;
-                <a href="call-rates.html" class="wow fadeInUpBig check-rates">Check Our Rates</a>
+              <div id="acenzione-button"></div>
+              <div id="volume-su"></div>
+              <div id="volume-giu"></div>
+              <div class="schermo-defult" [style]="{'background-image': 'url(assets/images/discover/android/' + selectedImage +'.gif)'}">
+
               </div>
             </div>
           </div>
-
         </div>
 
-      </div>
-    </section>
+        <div class="col-md-4">
+          <div class="wow fadeInUp">
+            <div class="content  content-left">
+              <div class="card ">
+                <div class="box-icon">
 
-    <!--- ============================================= Card row  ============================================= -->
-
-    <section class="lg-screen section-gap">
-      <div class="container">
-        <div class="fbox-wrapper">
-          <div class="row ">
-            <div class="col-md-4">
-              <div class="wow fadeInUp">
-                <div class="content content-right">
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" id="a1112" onclick="changeMobileDisplay('signup')">
-                        <span>Signup</span>
-                        <i class="fa-solid fa-user-pen"></i>
-                      </a>
-                      <p>How to signup with vinota using the APP</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" id="a111"
-                        onclick="changeMobileDisplay('verify_number')">
-                        <span>Verify the phone number </span>
-                        <i class="fa-solid fa-clipboard-check"></i>
-                      </a>
-                      <p>Verify your number by Text or Voice to complete the registration</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('make_payment')">
-                        <span>Make payment</span>
-                        <i class="fa-solid fa-money-bills"></i>
-                      </a>
-                      <p>Recharge your account by debit or credit cards and PayPal
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" id="a333"
-                        onclick="changeMobileDisplay('chack_rates')">
-                        <span>Check Rates</span>
-                        <i class="fa-solid fa-money-bill-trend-up"></i>
-                      </a>
-                      <p>Discover incredibly affordable Vinota international call rates.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('search_contacts')">
-                        <span>Search contacts</span>
-                        <i class="fa-solid fa-magnifying-glass-plus"></i>
-                      </a>
-                      <p> Search your Contacts to pick a number</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="box-icon ">
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('credit_transfer')">
-                        <span>Credit transfer</span>
-                        <i class="fa-solid fa-money-bill-transfer"></i>
-                      </a>
-                      <p> Transfer credit to your friends</p>
-                    </div>
-                  </div>
+                  <a class="box-icon-title" id="a222"
+                     (click)="changeMobileDisplay('dial_number')">
+                    <i class="fa-solid fa-phone"></i>
+                    <span>Dial a number</span>
+                  </a>
+                  <p>Simply dial the number with the country code and get in touch with your loved ones</p>
                 </div>
               </div>
-            </div>
-            <div class="col-md-4">
-              <div class="mobile-view wow fadeInLeft">
-                <div class="smart">
-                  <div id="dettaglio">
-                    <div id="sensore"></div>
-                    <div id="microfono"></div>
-
-                  </div>
-                  <div id="acenzione-button"></div>
-                  <div id="volume-su"></div>
-                  <div id="volume-giu"></div>
-                  <div class="schermo-defult" id="schermo-defult">
-
-                  </div>
+              <div class="card ">
+                <div class="box-icon ">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('display_call_chargers')">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <span>Display call charges</span>
+                  </a>
+                  <p>Enable Vinota to display call charges on the screen even before the call</p>
                 </div>
               </div>
-            </div>
-
-            <div class="col-md-4">
-              <div class="wow fadeInUp">
-                <div class="content  content-left">
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-phone"></i>
-
-                      <a class="box-icon-title" href="#discover_id" id="a222"
-                        onclick="changeMobileDisplay('dial_number')">
-                        <span>Dial a number</span>
-                      </a>
-                      <p>Simply dial the number with the country code and get in touch with your loved ones</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-mobile-screen"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('dispaly_charges')">
-                        <span>Display call charges</span>
-                      </a>
-                      <p>Enable Vinota to display call charges on the screen even before the call</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-calendar-check"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('payment_history')">
-                        <span>Payment history</span>
-                      </a>
-                      <p>check your payment history</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('call_history')">
-                        <span>View call history </span>
-                      </a>
-                      <p> Review your call history along with the corresponding call durations</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('integrate_dialer')">
-                        <span>Integrate with default dialer</span>
-                      </a>
-                      <p>Integrate Vinota with your default Android dialer to avoid opening Vinota for all your
-                        international calls</p>
-                    </div>
-                  </div>
+              <div class="card ">
+                <div class="box-icon">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('payment_history')">
+                    <i class="fa-solid fa-calendar-check"></i>
+                    <span>Payment history</span>
+                  </a>
+                  <p>Check your payment history</p>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="box-icon">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('call_history')">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span>View call history </span>
+                  </a>
+                  <p> Review your call history along with the corresponding call durations</p>
+                </div>
+              </div>
+              <div class="card ">
+                <div class="box-icon">
+                  <a class="box-icon-title" (click)="changeMobileDisplay('integrate_with_default_dialer')">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <span>Integrate with default dialer</span>
+                  </a>
+                  <p>Integrate Vinota with your default Android dialer to avoid opening Vinota for all your
+                    international calls</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!--- =============================================  MOBILE DISPLAY ============================================= -->
+<!--- =============================================  MOBILE DISPLAY ============================================= -->
 
-    <section class="sm-screen">
-      <div class="container">
-        <div class="fbox-wrapper">
-          <div class="row ">
-            <div class="col-md-6">
-              <div class="mobile-view wow fadeInLeft">
-                <div class="smart">
-                  <div id="dettaglio">
-                    <div id="sensore"></div>
-                    <div id="microfono"></div>
-                  </div>
-                  <div id="acenzione-button"></div>
-                  <div id="volume-su"></div>
-                  <div id="volume-giu"></div>
-                  <div class="schermo-defult" id="schermo-defult">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="wow fadeInUp">
-                <div class="content mobile-cards">
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-user-pen"></i>
-                      <a class="box-icon-title" href="#discover_id" id="a1112" onclick="changeMobileDisplay('signup')">
-                        <span>Signup</span>
-                      </a>
-                      <p>How to signup with vinota using the APP</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-clipboard-check"></i>
-                      <a class="box-icon-title" href="#discover_id" id="a111"
-                        onclick="changeMobileDisplay('verify_number')">
-                        <span>Verify the phone number </span>
-                      </a>
-                      <p>Verify your number by Text or Voice to complete the registration</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-money-bills"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('make_payment')">
-                        <span>Make payment</span>
-                      </a>
-                      <p>Recharge your account by Debit/ Credit cards, PayPal & CashU</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-money-bill-trend-up"></i>
-                      <a class="box-icon-title" href="#discover_id" id="a333"
-                        onclick="changeMobileDisplay('chack_rates')">
-                        <span>Check Rates</span>
-                      </a>
-                      <p>Check Vinota amazingly low international call rates</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-magnifying-glass-plus"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('search_contacts')">
-                        <span>Search contacts</span>
-                      </a>
-                      <p>Search your address book/ Contacts to pick a number</p>
-                    </div>
-                  </div>
-                  <div class="card">
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-money-bill-transfer"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('credit_transfer')">
-                        <span>Credit transfer</span>
-                      </a>
-                      <p>Transfer credit with your friends</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-phone"></i>
-                      <a class="box-icon-title" href="#discover_id" id="a222"
-                        onclick="changeMobileDisplay('dial_number')">
-                        <span>Dial a number</span>
-                      </a>
-                      <p>Simply dial the number with country code and get in touch with your loved ones</p>
-                    </div>
-                  </div>
+<!--<section class="sm-screen">-->
+<!--  <div class="container">-->
+<!--    <div class="fbox-wrapper">-->
+<!--      <div class="row ">-->
+<!--        <div class="col-md-6">-->
+<!--          <div class="mobile-view wow fadeInLeft">-->
+<!--            <div class="smart">-->
+<!--              <div>-->
+<!--                <div></div>-->
+<!--                <div></div>-->
+<!--              </div>-->
+<!--              <div></div>-->
+<!--              <div></div>-->
+<!--              <div></div>-->
+<!--              <div class="schermo-defult">-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-6">-->
+<!--          <div class="wow fadeInUp">-->
+<!--            <div class="content mobile-cards">-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-user-pen"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('signup')">-->
+<!--                    <span>Signup</span>-->
+<!--                  </a>-->
+<!--                  <p>How to signup with vinota using the APP</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-clipboard-check"></i>-->
+<!--                  <a class="box-icon-title" id="a111"-->
+<!--                     (click)="changeMobileDisplay('verify_number')">-->
+<!--                    <span>Verify the phone number </span>-->
+<!--                  </a>-->
+<!--                  <p>Verify your number by Text or Voice to complete the registration</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-money-bills"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('make_payment')">-->
+<!--                    <span>Make payment</span>-->
+<!--                  </a>-->
+<!--                  <p>Recharge your account by Debit/ Credit cards, PayPal & CashU</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-money-bill-trend-up"></i>-->
+<!--                  <a class="box-icon-title" id="a333"-->
+<!--                     (click)="changeMobileDisplay('chack_rates')">-->
+<!--                    <span>Check Rates</span>-->
+<!--                  </a>-->
+<!--                  <p>Check Vinota amazingly low international call rates</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-magnifying-glass-plus"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('search_contacts')">-->
+<!--                    <span>Search contacts</span>-->
+<!--                  </a>-->
+<!--                  <p>Search your address book/ Contacts to pick a number</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card">-->
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-money-bill-transfer"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('credit_transfer')">-->
+<!--                    <span>Credit transfer</span>-->
+<!--                  </a>-->
+<!--                  <p>Transfer credit with your friends</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon">-->
+<!--                  <i class="fa-solid fa-phone"></i>-->
+<!--                  <a class="box-icon-title" id="a222"-->
+<!--                     (click)="changeMobileDisplay('dial_number')">-->
+<!--                    <span>Dial a number</span>-->
+<!--                  </a>-->
+<!--                  <p>Simply dial the number with country code and get in touch with your loved ones</p>-->
+<!--                </div>-->
+<!--              </div>-->
 
-                  <div class="card ">
+<!--              <div class="card ">-->
 
-                    <div class="box-icon ">
-                      <i class="fa-solid fa-mobile-screen"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('dispaly_charges')">
-                        <span>Display call charges</span>
-                      </a>
-                      <p>How to enable vinota to display call charges on screen after each call</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-calendar-check"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('payment_history')">
-                        <span>Payment history</span>
-                      </a>
-                      <p>How to check your payment history</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-clock-rotate-left"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('call_history')">
-                        <span>View call history </span>
-                      </a>
-                      <p>View your call history with time you have spoken</p>
-                    </div>
-                  </div>
-                  <div class="card ">
-                    <div class="box-icon">
-                      <i class="fa-solid fa-phone-volume"></i>
-                      <a class="box-icon-title" href="#discover_id" onclick="changeMobileDisplay('integrate_dialer')">
-                        <span>Integrate with default dialer</span>
-                      </a>
-                      <p>How to integrate vinota with your default android dialer to avoid opening vinota for all your
-                        international calls</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+<!--                <div class="box-icon ">-->
+<!--                  <i class="fa-solid fa-mobile-screen"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('dispaly_charges')">-->
+<!--                    <span>Display call charges</span>-->
+<!--                  </a>-->
+<!--                  <p>How to enable vinota to display call charges on screen after each call</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon">-->
+<!--                  <i class="fa-solid fa-calendar-check"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('payment_history')">-->
+<!--                    <span>Payment history</span>-->
+<!--                  </a>-->
+<!--                  <p>How to check your payment history</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon">-->
+<!--                  <i class="fa-solid fa-clock-rotate-left"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('call_history')">-->
+<!--                    <span>View call history </span>-->
+<!--                  </a>-->
+<!--                  <p>View your call history with time you have spoken</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--              <div class="card ">-->
+<!--                <div class="box-icon">-->
+<!--                  <i class="fa-solid fa-phone-volume"></i>-->
+<!--                  <a class="box-icon-title" (click)="changeMobileDisplay('integrate_dialer')">-->
+<!--                    <span>Integrate with default dialer</span>-->
+<!--                  </a>-->
+<!--                  <p>How to integrate vinota with your default android dialer to avoid opening vinota for all your-->
+<!--                    international calls</p>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</section>-->
+
+<section class="sign-up-today-card">
+  <div class="container">
+    <div class="sign-up-today-card-bg row">
+      <div class="col-lg-8 col-12 content">
+        <h6 class="wow fadeInUp">Connect with My VINOTA</h6>
+        <p class="wow fadeInUpBig">My Vinota is an easily accessible platform for Vinota users where you can
+          manage your account effortlessly. Access bills, rates, and call details. Stay in control anytime,
+          anywhere.
+        </p>
+        <a class="link-btn wow fadeInUpBig" href="https://hello.vinota.com/login">Start Calling Now</a>
       </div>
-    </section>
 
-    <section class="my-vinota-description">
-      <div class="container">
-        <div class="lg-screen">
-          <div class="row">
-            <div class="col-8">
-              <div class="center-items">
-              <div class="page-sub-title-gray-md wow fadeInUp">Connect with My VINOTA</div>
-                <p class="wow fadeInUpBig">My Vinota is an easily accessible platform for Vinota users where you can
-                  manage your account effortlessly. Access bills, rates, and call details. Stay in control anytime,
-                  anywhere.
-                </p>
-                <h2 class="wow fadeInLeft"></h2>
-                <div class="d-flex justify-content-center"> <a class="wow fadeInUpBig">Start Calling Now</a></div>
-              </div>
-            </div>
-            <div class="col-4">
-              <img src="./assets/images/business_3.1.png" class="my-vinota-bottom-img wow fadeInLeft" />
-            </div>
-          </div>
-        </div>
-        <div class="sm-screen">
-          <div class="row">
-            <div class="col-12">
-              <div class="page-sub-title-gray-md wow fadeInUp">Connect with My VINOTA</div>
-            </div>
-            <div class="col-8">
-              <div class="center-items">
-                <p class="wow fadeInUpBig">My Vinota is an easily accessible platform for Vinota users where you can
-                  manage your account effortlessly. Access bills, rates, and call details. Stay in control anytime,
-                  anywhere.
-                </p>
-                <h2 class="wow fadeInLeft"></h2>
-                <div class="d-flex justify-content-center"> <a class="wow fadeInUpBig">Start Calling Now</a></div>
-              </div>
-            </div>
-            <div class="col-4">
-              <img src="./assets/images/business_3.1.png" class="my-vinota-bottom-img wow fadeInLeft" />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--- ============================================= HD VOICE  ============================================= -->
-
-    <!-- <section class="hd-voice-row ">
-      <div class="hd-row-background ">
-        <div class="container ">
-          <div class="row">
-            <div class="col-12">
-              <div class="hd-voice-text wow fadeInUp">Vinota is the first app that deliver HD quality VOICE</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!--- ============================================= ONE CALL CARD ============================================= -->
-
-    <!-- <section class="one-call-card">
-      <div class="container">
-        <div class="one-call-card-bg">
-          <div class="content">
-            <h2 class="s-46 wow fadeInUp">UNITING THE <span style="color:#3399cc">WORLD</span>, ONE CALL AT A <span
-                style="color:rgb(21, 189, 91)">TIME</span></h2>
-            <a class="wow fadeInUpBig">Get Started</a>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <!--- ============================================= FOOTER   ============================================= -->
-
-  </div> <!-- END PAGE CONTENT -->
-
-
-  <!--============================================= EXTERNAL SCRIPTS ============================================= -->
-
-
-  <script src="js/jquery-3.7.0.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/modernizr.custom.js"></script>
-  <script src="js/jquery.easing.js"></script>
-  <script src="js/jquery.appear.js"></script>
-  <script src="js/menu.js"></script>
-  <script src="js/owl.carousel.min.js"></script>
-  <script src="js/pricing-toggle.js"></script>
-  <script src="js/jquery.magnific-popup.min.js"></script>
-  <script src="js/request-form.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery.ajaxchimp.min.js"></script>
-  <script src="js/popper.min.js"></script>
-  <script src="js/lunar.js"></script>
-  <script src="js/wow.js"></script>
-  <!-- Custom Script -->
-  <script src="js/custom.js"></script>
-</body>
-
-</html>
+<!--      <div class="col-4">-->
+<!--        <img src="./assets/images/business_3.1.png" class="my-vinota-bottom-img wow fadeInLeft" />-->
+<!--      </div>-->
+    </div>
+  </div>
+</section>

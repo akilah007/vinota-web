@@ -20,7 +20,18 @@
   height: 100%;
   width: 100%;
 }
-
+.page-main-title-blue-lg {
+  color: black;
+  margin-bottom: 0;
+}
+.search-title {
+  margin: 10px 0 15px;
+  font-family: var(--app-secondary-font-family);
+  color: var(--primary-color) !important;
+  //letter-spacing: 1px;
+  font-size: 1.1em;
+  font-weight: 600;
+}
 @media all and (max-width: 768px) {
   .banner-wrapper .banner-bg {
     position: relative;
@@ -37,7 +48,7 @@
   padding-top: 30px;
 }
 .freedom-to-connect-section {
-  padding-top: 0em;
+  padding: 4em 0;
 
 }
 .section-gap {
@@ -207,11 +218,25 @@ video {
 }
 
 .card {
-  margin-top: 10px;
-
+  margin-top: 15px;
+  box-shadow: 0 0 4px rgba(0,0,0, .2);
+  border-radius: 8px;
+  border: none;
+  .box-icon-title {
+    font-family: var(--app-font-family);
+    margin-bottom: 4px !important;
+    display: block;
+    span {
+      color: var(--primary-color) !important;
+    }
+  }
+  p {
+    font-size: .8em;
+    opacity: .7;
+  }
 }
 
-#schermo-defult {
+.schermo-defult {
   background-size: contain;
   height: 100%;
   /* width: 295px; */
@@ -225,4 +250,77 @@ video {
 .fa-solid {
   color: var(--primary-color);
   padding: 5px;
+}
+
+//
+.fbox-wrapper {
+  .col-img {
+    display: flex;
+    align-items: center;
+    img {
+      max-width: 100%;
+    }
+  }
+  .freedom-to-connect-buttons {
+    margin-top: 2.5em;
+  }
+}
+
+.review-card {
+  //padding: 80px 40px;
+  //height: max-content;
+  //width: max-content;
+  margin-bottom: 1em;
+  position: relative;
+  //&::after,
+  @media all and (max-width: 768px) {
+    margin-bottom: 1.5em;
+  }
+  .content {
+    padding: 30px 45px 60px;
+    position: relative;
+    z-index: 1;
+    .fbox-txt {
+      margin-top: 20px;
+      h3 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        line-height: 1.4;
+      }
+      p {
+        font-size: .9em;
+        line-height: 1.5;
+        letter-spacing: normal;
+      }
+    }
+  }
+  &::before {
+    content: "";
+    background: linear-gradient(315deg, transparent 61px 0px, white 0);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.05));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+}
+//
+.sign-up-today-card-bg {
+  text-align: left;
+}
+.link-btn {
+  display: inline-block;
+  background: #111;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 8px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 48px;
+  padding: 0 24px;
+  font-size: .9em;
+  letter-spacing: 1px;
+  margin-top: 1.5em;
 }

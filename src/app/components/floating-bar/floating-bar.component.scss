@@ -1,0 +1,91 @@
+// blue download buttons bar
+
+
+.link-stripe {
+  height: 64px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  z-index: 99;
+  transition: 0.6s ease-in-out;
+  &.scroll {
+    width: 40%;
+    .icons span {
+      opacity: 0;
+      display: none;
+    }
+  }
+
+  .pink-bar {
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 50%;
+    border-radius: 0 16px 0 0;
+    overflow: hidden;
+    display: flex;
+    padding-right: 1em;
+    justify-content: flex-end;
+    transition: 0.3s all;
+    animation: animateDownloadBar 1s forwards;
+    .w {
+      width: calc(var(--wapper-width) / 2);
+      display: flex;
+      justify-content: space-between;
+    }
+    .icons {
+      color: white;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-left: 20px;
+      span {
+        font-size: 0.95em;
+        display: inline-block;
+        margin-right: 24px;
+        vertical-align: top;
+        animation-delay: 1.5s;
+        transition: 0.6s ease-in-out;
+      }
+      a {
+        margin: 0 8px;
+        animation-delay: 1.5s;
+        img {
+          height: 40px;
+        }
+      }
+    }
+    @media all and (max-width: 768px) {
+      .w {
+        width: unset;
+      }
+    }
+  }
+  @media all and (max-width: 768px) {
+    .pink-bar {
+      width: 100%;
+      animation: unset;
+    }
+  }
+}
+
+@media all and (max-width: 768px) {
+  .link-stripe.scroll {
+    width: 100%;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .link-stripe .pink-bar .icons a img {
+    height: 32px;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .link-stripe .pink-bar {
+    width: 100%;
+  }
+
+  .link-stripe .pink-bar .w {
+    width: 100%;
+  }
+}

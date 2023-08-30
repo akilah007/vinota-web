@@ -1,0 +1,39 @@
+<!--<header id="header" class="main-header white-scroll">-->
+<!--  <div class="header-wrapper flex align-center justify-content-between">-->
+<!--    <div class="logo">-->
+<!--      <a [routerLink]="['/']"><img src="./assets/images/Vinota-Logo-New-white12345.png" /></a>-->
+<!--    </div>-->
+<!--    <nav class="nav-bar">-->
+<!--      <a [routerLink]="['/call-rates']">Rates</a>-->
+<!--      <a [routerLink]="['/apps']">Apps</a>-->
+<!--      <a type="button" (click)="navigateToSection('support_section')">Support</a>-->
+<!--      <a target="_blank" href="https://hello.vinota.com/register">Join</a>-->
+<!--      <a target="_blank" href="https://hello.vinota.com/login" style="border-radius: 7px;-->
+<!--          background: #04AA6D;-->
+<!--          color: white;">Top-up</a>-->
+<!--    </nav>-->
+<!--    <div></div>-->
+<!--  </div>-->
+<!--  <a target="_blank" href="https://hello.vinota.com/login" class="login-button">Login</a>-->
+<!--</header>-->
+<header id="header" class="main-header white-scroll">
+  <div class="header-wrapper flex align-center justify-content-between">
+    <div class="logo">
+            <a [routerLink]="['/']"><img src="./assets/images/Vinota-Logo-New-white12345.png" /></a>
+    </div>
+    <span (click)="toggleNav()" class="nav-icon">
+          <a></a>
+        </span>
+    <nav class="nav-bar">
+      <a [routerLink]="['/call-rates']">Rates</a>
+      <a [routerLink]="['/apps']">Apps</a>
+      <a type="button" (click)="navigateToSection('support_section')">Support</a>
+      <a target="_blank" href="https://hello.vinota.com/register">Join</a>
+      <a target="_blank" href="https://hello.vinota.com/login" style="border-radius: 7px;
+                background: #1ac521;
+                color: white;">Top-up</a>
+    </nav>
+    <div></div>
+  </div>
+  <a class="login-button" href="https://hello.vinota.com/login" target="_blank">Login</a>
+</header>

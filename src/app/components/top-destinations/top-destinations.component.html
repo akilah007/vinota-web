@@ -1,0 +1,31 @@
+<section class="pt-50 reviews-section" style="margin-bottom:70px; ">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10 col-lg-5">
+        <div class="section-title">
+          <h4 class="page-sub-title-gray-md">Top Destinations</h4>
+        </div>
+      </div>
+    </div>
+    <owl-carousel-o [options]="customOptions" class="reviews-1-wrapper" *ngIf="topDestinations.length">
+      <ng-container *ngFor="let slide of topDestinations; trackBy: trackItems">
+        <ng-template carouselSlide>
+          <div [owlRouterLink]="['/about-country', slide.link]">
+            <div class="author-data">
+              <div class="country-img">
+                <img [src]="'./assets/images/country_flags/' + slide.iso + '.png'" alt="review-avatar">
+              </div>
+              <br>
+              <div class="review-author">
+                <h4> {{slide.name}} </h4>
+                <h5>{{slide.rate | currency: 'USD'}}/min</h5>
+                <h6>{{(5 / slide.rate) | number: '1.0-0'}} mins for 5 USD </h6>
+              </div>
+            </div>
+          </div>
+        </ng-template>
+      </ng-container>
+
+    </owl-carousel-o>
+  </div>
+</section>

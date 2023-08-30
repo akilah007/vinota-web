@@ -12,14 +12,13 @@ import { CallRatesComponent } from './pages/call-rates/call-rates.component';
 
 const routes: Routes = [
   { path: '', component: IndexComponent },
-  { path: 'index', component: IndexComponent },
   { path: 'call-rates', component: CallRatesComponent },
   { path: 'about-us', component: AboutUsComponent },
   { path: 'why-vinota', component: WhyVinotaComponent },
   { path: 'contact-us', component: ContactUsComponent },
   { path: 'faqs', component: FaqComponent },
   { path: 'knowledge-base', component: KnowledgeBaseComponent },
-  { path: 'about-country', component: AboutCountryComponent },
+  { path: 'call-rates/:id', component: AboutCountryComponent },
   { path: 'apps', component: AppsComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
