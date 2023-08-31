@@ -1,4 +1,4 @@
-import { Component} from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-about-us',
@@ -9,5 +9,8 @@ export class AboutUsComponent {
   public changeClass = true;
 
   constructor() { }
-
+  
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }

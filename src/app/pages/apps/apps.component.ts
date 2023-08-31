@@ -11,8 +11,10 @@ export class AppsComponent {
 
   constructor() { }
 
-
   changeMobileDisplay(imageName: string) {
     this.selectedImage = imageName;
+  }
+  ngAfterViewInit() {
+    window.scroll(0, 0)
   }
 }

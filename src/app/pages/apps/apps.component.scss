@@ -57,7 +57,7 @@
 }
 @media all and (max-width: 768px) {
   .freedom-to-connect-section {
-   padding-bottom: 4em;
+   padding-bottom: 2em;
 
   }
 }
@@ -68,18 +68,12 @@
   line-height: 1.25em;
 }
 
-.freedom-to-connect-buttons a {
-  display: inline-block;
-  background: var(--secondary-color);
-  color: white;
-  border-radius: 8px;
-  font-weight: 500;
-  text-transform: uppercase;
-  line-height: 48px;
-  padding: 0 24px;
+.get-start-btn {
+  margin-top: 0.5em;
 }
 
 .freedom-to-connect-buttons a.check-rates {
+  margin-top: 8px;
   display: inline-block;
   background: var(--primary-color);
   color: white;
@@ -92,7 +86,6 @@
 
 .freedom-to-connect-buttons {
   text-align: center;
-  margin-top: 8px;
 }
 .apps-my-vinota-img {
   width: 100%;
@@ -255,14 +248,28 @@ video {
 //
 .fbox-wrapper {
   .col-img {
-    display: flex;
+    display:inline;
     align-items: center;
     img {
-      max-width: 100%;
+      // max-width: 100%;
     }
   }
   .freedom-to-connect-buttons {
-    margin-top: 2.5em;
+    // margin-top: 2.5em;
+  }
+}
+.blue-color-girl{
+  width: 100%;
+
+}
+.image-button-section{
+  position: absolute;
+  bottom: 25%;
+}
+
+@media all and (max-width: 768px) {
+  .image-button-section{
+    position: unset;
   }
 }
 
@@ -277,7 +284,7 @@ video {
     margin-bottom: 1.5em;
   }
   .content {
-    padding: 30px 45px 60px;
+    padding: 30px 46px 60px;
     position: relative;
     z-index: 1;
     .fbox-txt {

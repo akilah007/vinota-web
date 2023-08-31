@@ -10,13 +10,15 @@ export class WhyVinotaComponent {
 
   constructor() { }
 
-
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
   next() {
     if (this.isActive == 3) this.isActive = 0;
-    this.isActive ++;
+    this.isActive++;
   }
   pre() {
-    this.isActive --;
+    this.isActive--;
     if (this.isActive == 0) this.isActive = 3;
   }
 }

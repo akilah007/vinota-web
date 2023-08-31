@@ -1,9 +1,9 @@
-import {Component, Pipe, PipeTransform} from '@angular/core';
-import {ViewportScroller} from '@angular/common';
-import {FormControl} from "@angular/forms";
-import {map, Observable, startWith} from "rxjs";
-import {getDatabase, onValue, ref} from "@angular/fire/database";
-import {Router} from "@angular/router";
+import { Component, Pipe, PipeTransform } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { FormControl } from "@angular/forms";
+import { map, Observable, startWith } from "rxjs";
+import { getDatabase, onValue, ref } from "@angular/fire/database";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-call-rates',
@@ -22,21 +22,24 @@ export class CallRatesComponent {
   filterLetter: string = '';
 
   constructor(private viewportScroller: ViewportScroller,
-              private router: Router) { }
+    private router: Router) { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
       const data = snapshot.val();
       this.countries = [];
       for (const k in data) {
-        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate})
+        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate })
       }
       this.filteredCountries = this.countryCtrl.valueChanges.pipe(
         startWith(''),
         map(country => (country ? this._filterStates(country) : this.countries.slice())),
       );
       this.countriesList = this.groupArrayByFirstLetter(this.countries);
-    }, { onlyOnce: true});
+    }, { onlyOnce: true });
   }
   private _filterStates(value: string): any[] {
     const filterValue = value.toLowerCase();
@@ -61,7 +64,7 @@ export class CallRatesComponent {
     });
 
     return Object.keys(groups).map(key => {
-      return {key, countries: groups[key]};
+      return { key, countries: groups[key] };
     });
   }
   countrySelected(v: any) {

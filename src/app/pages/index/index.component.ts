@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import {FormControl} from "@angular/forms";
-import {map, Observable, startWith} from "rxjs";
-import {getDatabase, onValue, ref} from "@angular/fire/database";
-import {Router} from "@angular/router";
+import { FormControl } from "@angular/forms";
+import { map, Observable, startWith } from "rxjs";
+import { getDatabase, onValue, ref } from "@angular/fire/database";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-index',
@@ -27,20 +27,23 @@ export class IndexComponent implements OnInit {
   descriptionArray = ["Immerse yourself in conversations with Vinota's crystal clear voice quality. Our advanced technology ensures uninterrupted and high-quality calls. Enjoy conversations that feel like you're in the same room, no matter the distance.", "Experience the convenience and flexibility of Vinota across all your devices. Our app is designed to be compatible with various platforms, ensuring that you can enjoy seamless communication no matter which device you prefer."];
   private timer: any = 0;
   constructor(private router: Router) { }
-
+  
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
       const data = snapshot.val();
       this.countries = [];
       for (const k in data) {
-        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate})
+        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate })
       }
       this.filteredCountries = this.countryCtrl.valueChanges.pipe(
         startWith(''),
         map(country => (country ? this._filterStates(country) : this.countries.slice())),
       );
-    }, { onlyOnce: true});
+    }, { onlyOnce: true });
     this.selectRandomTitle();
     this.timer = setInterval(() => {
       this.selectRandomTitle();

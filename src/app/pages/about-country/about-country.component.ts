@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ViewportScroller } from '@angular/common';
-import {ActivatedRoute} from "@angular/router";
-import {getDatabase, onValue, ref} from "@angular/fire/database";
+import { ActivatedRoute } from "@angular/router";
+import { getDatabase, onValue, ref } from "@angular/fire/database";
 
 @Component({
   selector: 'app-about-country',
@@ -16,7 +16,7 @@ export class AboutCountryComponent {
   db = getDatabase();
   date = new Date();
   constructor(private viewportScroller: ViewportScroller,
-              private route: ActivatedRoute) { }
+    private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((p: any) => {
@@ -32,14 +32,17 @@ export class AboutCountryComponent {
             onValue(ref(this.db, `/full_rate_db/all_call_rates/${u[k].prefix}`), snapshot3 => {
               const r: any = snapshot3.val();
               if (k !== 'sms-rate') {
-                this.rates.push({name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number']});
+                this.rates.push({ name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number'] });
               }
-            }, {onlyOnce: true});
+            }, { onlyOnce: true });
           }
           console.log(snapshot2.val());
-        }, {onlyOnce: true})
-      }, {onlyOnce: true})
+        }, { onlyOnce: true })
+      }, { onlyOnce: true })
     });
+  }
+  ngAfterViewInit() {
+    window.scroll(0, 0)
   }
   convertUniqueRates(input: string) {
     return input.split(':')[1].trim();

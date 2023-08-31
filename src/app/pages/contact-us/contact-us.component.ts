@@ -10,5 +10,8 @@ export class ContactUsComponent {
   public changeClass = true;
 
   constructor(private viewportScroller: ViewportScroller) { }
-
+  
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }
