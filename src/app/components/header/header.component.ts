@@ -22,8 +22,6 @@ export class HeaderComponent implements AfterViewInit {
   ngAfterViewInit() {
     this.navIcon = this.el.nativeElement.querySelector('.nav-icon');
     this.navBar = this.el.nativeElement.querySelector('.nav-bar');
-    // if (window.innerWidth < 992) {
-    // }
   }
   toggleNav() {
     this.navBar.classList.toggle('active');

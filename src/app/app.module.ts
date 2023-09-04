@@ -57,8 +57,6 @@ import {TopDestinationsComponent} from "./components/top-destinations/top-destin
     FloatingBarComponent,
     TopDestinationsComponent
   ],
-  // providers: [],
-  // providers: [{provide: APP_BASE_HREF, useValue: '/dist/vinota-v2-angular/'}],
   bootstrap: [AppComponent],
   providers: [
     ScreenTrackingService,UserTrackingService

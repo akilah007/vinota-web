@@ -31,10 +31,10 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
-      const data = snapshot.val();
+      const data2 = snapshot.val();
       this.countries = [];
-      for (const k in data) {
-        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate})
+      for (const k in data2) {
+        this.countries.push({ name: k, iso: data2[k].iso.toLowerCase(), rate: data2[k].rate})
       }
       this.filteredCountries = this.countryCtrl.valueChanges.pipe(
         startWith(''),
@@ -45,6 +45,10 @@ export class IndexComponent implements OnInit {
     this.timer = setInterval(() => {
       this.selectRandomTitle();
     }, 2000);
+    setTimeout(() => {
+      // Clear the interval
+      clearInterval(this.timer);
+    }, 60000);
   }
   trackItems = (index: number, itemObject: any) => itemObject.id;
   private _filterStates(value: string): any[] {
@@ -56,8 +60,8 @@ export class IndexComponent implements OnInit {
     this.selectedTitle = this.titleArray[randomIndex];
     this.selectedDescription = this.descriptionArray[randomIndex];
   }
-  countrySelected() {
+  async countrySelected() {
     const v = this.countryCtrl.value?.replace(/\s/, '-').toLowerCase();
-    this.router.navigate(['/call-rates', v])
+    await this.router.navigate(['/call-rates', v])
   }
 }

@@ -1,5 +1,4 @@
-import { Component } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
+import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from "@angular/router";
 import {getDatabase, onValue, ref} from "@angular/fire/database";
 
@@ -8,15 +7,14 @@ import {getDatabase, onValue, ref} from "@angular/fire/database";
   templateUrl: './about-country.component.html',
   styleUrls: ['./about-country.component.scss']
 })
-export class AboutCountryComponent {
+export class AboutCountryComponent implements OnInit {
   public changeClass = true;
   countryName: any;
   iso: any;
   rates: any[] = [];
   db = getDatabase();
   date = new Date();
-  constructor(private viewportScroller: ViewportScroller,
-              private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.params.subscribe((p: any) => {

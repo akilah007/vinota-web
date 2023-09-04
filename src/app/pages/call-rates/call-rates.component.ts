@@ -1,5 +1,4 @@
-import {Component, Pipe, PipeTransform} from '@angular/core';
-import {ViewportScroller} from '@angular/common';
+import {Component, OnInit, Pipe, PipeTransform} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {map, Observable, startWith} from "rxjs";
 import {getDatabase, onValue, ref} from "@angular/fire/database";
@@ -10,7 +9,7 @@ import {Router} from "@angular/router";
   templateUrl: './call-rates.component.html',
   styleUrls: ['./call-rates.component.scss']
 })
-export class CallRatesComponent {
+export class CallRatesComponent implements OnInit {
   public changeClass = true;
   countryCtrl = new FormControl('');
   // @ts-ignore
@@ -21,8 +20,7 @@ export class CallRatesComponent {
   alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)); // Uppercase letters
   filterLetter: string = '';
 
-  constructor(private viewportScroller: ViewportScroller,
-              private router: Router) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
@@ -41,11 +39,6 @@ export class CallRatesComponent {
   private _filterStates(value: string): any[] {
     const filterValue = value.toLowerCase();
     return this.countries.filter((country: any) => country.name.toLowerCase().includes(filterValue));
-  }
-
-  public navigateToSection(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
-    this.changeClass = !this.changeClass;
   }
   groupArrayByFirstLetter(arr: any) {
     const groups: any = {};

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { ViewportScroller } from '@angular/common';
 
 @Component({
   selector: 'app-contact-us',
@@ -9,6 +8,6 @@ import { ViewportScroller } from '@angular/common';
 export class ContactUsComponent {
   public changeClass = true;
 
-  constructor(private viewportScroller: ViewportScroller) { }
+  constructor() { }
 
 }
