@@ -28,6 +28,9 @@ export class IndexComponent implements OnInit {
   private timer: any = 0;
   constructor(private router: Router) { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {

@@ -10,4 +10,7 @@ export class ContactUsComponent {
 
   constructor() { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }

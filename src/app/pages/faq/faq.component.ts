@@ -10,4 +10,7 @@ export class FaqComponent {
 
   constructor() { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }

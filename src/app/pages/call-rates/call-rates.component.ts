@@ -22,6 +22,9 @@ export class CallRatesComponent implements OnInit {
 
   constructor(private router: Router) { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
       const data = snapshot.val();

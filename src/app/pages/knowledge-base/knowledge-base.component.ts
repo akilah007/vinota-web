@@ -8,5 +8,9 @@ import { Component } from '@angular/core';
 export class KnowledgeBaseComponent {
   public changeClass = true;
 
-  constructor(){}
+  constructor() { }
+
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }

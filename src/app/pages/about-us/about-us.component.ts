@@ -10,4 +10,7 @@ export class AboutUsComponent {
 
   constructor() { }
 
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
 }
