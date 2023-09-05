@@ -11,7 +11,6 @@ export class AppsComponent {
 
   constructor() { }
 
-
   changeMobileDisplay(imageName: string) {
     this.selectedImage = imageName;
   }

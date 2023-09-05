@@ -9,8 +9,18 @@ import { KnowledgeBaseComponent } from './pages/knowledge-base/knowledge-base.co
 import { AboutCountryComponent } from './pages/about-country/about-country.component';
 import { AppsComponent } from './pages/apps/apps.component';
 import { CallRatesComponent } from './pages/call-rates/call-rates.component';
+import { TermsAndConditionsComponent } from './pages/terms-and-conditions/terms-and-conditions.component';
+import { LegalInformationComponent } from './pages/legal-information/legal-information.component';
+import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-and-policy.component';
+import { SecurityPolicyComponent } from './pages/security-policy/security-policy.component';
+import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 
 const routes: Routes = [
+  { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'legal-information', component: LegalInformationComponent },
+  { path: 'privacy-and-policy', component: PrivacyAndPolicyComponent },
+  { path: 'security-policy', component: SecurityPolicyComponent },
+  { path: 'data-depletion-policy', component: DataDepletionPolicyComponent },
   { path: '', component: IndexComponent },
   { path: 'call-rates', component: CallRatesComponent },
   { path: 'about-us', component: AboutUsComponent },

@@ -39,6 +39,9 @@ export class AboutCountryComponent implements OnInit {
       }, {onlyOnce: true})
     });
   }
+  ngAfterViewInit() {
+    window.scroll(0, 0)
+  }
   convertUniqueRates(input: string) {
     return input.split(':')[1].trim();
   }

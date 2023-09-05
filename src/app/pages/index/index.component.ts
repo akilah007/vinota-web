@@ -34,10 +34,10 @@ export class IndexComponent implements OnInit {
 
   ngOnInit(): void {
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
-      const data2 = snapshot.val();
+      const data = snapshot.val();
       this.countries = [];
-      for (const k in data2) {
-        this.countries.push({ name: k, iso: data2[k].iso.toLowerCase(), rate: data2[k].rate})
+      for (const k in data) {
+        this.countries.push({ name: k, iso: data[k].iso.toLowerCase(), rate: data[k].rate})
       }
       this.filteredCountries = this.countryCtrl.valueChanges.pipe(
         startWith(''),
