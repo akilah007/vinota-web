@@ -74,6 +74,15 @@ p {
     line-height: 1.2 !important;
   }
 }
+li{
+  font-family: var(--app-secondary-font-family) !important;
+
+}
+@media all and (max-width: 768px) {
+  li {
+    line-height: 1.2 !important;
+  }
+}
 // titles
 
 // Search bar
