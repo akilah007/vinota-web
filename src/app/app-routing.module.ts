@@ -17,8 +17,10 @@ import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data
 
 const routes: Routes = [
   { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'legal-information/terms-&-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information', component: LegalInformationComponent },
-  { path: 'privacy-and-policy', component: PrivacyAndPolicyComponent },
+  { path: 'privacy-policy', component: PrivacyAndPolicyComponent },
+  { path: 'legal-information/privacy-policy', component: PrivacyAndPolicyComponent },
   { path: 'security-policy', component: SecurityPolicyComponent },
   { path: 'data-depletion-policy', component: DataDepletionPolicyComponent },
   { path: '', component: IndexComponent },
