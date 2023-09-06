@@ -16,7 +16,7 @@ import { SecurityPolicyComponent } from './pages/security-policy/security-policy
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 
 const routes: Routes = [
-  { path: 'terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'terms-&-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information/terms-&-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information', component: LegalInformationComponent },
   { path: 'privacy-policy', component: PrivacyAndPolicyComponent },
