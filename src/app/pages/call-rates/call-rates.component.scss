@@ -11,10 +11,7 @@
     height: fit-content;
   }
 }
-.page-main-title-blue-lg {
-  color: black;
-  margin-bottom: 0;
-}
+
 .search-title {
   margin: 0 0 15px;
   font-family: var(--app-font-family);
@@ -226,6 +223,22 @@
       transform: scale(1.5);
     }
   }
+  .link_all {
+    font-size: 1.3rem;
+    color: var(--primary-color) !important;
+    font-weight: 600;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 6px;
+    margin: 0 4px;
+    transition: .3s;
+    cursor: pointer;
+    &:hover,
+    &.s {
+      color: var(--primary-color) !important;
+      transform: scale(1.5);
+    }
+  }
 }
 @media all and (max-width: 768px) {
   .country-letters {
@@ -282,3 +295,6 @@
   margin-right: 0;
   margin-left: 15px;
 }
+.not-active{
+  display: none;
+  }

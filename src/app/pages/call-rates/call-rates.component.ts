@@ -12,6 +12,7 @@ import { Router } from "@angular/router";
 })
 export class CallRatesComponent {
   public changeClass = true;
+  public showAllCountries = true;
   countryCtrl = new FormControl('');
   // @ts-ignore
   filteredCountries: Observable<any>;
@@ -48,7 +49,12 @@ export class CallRatesComponent {
 
   public navigateToSection(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
-    this.changeClass = !this.changeClass;
+    if(elementId=='all_countries'){
+      this.showAllCountries = !this.showAllCountries;
+    }
+    if(elementId=='support_section'){
+      this.changeClass = !this.changeClass;
+    }
   }
   groupArrayByFirstLetter(arr: any) {
     const groups: any = {};
@@ -68,6 +74,7 @@ export class CallRatesComponent {
     });
   }
   countrySelected(v: any) {
+    console.log(v)
     if (!v) {
       v = this.countryCtrl.value?.replace(/\s/, '-').toLowerCase();
     } else {
@@ -88,5 +95,4 @@ export class FilterByLetter implements PipeTransform {
       return value;
     }
   }
-
 }
