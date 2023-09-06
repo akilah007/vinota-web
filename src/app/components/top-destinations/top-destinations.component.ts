@@ -1,7 +1,7 @@
 import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {CarouselModule, OwlOptions} from "ngx-owl-carousel-o";
 import {CurrencyPipe, DecimalPipe, NgForOf, NgIf} from "@angular/common";
-import {RouterLink} from "@angular/router";
+import {Router, RouterLink} from "@angular/router";
 import {getDatabase, onValue, ref} from "@angular/fire/database";
 
 @Component({
@@ -16,7 +16,7 @@ export class TopDestinationsComponent implements OnInit {
   topDestinations: any = [];
   customOptions: OwlOptions | any;
   db = getDatabase();
-  constructor() {
+  constructor(private router: Router) {
   }
   ngOnInit() {
     this.getData();
@@ -59,6 +59,9 @@ export class TopDestinationsComponent implements OnInit {
     }, {onlyOnce: true})
   }
   trackItems = (index: number, itemObject: any) => itemObject.id;
-
+  countrySelected(v: any) {
+    v = v.replace(/\s/, '-').toLowerCase();
+    this.router.navigate(['/call-rates', v])
+  }
 
 }

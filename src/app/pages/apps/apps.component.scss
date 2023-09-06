@@ -20,10 +20,7 @@
   height: 100%;
   width: 100%;
 }
-.page-main-title-blue-lg {
-  color: black;
-  margin-bottom: 0;
-}
+
 .search-title {
   margin: 10px 0 15px;
   font-family: var(--app-secondary-font-family);
@@ -274,6 +271,7 @@ video {
 }
 
 .review-card {
+  // height: 100%;
   //padding: 80px 40px;
   //height: max-content;
   //width: max-content;
@@ -329,5 +327,9 @@ video {
   padding: 0 24px;
   font-size: .9em;
   letter-spacing: 1px;
-  margin-top: 1.5em;
+  margin-top: 1em;
+}
+.link-btn:hover {
+  color: #fff !important;
+  text-decoration: none;
 }

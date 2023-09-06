@@ -81,5 +81,4 @@ export class FilterByLetter implements PipeTransform {
       return value;
     }
   }
-
 }

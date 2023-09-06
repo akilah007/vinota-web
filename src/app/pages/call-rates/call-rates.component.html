@@ -37,8 +37,7 @@
               of our service. Plus, your first international call is FREE. Don’t miss out and connect effortlessly
               with Vinota today.
             </p>
-            <a class="link-btn wow fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Connect with confidence</a>
-
+            <a class="wow fadeInUpBig get-start-btn " href="https://hello.vinota.com/register" target="_blank">CONNECT NOW </a>
           </div>
           <div class="col-lg-5 col-m-5 col-12">
             <br>
@@ -55,87 +54,7 @@
     </div>
   </div>
 </section>
-<div id="support_section">
-  <div [class.not-active]="changeClass">
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="support">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 col-lg-2 col-xl-3">
-            <div class="footer-links fl-1 ">
-              <ul class="foo-links clearfix">
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/apps">
-                  APPs</a></li>
-                <span class="support-description">
-                      <p>Explore the Great Features of the Vinota App
-                      </p>
-                    </span>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-2 col-xl-3">
-            <div class="footer-links fl-2">
-              <ul class="foo-links clearfix">
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> SUPPORT TICKETS</a>
-                </li>
-                <span class="support-description">
-                      <p>Visit Support Tickets
-                      </p>
-                    </span>
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                  routerLink="/knowledge-base"> KNOWLEDGE BASE</a></li>
-                <span class="support-description">
-                      <p>Everything You Need to Know About Vinota</p>
-                    </span>
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a routerLink="/faq"> FAQs
-                </a></li>
-                <span class="support-description">
-                      <p>All Your Questions Answered</p>
-                    </span>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-2 col-xl-3">
-            <div class="footer-links fl-3">
-              <ul class="foo-links clearfix">
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> ADD CREDIT </a></li>
-                <span class="support-description">
-                      <p>Get in Touch with Us
-                      </p>
-                    </span>
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a
-                  routerLink="/contact-us"> CONTACT US </a></li>
-                <span class="support-description">
-                      <p>Get in touch with us</p>
-                    </span>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-2 col-xl-3">
-            <div class="footer-links fl-3">
-              <ul class="foo-links clearfix">
-                <li> <img class="support-icon-sm"
-                          src="./assets/images/images-sm/icons8-bookmark-64.png" />&nbsp;<a> FEEDBACK </a></li>
-                <span class="support-description">
-                      <p>We love to hear from you</p>
-                    </span>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <app-top-destinations></app-top-destinations>
 
@@ -148,7 +67,7 @@
         </div>
         <hr>
         <h6 class="s-10 w-500 country-letters">
-          <a class="link" [class.s]="filterLetter === ''" (click)="filterLetter = ''">All</a>
+          <a class="link_all" (click)="navigateToSection('all_countries')" >All</a>
           <a class="link" [class.s]="filterLetter === a" (click)="filterLetter = a" *ngFor="let a of alphabet">{{a}}</a>
         </h6>
       </div>
@@ -156,8 +75,8 @@
   </div>
 </section>
 
-
-<div class="country-flags-wrapper">
+<div id="all_countries">
+<div class="country-flags-wrapper"  [class.not-active]="showAllCountries">
   <div class="country-flags-list" *ngFor="let c of countriesList | filterByLetter: filterLetter; trackBy: trackItems">
     <h2>{{c.key}}</h2>
     <div class="flag-item" *ngFor="let x of c.countries"  (click)="countrySelected(x.name)">
@@ -165,4 +84,5 @@
       <p>{{x.name}}</p>
     </div>
   </div>
+</div>
 </div>
