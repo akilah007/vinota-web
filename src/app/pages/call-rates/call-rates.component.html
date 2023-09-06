@@ -67,7 +67,7 @@
         </div>
         <hr>
         <h6 class="s-10 w-500 country-letters">
-          <a class="link_all" (click)="navigateToSection('all_countries')" >All</a>
+          <a class="link_all" (click)="filterLetter = ''" >All</a>
           <a class="link" [class.s]="filterLetter === a" (click)="filterLetter = a" *ngFor="let a of alphabet">{{a}}</a>
         </h6>
       </div>
@@ -76,7 +76,7 @@
 </section>
 
 <div id="all_countries">
-<div class="country-flags-wrapper"  [class.not-active]="showAllCountries">
+<div class="country-flags-wrapper">
   <div class="country-flags-list" *ngFor="let c of countriesList | filterByLetter: filterLetter; trackBy: trackItems">
     <h2>{{c.key}}</h2>
     <div class="flag-item" *ngFor="let x of c.countries"  (click)="countrySelected(x.name)">
