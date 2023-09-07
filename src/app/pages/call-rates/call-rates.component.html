@@ -5,7 +5,7 @@
       <div class="content">
         <div class="row">
           <div class="col-lg-7 col-m-7 col-12">
-            <div class="wow fadeInUp page-main-title-blue-lg">Call Rates</div>
+            <div class="wow fadeInUp page-main-title-black-lg">Call Rates</div>
             <div class="search-title wow fadeInUpBig">Explore our affordable international rates</div>
             <form class="quick-form form-stroke">
               <div class="position-relative">
@@ -30,7 +30,6 @@
                 </mat-form-field>
               </div>
             </form>
-<!--            <h2 class="wow fadeInLeft">Take the first step now</h2>-->
             <p class="wow fadeInUp fadeInUpBig">Connect globally without breaking the bank. Vinota offers the most
               competitive international call rates in the market. Stay in touch with your loved ones, friends, and
               colleagues worldwide at an affordable price. Search your country now and experience the convenience
@@ -41,20 +40,14 @@
           </div>
           <div class="col-lg-5 col-m-5 col-12">
             <br>
-            <br>
-            <br>
-
             <img src="./assets/images/page-first-image/2989843.jpg"
                  class="banner-content-img wow fadeInLeft" alt="" />
-
           </div>
-
         </div>
       </div>
     </div>
   </div>
 </section>
-
 
 <app-top-destinations></app-top-destinations>
 
@@ -63,7 +56,7 @@
     <div class="row justify-content-center">
       <div class="col-md-12 col-lg-10">
         <div class="section-title">
-          <div class="country-list-header page-sub-title-gray-sm">Search By Full List Of Country</div>
+          <div class="page-sub-title-gray-sm">Search By Full List Of Country</div>
         </div>
         <hr>
         <h6 class="s-10 w-500 country-letters">
@@ -75,7 +68,6 @@
   </div>
 </section>
 
-<div id="all_countries">
 <div class="country-flags-wrapper">
   <div class="country-flags-list" *ngFor="let c of countriesList | filterByLetter: filterLetter; trackBy: trackItems">
     <h2>{{c.key}}</h2>
@@ -84,5 +76,4 @@
       <p>{{x.name}}</p>
     </div>
   </div>
-</div>
 </div>

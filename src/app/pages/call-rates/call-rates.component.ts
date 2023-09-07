@@ -10,7 +10,6 @@ import {Router} from "@angular/router";
   styleUrls: ['./call-rates.component.scss']
 })
 export class CallRatesComponent implements OnInit {
-  public changeClass = true;
   countryCtrl = new FormControl('');
   // @ts-ignore
   filteredCountries: Observable<any>;
@@ -69,6 +68,8 @@ export class CallRatesComponent implements OnInit {
     this.router.navigate(['/call-rates', v])
   }
   trackItems = (index: number, itemObject: any) => itemObject.id;
+
+  
 }
 @Pipe({
   name: 'filterByLetter'

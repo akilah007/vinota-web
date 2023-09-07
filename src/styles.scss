@@ -166,23 +166,38 @@ li{
   font-size: 3.5em;
   font-weight: 600;
   margin-bottom: 10px;
+  color: var(--primary-color);
+  line-height: 1.2em;
+  display: block;
+}
+.page-main-title-black-lg {
+  font-family: var(--app-font-family) !important;
+  font-size: 3.5em;
+  font-weight: 600;
+  margin-bottom: 10px;
   color:black;
   line-height: 1.2em;
   display: block;
 }
-
 @media all and (max-width: 768px) {
   .page-main-title-blue-lg {
     font-size: 2.5em;
     font-weight: 600;
     margin-bottom: 7px;
+    color: var(--primary-color);
+    line-height: 1.2em;
+    display: block;
+  }
+  .page-main-title-black-lg {
+    font-family: var(--app-font-family) !important;
+    font-size: 2.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
     color:black;
     line-height: 1.2em;
     display: block;
   }
 }
-
-
 
 
 // images
@@ -570,7 +585,7 @@ li{
   padding: 0 24px;
   font-size: .9em;
   letter-spacing: 1px;
-  margin-top: 1.5em;
+  margin-top: 0.5em;
 }
 
 .download-buttons {
