@@ -14,9 +14,13 @@
   }
 }
 .banner-wrapper .banner-content a {
-  margin-top: 7px;
+  margin-bottom: 0px;
 }
-
+@media all and (max-width: 768px) {
+  .banner-wrapper .banner-content a {
+    margin-bottom:20px;
+  }
+}
 .page-sub-title-blue-md {
   margin: 10px;
 

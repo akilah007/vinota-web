@@ -148,7 +148,6 @@ video {
     margin-bottom: 25px;
     font-size: 0.9rem;
     line-height: 1.2em;
-
   }
 }
 
@@ -181,8 +180,24 @@ video {
 
 .content-right {
   text-align: end;
+  margin-bottom: 0px;
 }
-
+@media all and (max-width: 768px) {
+  .content-right {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.content-left {
+  text-align: start;
+  margin-bottom: 0px;
+}
+@media all and (max-width: 768px) {
+  .content-left {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
 .lg-screen span {
   font-size: 18px;
   color: black;
@@ -261,6 +276,12 @@ video {
 .img-col-pd {
   padding: 8em 0em;
 }
+@media all and (max-width: 768px) {
+.img-col-pd {
+  padding: 0em 0em;
+}
+}
+
 .blue-color-girl{
   width: 100%;
 

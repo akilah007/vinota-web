@@ -28,8 +28,12 @@
 
 }
 .banner-content .banner-content-img {
- 
   height: 90%;
+}
+@media all and (max-width: 768px) {
+  .banner-content .banner-content-img {
+    height: 100%;
+  }
 }
 .free-call-btn {
   text-align: center;
@@ -76,9 +80,6 @@ svg {
 .contact-text {
   color: #6c757d;
   ;
-}
-.banner-content .banner-content-img {
-  height: 80%;
 }
 .page-sub-title-gray-sm{
   text-align: center;

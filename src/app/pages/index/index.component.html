@@ -1,150 +1,143 @@
 <section class="bg--scroll hero-section-main">
-      <div class="banner-wrapper">
-        <div class="banner-content">
-          <div class="content">
-            <div class="wow fadeInUp page-main-title-blue-lg text-changer">
-              <span class="hello"></span>
-            </div>
-            <p class="wow fadeInUpBig">UNITING THE WORLD, ONE CALL AT A TIME</p>
-            <h2 class="wow fadeInLeft">Enjoy the Freedom of International Calling</h2>
-            <a class="get-start-btn wow btn fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Get Started</a>
-
-<!--            CALL RATES -->
-
-            <mat-form-field class="input-full-width" appearance="outline">
-              <input matInput
-                     placeholder="Search rates"
-                     aria-label="State"
-                     type="search"
-                     [formControl]="countryCtrl"
-                     [matAutocomplete]="auto">
-              <mat-autocomplete #auto="matAutocomplete">
-                <mat-option *ngFor="let country of filteredCountries | async; trackBy: trackItems" [value]="country.name" (click)="countrySelected()">
-                  <div class="flex align-center">
-                    <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + country.iso + '.png'" height="44">
-                    <div>
-                      <span class="input-country-name">{{country.name}}</span>
-                      <small class="input-rate">from {{country.rate | currency}}/minute</small>
-                    </div>
-                  </div>
-                </mat-option>
-              </mat-autocomplete>
-
-              <span class="_b" matSuffix><i class="fa fa-search search-icon-new"></i></span>
-            </mat-form-field>
-
-<!--            -->
-
-          </div>
+  <div class="banner-wrapper">
+    <div class="banner-content">
+      <div class="content">
+        <div class="wow fadeInUp page-main-title-blue-lg text-changer">
+          <span class="hello"></span>
         </div>
-        <div class="banner-bg">
-          <div class="banner-mask"></div>
-          <video loop muted autoplay>
-            <source src="./assets/videos/shutterstock-1056283940.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </section>
-   
-    <!--- =============================================  SIM SHAPE TEXT LIST ============================================= -->
+        <p class="wow fadeInUpBig">UNITING THE WORLD, ONE CALL AT A TIME</p>
+        <h2 class="wow fadeInLeft">Enjoy the Freedom of International Calling</h2>
+        <a class="get-start-btn wow btn fadeInUpBig" href="https://hello.vinota.com/register" target="_blank">Get
+          Started</a>
 
-    <section id="lnk-1" class="content-section">
-      <div class="container hd-section-bottom">
-        <div class="row d-flex align-items-center">
-          <div class="col-md-5">
-            <div class="sim-shape">
-              <div class="sim-content">
-                <div class="title">
-                  <p>What makes us uniquely exceptional? </p>
-                </div>
+        <!--            CALL RATES -->
+
+        <mat-form-field class="input-full-width" appearance="outline">
+          <input matInput placeholder="Search rates" aria-label="State" type="search" [formControl]="countryCtrl"
+            [matAutocomplete]="auto">
+          <mat-autocomplete #auto="matAutocomplete">
+            <mat-option *ngFor="let country of filteredCountries | async; trackBy: trackItems" [value]="country.name"
+              (click)="countrySelected()">
+              <div class="flex align-center">
+                <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + country.iso + '.png'"
+                  height="44">
                 <div>
-                  <ul class="icon-list">
-                    <li><img src="./assets/images/cheap_international_calls_start_calling.png" alt=""
-                        class="check-circle" />
-                      Secure Premium Voice Quality</li>
-                    <li><img src="./assets/images/rates_world_wide.png" alt="" class="check-circle" />
-                      Lowest Call Rates Worldwide
-                    </li>
-                    <li>
-                      <img src="./assets/images/cheap_international_calls_payment.png" alt="" class="check-circle" />
-                      Pay with
-                      Ease
-                    </li>
-                    <li><img src="./assets/images/cheap_international_calls_credit_lifetime.png" alt=""
-                        class="check-circle" />
-                      Lifetime Credits </li>
-                    <li><img src="./assets/images/cheap_international_calls_tower.png" alt="" class="check-circle" />
-                      No Call Dropping</li>
-                    <li><img src="./assets/images/cheap_international_calls_net_world.png" alt=""
-                        class="check-circle" />
-                      Consistent Rates Worldwide</li>
-                    <li><img src="./assets/images/cheap_international_calls_transfer.png" alt="" class="check-circle" />
-                      Transfer Funds with Ease
-                    </li>
-                  </ul>
+                  <span class="input-country-name">{{country.name}}</span>
+                  <small class="input-rate">from {{country.rate | currency}}/minute</small>
+                </div>
+              </div>
+            </mat-option>
+          </mat-autocomplete>
+
+          <span class="_b" matSuffix><i class="fa fa-search search-icon-new"></i></span>
+        </mat-form-field>
+      </div>
+    </div>
+    <div class="banner-bg">
+      <div class="banner-mask"></div>
+      <video src="./assets/videos/shutterstock-1056283940.mp4" type="video/mp4" playsinline loop autoplay
+        [muted]="true"></video>
+
+    </div>
+  </div>
+</section>
+
+<!--- =============================================  SIM SHAPE TEXT LIST ============================================= -->
+
+<section id="lnk-1" class="content-section">
+  <div class="container hd-section-bottom">
+    <div class="row d-flex align-items-center">
+      <div class="col-md-5">
+        <div class="sim-shape">
+          <div class="sim-content">
+            <div class="title">
+              <p>What makes us uniquely exceptional? </p>
+            </div>
+            <div>
+              <ul class="icon-list">
+                <li><img src="./assets/images/cheap_international_calls_start_calling.png" alt=""
+                    class="check-circle" />
+                  Secure Premium Voice Quality</li>
+                <li><img src="./assets/images/rates_world_wide.png" alt="" class="check-circle" />
+                  Lowest Call Rates Worldwide
+                </li>
+                <li>
+                  <img src="./assets/images/cheap_international_calls_payment.png" alt="" class="check-circle" />
+                  Pay with
+                  Ease
+                </li>
+                <li><img src="./assets/images/cheap_international_calls_credit_lifetime.png" alt=""
+                    class="check-circle" />
+                  Lifetime Credits </li>
+                <li><img src="./assets/images/cheap_international_calls_tower.png" alt="" class="check-circle" />
+                  No Call Dropping</li>
+                <li><img src="./assets/images/cheap_international_calls_net_world.png" alt="" class="check-circle" />
+                  Consistent Rates Worldwide</li>
+                <li><img src="./assets/images/cheap_international_calls_transfer.png" alt="" class="check-circle" />
+                  Transfer Funds with Ease
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- desktop cards -->
+      <div class="col-md-7 text-sim-under-section">
+        <div class="flex">
+          <div class="flex-item card-section-2">
+            <div class="wow fadeInUp">
+              <div class="statistic-block">
+                <!-- Digit -->
+                <div class="statistic-block-digit text-center ">
+                  <h2 class="s-46 statistic-number"><span class="count-element">95</span>%</h2>
+                  <div>
+                    <h3>Customer Satisfaction</h3>
+                    <p>We are proud to tell you that more than 95% of our
+                      customers are satisfied with Vinota</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-          <!-- desktop cards -->
-          <div class="col-md-7 text-sim-under-section">
-            <div class="flex">
-              <div class="flex-item card-section-2">
-                <div class="wow fadeInUp">
-                  <div class="statistic-block">
-                    <!-- Digit -->
-                    <div class="statistic-block-digit text-center ">
-                      <h2 class="s-46 statistic-number"><span class="count-element">95</span>%</h2>
-                      <div>
-                        <h3>Customer Satisfaction</h3>
-                        <p>We are proud to tell you that more than 95% of our
-                          customers are satisfied with Vinota</p>
-                      </div>
-                    </div>
+          <div class="flex-item card-section-2">
+            <div class="wow fadeInUp">
+              <div class="statistic-block">
+                <!-- Digit -->
+                <div class="statistic-block-digit text-center ">
+                  <h2 class="s-46 statistic-number"><span class="count-element">200</span>+</h2>
+                  <div>
+                    <h3>Countries Connected</h3>
+                    <p>Vinota has 200+ countries directly connected to
+                      deliver best rate to customers.</p>
                   </div>
                 </div>
               </div>
-              <div class="flex-item card-section-2">
-                <div class="wow fadeInUp">
-                  <div class="statistic-block">
-                    <!-- Digit -->
-                    <div class="statistic-block-digit text-center ">
-                      <h2 class="s-46 statistic-number"><span class="count-element">200</span>+</h2>
-                      <div>
-                        <h3>Countries Connected</h3>
-                        <p>Vinota has 200+ countries directly connected to
-                          deliver best rate to customers.</p>
-                      </div>
-                    </div>
+            </div>
+          </div>
+          <div class="flex-item card-section-2">
+            <div class="wow fadeInUp">
+              <div class="statistic-block">
+                <!-- Digit -->
+                <div class="statistic-block-digit text-center">
+                  <h2 class="s-46 statistic-number"><span class="count-element">24</span>/7</h2>
+                  <div>
+                    <h3>True Customer Support</h3>
+                    <p>Vinota offers true 24/7 customer support</p>
                   </div>
                 </div>
               </div>
-              <div class="flex-item card-section-2">
-                <div class="wow fadeInUp">
-                  <div class="statistic-block">
-                    <!-- Digit -->
-                    <div class="statistic-block-digit text-center">
-                      <h2 class="s-46 statistic-number"><span class="count-element">24</span>/7</h2>
-                      <div>
-                        <h3>True Customer Support</h3>
-                        <p>Vinota offers true 24/7 customer support</p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="flex-item card-section-2">
-                <div class="wow fadeInUp">
-                  <div class="statistic-block">
-                    <!-- Digit -->
-                    <div class="statistic-block-digit text-center">
-                      <h2 class="s-46 statistic-number"><span class="count-element">80</span>%</h2>
-                      <div>
-                        <h3>Cheaper call charges</h3>
-                        <p>You can save upto 80% on your call charges with Vinota</p>
-                      </div>
-                    </div>
+            </div>
+          </div>
+          <div class="flex-item card-section-2">
+            <div class="wow fadeInUp">
+              <div class="statistic-block">
+                <!-- Digit -->
+                <div class="statistic-block-digit text-center">
+                  <h2 class="s-46 statistic-number"><span class="count-element">80</span>%</h2>
+                  <div>
+                    <h3>Cheaper call charges</h3>
+                    <p>You can save upto 80% on your call charges with Vinota</p>
                   </div>
                 </div>
               </div>
@@ -152,162 +145,150 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!--- ============================================= section 5  Top Destinations============================================= -->
+<!--- ============================================= section 5  Top Destinations============================================= -->
 
 
-  <app-top-destinations></app-top-destinations>
+<app-top-destinations></app-top-destinations>
 
-    <!--- ============================================= section 5  international calls============================================= -->
+<!--- ============================================= section 5  international calls============================================= -->
 
-    <section id="features-2" class="features-section pt-50">
-      <div class="container">
-        <div class="fbox-wrapper text-center">
-          <div class="row row-cols-1 row-cols-md-3">
-            <div class="col">
-              <div class="review-card wow fadeInUp">
-                <div class="content">
-                  <div class="fbox-img">
-                    <div class="sim-voice-image-section">
-                      <img src="./assets/images/lady.png" alt="" class="img-fluid" alt="feature-image">
-                      <div class="star-wrapper">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Text -->
-                  <div class="fbox-txt">
-                    <p>This is the best app for international calls for me. I
-                      am getting lot of benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                    </p>
+<section id="features-2" class="features-section pt-50">
+  <div class="container">
+    <div class="fbox-wrapper text-center">
+      <div class="row row-cols-1 row-cols-md-3">
+        <div class="col">
+          <div class="review-card wow fadeInUp">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img src="./assets/images/lady.png" alt="" class="img-fluid" alt="feature-image">
+                  <div class="star-wrapper">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
                   </div>
                 </div>
               </div>
+              <!-- Text -->
+              <div class="fbox-txt">
+                <p>This is the best app for international calls for me. I
+                  am getting lot of benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                </p>
+              </div>
             </div>
-            <div class="col">
-              <div class="review-card wow fadeInUp">
-                <div class="content">
-                  <div class="fbox-img">
-                    <div class="sim-voice-image-section">
-                      <img src="./assets/images/rate-mn.png" alt="" class="img-fluid" alt="feature-image">
-                      <div class="star-wrapper">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Text -->
-                  <div class="fbox-txt">
-                    <p>This is the best app for international calls for me. I
-                      am getting lot of benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                    </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="review-card wow fadeInUp">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img src="./assets/images/rate-mn.png" alt="" class="img-fluid" alt="feature-image">
+                  <div class="star-wrapper">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
                   </div>
                 </div>
               </div>
+              <!-- Text -->
+              <div class="fbox-txt">
+                <p>This is the best app for international calls for me. I
+                  am getting lot of benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                </p>
+              </div>
             </div>
-            <div class="col">
-              <div class="review-card wow fadeInUp">
-                <div class="content">
-                  <div class="fbox-img">
-                    <div class="sim-voice-image-section">
-                      <img src="./assets/images/girl_n.png" alt="" class="img-fluid" alt="feature-image">
-                      <div class="star-wrapper">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                        <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star"
-                          alt="feature-image">
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Text -->
-                  <div class="fbox-txt">
-                    <p>This is the best app for international calls for me. I
-                      am getting lot of benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                      This is the best app for international calls for me. I am getting lot of
-                      benefits from using it.
-                    </p>
+          </div>
+        </div>
+        <div class="col">
+          <div class="review-card wow fadeInUp">
+            <div class="content">
+              <div class="fbox-img">
+                <div class="sim-voice-image-section">
+                  <img src="./assets/images/girl_n.png" alt="" class="img-fluid" alt="feature-image">
+                  <div class="star-wrapper">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
+                    <img src="./assets/images/images-sm/icons8-star-48.png" alt="" class="img-star" alt="feature-image">
                   </div>
                 </div>
+              </div>
+              <!-- Text -->
+              <div class="fbox-txt">
+                <p>This is the best app for international calls for me. I
+                  am getting lot of benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                  This is the best app for international calls for me. I am getting lot of
+                  benefits from using it.
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
-    <!--- ============================================= section 6  Try before you buy ============================================= -->
+<!--- ============================================= section 6  Try before you buy ============================================= -->
 
-    <section class="girl-with-image-section">
-      <div class="container flex justify-content-end align-items-end floating-image-content">
-        <div class="floating-content">
-          <h3 class="wow fadeInLeft">{{selectedTitle}}</h3>
-          <div class="sim-bottom">
-            <div class="sim-bottom-content text-center">
-              <p class="wow fadeInUp">{{selectedDescription}}</p>
-              <img class="wow fadeIn" src="./assets/images/desktop-pc.png" alt="" />
-            </div>
-          </div>
-        </div>
-        <div class="girl-with-image">
-          <span class="effect wow fadeInUp"></span>
-          <img class="img-fluid wow fadeInLeft" src="./assets/images/bottom-girl.png" alt="hero-image">
+<section class="girl-with-image-section">
+  <div class="container flex justify-content-end align-items-end floating-image-content">
+    <div class="floating-content">
+      <h3 class="wow fadeInLeft">{{selectedTitle}}</h3>
+      <div class="sim-bottom">
+        <div class="sim-bottom-content text-center">
+          <p class="wow fadeInUp">{{selectedDescription}}</p>
+          <img class="wow fadeIn" src="./assets/images/desktop-pc.png" alt="" />
         </div>
       </div>
-    </section>
+    </div>
+    <div class="girl-with-image">
+      <span class="effect wow fadeInUp"></span>
+      <img class="img-fluid wow fadeInLeft" src="./assets/images/bottom-girl.png" alt="hero-image">
+    </div>
+  </div>
+</section>
 
-    <!--- ============================================= section 7  ============================================= -->
-    <section class="sign-up-today-card">
-      <div class="container">
-        <div class="sign-up-today-card-bg">
-          <div class="content">
-            <h6>Ready for your free call? <br />Listen. Laugh. Live. Love.</h6>
-            <p>Download today and experience Seamless Connectivity</p>
-            <div class="button-wrapper">
-              <a class="wow fadeInUp" href="https://apps.apple.com/us/app/vinota-international-calling/id1103113535" target="_blank"><img src="./assets/images/new/app-store-dark.svg"></a>
-              <a class="wow fadeInUp" href="https://play.google.com/store/apps/details?id=org.vinota
+<!--- ============================================= section 7  ============================================= -->
+<section class="sign-up-today-card">
+  <div class="container">
+    <div class="sign-up-today-card-bg">
+      <div class="content">
+        <h6>Ready for your free call? <br />Listen. Laugh. Live. Love.</h6>
+        <p>Download today and experience Seamless Connectivity</p>
+        <div class="button-wrapper">
+          <a class="wow fadeInUp" href="https://apps.apple.com/us/app/vinota-international-calling/id1103113535"
+            target="_blank"><img src="./assets/images/new/app-store-dark.svg"></a>
+          <a class="wow fadeInUp" href="https://play.google.com/store/apps/details?id=org.vinota
 " target="_blank"><img src="./assets/images/new/google-play-colored.svg"></a>
-            </div>
-          </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
