@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-security-policy',
@@ -8,9 +9,14 @@ import { Component } from '@angular/core';
 export class SecurityPolicyComponent {
   public changeClass = true;
 
-  constructor() { }
-  
+  constructor(private metaService: Meta) { }
+
   ngAfterViewInit() {
     window.scroll(0, 0)
+  }
+
+  ngOnInit() {
+    this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Security Policy' });
+    this.metaService.updateTag({ name: 'description', content: 'Security is our priority. Learn about Vinota`s Security Policy and measures we take to ensure your safety while making international calls.' });
   }
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-legal-information',
@@ -8,9 +9,14 @@ import { Component } from '@angular/core';
 export class LegalInformationComponent {
   public changeClass = true;
 
-  constructor() { }
-  
+  constructor(private metaService: Meta) { }
+
   ngAfterViewInit() {
     window.scroll(0, 0)
+  }
+
+  ngOnInit() {
+    this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Legal Information' });
+    this.metaService.updateTag({ name: 'description', content: 'Explore Vinota`s legal information, including company details.' });
   }
 }

@@ -4,6 +4,7 @@ import {FormControl} from "@angular/forms";
 import {map, Observable, startWith} from "rxjs";
 import {getDatabase, onValue, ref} from "@angular/fire/database";
 import {Router} from "@angular/router";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-index',
@@ -26,13 +27,17 @@ export class IndexComponent implements OnInit {
   titleArray = ["Crystal Clear Voice Quality", "Accessible to Any Device: Android and iOS"];
   descriptionArray = ["Immerse yourself in conversations with Vinota's crystal clear voice quality. Our advanced technology ensures uninterrupted and high-quality calls. Enjoy conversations that feel like you're in the same room, no matter the distance.", "Experience the convenience and flexibility of Vinota across all your devices. Our app is designed to be compatible with various platforms, ensuring that you can enjoy seamless communication no matter which device you prefer."];
   private timer: any = 0;
-  constructor(private router: Router) { }
+
+  constructor(private router: Router,private metaService: Meta) { }
 
   ngAfterViewInit() {
     window.scroll(0, 0)
   }
 
+  
   ngOnInit(): void {
+    this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Affordable International Calling App,High Quality International Calls ' });
+    this.metaService.updateTag({ name: 'description', content: 'Stay connected worldwide with Vinota`s international calling app. Experience crystal-clear international calls and affordable rates.' });
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
       const data = snapshot.val();
       this.countries = [];

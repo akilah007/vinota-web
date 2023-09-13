@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { Meta } from '@angular/platform-browser';
 @Component({
   selector: 'app-data-depletion-policy',
   templateUrl: './data-depletion-policy.component.html',
@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class DataDepletionPolicyComponent {
   public changeClass = true;
 
-  constructor() { }
-  
+  constructor(private metaService: Meta) { }
+  ngOnInit() {
+    this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Data Depletion Policy' });
+    this.metaService.updateTag({ name: 'description', content: 'Discover Vinota`s Data Depletion Policy. Understand how we manage and protect your data usage when using our app.' });
+  }
   ngAfterViewInit() {
     window.scroll(0, 0)
   }

@@ -3,6 +3,7 @@ import {FormControl} from "@angular/forms";
 import {map, Observable, startWith} from "rxjs";
 import {getDatabase, onValue, ref} from "@angular/fire/database";
 import {Router} from "@angular/router";
+import { Meta } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-call-rates',
@@ -19,12 +20,14 @@ export class CallRatesComponent implements OnInit {
   alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)); // Uppercase letters
   filterLetter: string = '';
 
-  constructor(private router: Router) { }
+  constructor(private router: Router,private metaService: Meta) { }
 
   ngAfterViewInit() {
     window.scroll(0, 0)
   }
   ngOnInit(): void {
+    this.metaService.updateTag({ name: 'keywords', content: 'Vinota Call Rates,Affordable International Calling' });
+    this.metaService.updateTag({ name: 'description', content: 'Explore Vinota`s competitive call rates for global connections. Save on  international calls. Enjoy cheap rates and exceptional call quality. Check our rates now.' });
     onValue(ref(this.db, 'full_rate_db/minimum_rate'), (snapshot) => {
       const data = snapshot.val();
       this.countries = [];
