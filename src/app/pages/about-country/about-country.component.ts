@@ -1,6 +1,6 @@
-import {Component, OnInit} from '@angular/core';
-import {ActivatedRoute} from "@angular/router";
-import {getDatabase, onValue, ref} from "@angular/fire/database";
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from "@angular/router";
+import { getDatabase, onValue, ref } from "@angular/fire/database";
 
 @Component({
   selector: 'app-about-country',
@@ -14,35 +14,61 @@ export class AboutCountryComponent implements OnInit {
   rates: any[] = [];
   db = getDatabase();
   date = new Date();
+  landline_min: any;
+  mobile_min: any;
   constructor(private route: ActivatedRoute) { }
 
-  ngOnInit(): void {
+   ngOnInit() {
+     this.getDatabase();
+  }
+  getDatabase() {
+    // code here
     this.route.params.subscribe((p: any) => {
       this.countryName = this.convertCountryName(p.id);
       onValue(ref(this.db, `full_rate_db/minimum_rate/${this.countryName}`), snapshot => {
-        const min: any = snapshot.val();
+        let min = snapshot.val();
+        console.log(min)
         this.iso = min.iso.toLowerCase();
-        onValue(ref(this.db, `/full_rate_db/all_unique_rates/${min.iso}`), snapshot2 => {
+        onValue(ref(this.db, `/full_rate_db/all_unique_rates/${min.iso}`), async snapshot2 => {
           const unique = [];
           const u = snapshot2.val();
-          console.log(u);
+          console.log(u)
+
           for (const k in u) {
             onValue(ref(this.db, `/full_rate_db/all_call_rates/${u[k].prefix}`), snapshot3 => {
               const r: any = snapshot3.val();
-          console.log(r);
-
               if (k !== 'sms-rate') {
-                this.rates.push({name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number']});
-          console.log(this.rates);
-            
+                this.rates.push({ name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number'] });
+                console.log(this.rates)
+                // 'Landline'
+
+                let landline = this.rates.filter(
+                  (obj) => obj.name== 'Landline'
+                );
+                if(landline.length==1){
+                  this.landline_min = 5 / landline[0].usd5;
+                  this.landline_min = ~~this.landline_min;
+                }
+                let mobile = this.rates.filter(
+                  (obj) => obj.name!= 'Landline'
+                );
+                const min_low = mobile.reduce((prev, curr) => {
+                  return curr.usd5 < prev.usd5 ? curr : prev;
+                });
+                console.log(min)
+                this.mobile_min = 5 / min_low.rate;
+                this.mobile_min = ~~this.mobile_min;
               }
-            }, {onlyOnce: true});
+            }, { onlyOnce: true });
+ 
+        
           }
-          console.log(snapshot2.val());
-        }, {onlyOnce: true})
-      }, {onlyOnce: true})
-    });
+   
+        }, { onlyOnce: true })
+      }, { onlyOnce: true })
+    })
   }
+
   ngAfterViewInit() {
     window.scroll(0, 0)
   }

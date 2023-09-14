@@ -231,6 +231,7 @@
 
 .review-card {
   position: relative;
+  height: 100%;
 }
 
 @media all and (max-width: 768px) {
@@ -340,4 +341,7 @@
 [dir='rtl'] .input-option-img {
   margin-right: 0;
   margin-left: 15px;
+}
+.fbox-img .img-fluid {
+  width: 150px;
 }
