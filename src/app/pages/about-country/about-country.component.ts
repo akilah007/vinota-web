@@ -32,16 +32,12 @@ export class AboutCountryComponent implements OnInit {
         onValue(ref(this.db, `/full_rate_db/all_unique_rates/${min.iso}`), async snapshot2 => {
           const unique = [];
           const u = snapshot2.val();
-          console.log(u)
-
           for (const k in u) {
             onValue(ref(this.db, `/full_rate_db/all_call_rates/${u[k].prefix}`), snapshot3 => {
               const r: any = snapshot3.val();
               if (k !== 'sms-rate') {
                 this.rates.push({ name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number'] });
-                console.log(this.rates)
                 // 'Landline'
-
                 let landline = this.rates.filter(
                   (obj) => obj.name== 'Landline'
                 );
@@ -55,13 +51,10 @@ export class AboutCountryComponent implements OnInit {
                 const min_low = mobile.reduce((prev, curr) => {
                   return curr.usd5 < prev.usd5 ? curr : prev;
                 });
-                console.log(min)
                 this.mobile_min = 5 / min_low.rate;
                 this.mobile_min = ~~this.mobile_min;
               }
             }, { onlyOnce: true });
- 
-        
           }
    
         }, { onlyOnce: true })

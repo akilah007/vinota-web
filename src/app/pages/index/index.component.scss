@@ -241,9 +241,10 @@
 }
 
 .review-card .content {
-  padding: 40px 60px 80px;
+  padding: 40px 20px 0px;
   position: relative;
   z-index: 1;
+  height: 75%;
 }
 
 .review-card .content .fbox-txt {
@@ -342,6 +343,13 @@
   margin-right: 0;
   margin-left: 15px;
 }
-.fbox-img .img-fluid {
-  width: 150px;
+.fbox-img  {
+  margin: 5px 0px 50px 0px;
+  position: relative;
+}
+
+.inverted-commas {
+  position: relative;
+  z-index: -4;
+  margin:-25px -25px 0px 0px
 }
