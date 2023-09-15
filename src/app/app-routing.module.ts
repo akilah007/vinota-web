@@ -48,7 +48,6 @@ const routes: Routes = [
   { path: 'get-vinota-apps', component: AppsComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabledBlocking'

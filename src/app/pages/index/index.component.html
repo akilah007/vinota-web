@@ -32,8 +32,11 @@
     </div>
     <div class="banner-bg">
       <div class="banner-mask"></div>
-      <video src="./assets/videos/shutterstock-1056283940.mp4" type="video/mp4" playsinline loop autoplay
-        [muted]="true"></video>
+      <video playsinline loop autoplay
+        [muted]="true">
+        <source src="./assets/videos/main-banner-video.webm" type="video/webm">
+        <source src="./assets/videos/shutterstock-1056283940.mp4" type="video/mp4">
+      </video>
 
     </div>
   </div>
