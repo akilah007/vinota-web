@@ -54,7 +54,8 @@
               <td><img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="30"> {{x.name}}</td>
               <td class="text-right">{{x.rate | currency}}</td>
               <td class="text-right">{{x.sms | currency}}</td>
-              <td class="text-center">{{5/x.usd5 | number: '1.0-0'}}</td>
+              <td class="text-center" *ngIf="5/x.usd5>0">{{5/x.usd5 | number: '1.0-0'}}</td>
+              <td class="text-center" *ngIf="5/x.usd5<0">-</td>
             </tr>
             </tbody>
           </table>

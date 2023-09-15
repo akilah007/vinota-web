@@ -18,8 +18,8 @@ export class AboutCountryComponent implements OnInit {
   mobile_min: any;
   constructor(private route: ActivatedRoute) { }
 
-   ngOnInit() {
-     this.getDatabase();
+  ngOnInit() {
+    this.getDatabase();
   }
   getDatabase() {
     // code here
@@ -27,7 +27,6 @@ export class AboutCountryComponent implements OnInit {
       this.countryName = this.convertCountryName(p.id);
       onValue(ref(this.db, `full_rate_db/minimum_rate/${this.countryName}`), snapshot => {
         let min = snapshot.val();
-        console.log(min)
         this.iso = min.iso.toLowerCase();
         onValue(ref(this.db, `/full_rate_db/all_unique_rates/${min.iso}`), async snapshot2 => {
           const unique = [];
@@ -39,24 +38,31 @@ export class AboutCountryComponent implements OnInit {
                 this.rates.push({ name: this.convertUniqueRates(k), rate: r.rate, usd5: r.rate, sms: !u['sms-rate'] ? 0 : u['sms-rate']['For any number'] });
                 // 'Landline'
                 let landline = this.rates.filter(
-                  (obj) => obj.name== 'Landline'
-                );
-                if(landline.length==1){
-                  this.landline_min = 5 / landline[0].usd5;
+                  obj => obj.name.includes('Landline') || obj.name.includes('All Other Numbers') && obj.usd5 < 0);
+                landline = landline.filter(
+                  obj => obj.usd5 > 0);
+                if (landline.length > 0) {
+                  const landline_low = landline.reduce((prev, curr) => {
+                    return curr.usd5 < prev.usd5 ? curr : prev;
+                  });
+                  this.landline_min = 5 / landline_low.usd5;
                   this.landline_min = ~~this.landline_min;
                 }
                 let mobile = this.rates.filter(
-                  (obj) => obj.name!= 'Landline'
-                );
-                const min_low = mobile.reduce((prev, curr) => {
-                  return curr.usd5 < prev.usd5 ? curr : prev;
-                });
-                this.mobile_min = 5 / min_low.rate;
-                this.mobile_min = ~~this.mobile_min;
+                  obj => obj.name.includes('Mobile') || obj.name.includes('All Other Numbers'));
+                mobile = mobile.filter(
+                  obj => obj.usd5 > 0);
+                if (mobile.length > 0) {
+                  const mobile_low = mobile.reduce((prev, curr) => {
+                    return curr.usd5 < prev.usd5 ? curr : prev;
+                  });
+                  this.mobile_min = 5 / mobile_low.usd5;
+                  this.mobile_min = ~~this.mobile_min;
+                }
               }
             }, { onlyOnce: true });
           }
-   
+
         }, { onlyOnce: true })
       }, { onlyOnce: true })
     })
