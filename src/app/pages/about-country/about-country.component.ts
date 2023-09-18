@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { getDatabase, onValue, ref } from "@angular/fire/database";
+import { CountryGreetingsService } from "../../services/country-greetings.service";
 
 @Component({
   selector: 'app-about-country',
@@ -16,10 +17,27 @@ export class AboutCountryComponent implements OnInit {
   date = new Date();
   landline_min: any;
   mobile_min: any;
-  constructor(private route: ActivatedRoute) { }
+  country_id: any;
+  country_greeting= 'Hello'
+
+  constructor(private route: ActivatedRoute,
+    private countryGreetingsService: CountryGreetingsService) { }
 
   ngOnInit() {
+    this.getCountryGreetings()
     this.getDatabase();
+  }
+  getCountryGreetings() {
+    let greetings_array = this.countryGreetingsService.greetings_array;
+    this.country_id = this.route.snapshot.paramMap.get('id');
+    let country_name = this.country_id.split('-').join(' ');
+    for (let country of greetings_array) {
+      if (country_name.toUpperCase() == country.country.toLocaleUpperCase()) {
+      console.log(country_name.toUpperCase(),country.country.toLocaleUpperCase())
+      console.log(country.hellow_text)
+        this.country_greeting = country.hellow_text
+      } 
+    }
   }
   getDatabase() {
     // code here

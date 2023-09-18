@@ -6,7 +6,7 @@
       <div class="content">
         <div class="row">
           <div>
-            <div class="wow fadeInUp page-main-title-blue-lg">Hello </div>
+            <div class="wow fadeInUp page-main-title-blue-lg">{{country_greeting}} </div>
             <!-- <p class="wow fadeInUpBig">Checkout our award winning APP. Available on Apple, Google and Amazon. Clean, simple and powerful</p> -->
             <!--                <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="96">-->
             <h2 class="wow fadeInLeft"><img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="96"> {{countryName}}</h2>
@@ -52,8 +52,10 @@
             <tbody>
             <tr *ngFor="let x of rates">
               <td><img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + iso + '.png'" height="30"> {{x.name}}</td>
-              <td class="text-right">{{x.rate | currency}}</td>
-              <td class="text-right">{{x.sms | currency}}</td>
+              <td class="text-center" *ngIf="x.rate>0">{{x.rate | currency}}</td>
+              <td class="text-center"*ngIf="x.rate<0">-</td>
+              <td class="text-center" *ngIf="x.sms>0">{{x.sms | currency}}</td>
+              <td class="text-center"*ngIf="x.sms<0">-</td>
               <td class="text-center" *ngIf="5/x.usd5>0">{{5/x.usd5 | number: '1.0-0'}}</td>
               <td class="text-center" *ngIf="5/x.usd5<0">-</td>
             </tr>

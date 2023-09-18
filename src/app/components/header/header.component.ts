@@ -1,6 +1,6 @@
-import {AfterViewInit, Component, ElementRef} from '@angular/core';
-import {ViewportScroller} from "@angular/common";
-import {RouterLink} from "@angular/router";
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
+import { RouterLink } from "@angular/router";
 
 @Component({
   selector: 'app-header',
@@ -16,8 +16,10 @@ export class HeaderComponent implements AfterViewInit {
 
   navIcon: any;
   navBar: any;
-  constructor(private viewportScroller: ViewportScroller,
-              private el: ElementRef) {
+
+  constructor(
+    private viewportScroller: ViewportScroller,
+    private el: ElementRef) {
   }
   ngAfterViewInit() {
     this.navIcon = this.el.nativeElement.querySelector('.nav-icon');

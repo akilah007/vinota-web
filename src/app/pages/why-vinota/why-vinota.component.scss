@@ -238,6 +238,26 @@
 
 .download-img {
   width: 30%;
+  width: 30%;
+  display: block;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.20);
+  padding: 0;
+  border: none;
+  margin: 0;
+  background: transparent;
+  border-radius: 15px;
+  overflow: hidden;
+  margin-inline-end: 25px;
+    @media all and (max-width: 768px) {
+      margin-inline-end: 10px;
+    }
+    &:hover {
+      transform: scale(1.15);
+      box-shadow: 0 0 15px rgba(0,0,0,.15);
+    }
+    img {
+      max-height: 56px;
+    }
 }
 
 @media all and (max-width: 768px) {

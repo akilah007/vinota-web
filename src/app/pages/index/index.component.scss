@@ -425,6 +425,10 @@
   height: 100%;
   border-radius: 30px;
 }
+.review-avatar-ps{
+  width: 40px;
+  margin-left: 35px;
+}
 
 .sim-bottom {
   position: relative;
@@ -512,9 +516,16 @@
 .inverted-commas {
   position: relative;
   z-index: -4;
-  margin: -25px -25px 0px 0px
+  margin: -25px 0px 0px 0px;
+  width: 25px;
 }
-
+.inverted-commas-under{
+  position: relative;
+  z-index: -4;
+  margin: -10px 0px -20px 0px;
+  transform: rotate(180deg);
+  width: 25px;
+}
 .fbox-img h5 {
  margin-bottom: 0em;
 }
