@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import { getDatabase, onValue, ref } from "@angular/fire/database";
 import { CountryGreetingsService } from "../../services/country-greetings.service";
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-about-country',
@@ -9,6 +10,7 @@ import { CountryGreetingsService } from "../../services/country-greetings.servic
   styleUrls: ['./about-country.component.scss']
 })
 export class AboutCountryComponent implements OnInit {
+
   public changeClass = true;
   countryName: any;
   iso: any;
@@ -20,8 +22,11 @@ export class AboutCountryComponent implements OnInit {
   country_id: any;
   country_greeting= 'Hello'
 
-  constructor(private route: ActivatedRoute,
-    private countryGreetingsService: CountryGreetingsService) { }
+  constructor(
+    private route: ActivatedRoute,
+    private countryGreetingsService: CountryGreetingsService,
+    private metaService: Meta,
+    private titleService: Title) { }
 
   ngOnInit() {
     this.getCountryGreetings()
@@ -31,6 +36,7 @@ export class AboutCountryComponent implements OnInit {
     let greetings_array = this.countryGreetingsService.greetings_array;
     this.country_id = this.route.snapshot.paramMap.get('id');
     let country_name = this.country_id.split('-').join(' ');
+    this.titleService.setTitle(`${'Affordable International Calls to'} ${country_name} ${'| Vinota'}`);
     for (let country of greetings_array) {
       if (country_name.toUpperCase() == country.country.toLocaleUpperCase()) {
       console.log(country_name.toUpperCase(),country.country.toLocaleUpperCase())
