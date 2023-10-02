@@ -51,7 +51,7 @@ export class CallRatesComponent implements OnInit {
     }, { onlyOnce: true });
   }
 
-// Filter countries
+// .Filter countries
   private _filterStates(value: string) {
     let filterValue = value.toLowerCase();
     let filerArray = this.countries.filter((country: any) => country.name.toLowerCase().includes(filterValue));
