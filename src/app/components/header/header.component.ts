@@ -1,6 +1,6 @@
-import { AfterViewInit, Component, ElementRef } from '@angular/core';
-import { ViewportScroller } from "@angular/common";
-import { RouterLink } from "@angular/router";
+import {AfterViewInit, Component, ElementRef} from '@angular/core';
+import {ViewportScroller} from "@angular/common";
+import { Router, Event, NavigationStart, NavigationEnd, NavigationError,RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -16,10 +16,15 @@ export class HeaderComponent implements AfterViewInit {
 
   navIcon: any;
   navBar: any;
-
-  constructor(
-    private viewportScroller: ViewportScroller,
-    private el: ElementRef) {
+  constructor(private viewportScroller: ViewportScroller,
+              private el: ElementRef,private router: Router) {
+  }
+  ngOnInit() {
+    this.router.events.subscribe((event: Event) => {
+      if (event instanceof NavigationStart) {
+        this.changeClass = true
+      }
+  });
   }
   ngAfterViewInit() {
     this.navIcon = this.el.nativeElement.querySelector('.nav-icon');
@@ -32,5 +37,8 @@ export class HeaderComponent implements AfterViewInit {
   public navigateToSection(elementId: string): void {
     this.viewportScroller.scrollToAnchor(elementId);
     this.changeClass = !this.changeClass;
+  }
+  ngOnDestroy(): void {
+  
   }
 }

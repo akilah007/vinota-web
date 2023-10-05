@@ -25,6 +25,7 @@ import {ReactiveFormsModule} from "@angular/forms";
 import {HeaderComponent} from "./components/header/header.component";
 import {FloatingBarComponent} from "./components/floating-bar/floating-bar.component";
 import {TopDestinationsComponent} from "./components/top-destinations/top-destinations.component";
+import {SupportSectionComponent} from "./components/support-section/support-section.component";
 import { TermsAndConditionsComponent } from './pages/terms-and-conditions/terms-and-conditions.component';
 import { LegalInformationComponent } from './pages/legal-information/legal-information.component';
 import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-and-policy.component';
@@ -65,7 +66,8 @@ import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data
     ReactiveFormsModule,
     HeaderComponent,
     FloatingBarComponent,
-    TopDestinationsComponent
+    TopDestinationsComponent,
+    SupportSectionComponent
   ],
   bootstrap: [AppComponent],
   providers: [
