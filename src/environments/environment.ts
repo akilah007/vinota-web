@@ -15,6 +15,7 @@ export const environment = {
     measurementId: 'G-CFT91KJ9X4',
   },
   production: false,
+  hotjar: '3695758',
   imageURL:"/dist/vinota-v2-angular"
 };
 

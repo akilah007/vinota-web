@@ -2,9 +2,9 @@ import { Component, OnInit, Pipe, PipeTransform } from '@angular/core';
 import { FormControl } from "@angular/forms";
 import { map, Observable, startWith } from "rxjs";
 import { getDatabase, onValue, ref } from "@angular/fire/database";
-import { Router } from "@angular/router";
 import { Meta, Title } from '@angular/platform-browser';
-
+import { Router, NavigationEnd } from '@angular/router';
+import { isDevMode } from '@angular/core';
 @Component({
   selector: 'app-call-rates',
   templateUrl: './call-rates.component.html',
@@ -21,12 +21,21 @@ export class CallRatesComponent implements OnInit {
   alphabet = Array.from({ length: 26 }, (_, i) => String.fromCharCode(65 + i)); // Uppercase letters
   filterLetter: string = '';
 
-  constructor(
-    private router: Router,
-    private metaService: Meta,
-    private titleService: Title
-    ) { }
 
+    constructor(private router: Router,   
+      private metaService: Meta,
+      private titleService: Title) {
+      console.log(isDevMode());
+      
+      this.router.events.subscribe(event => {
+        if (event instanceof NavigationEnd) {
+          // Notify Hotjar of the route change
+          if ((window as any).hj) {
+            (window as any).hj('stateChange', event.urlAfterRedirects);
+          }
+        }
+      });
+    }
   ngAfterViewInit() {
     window.scroll(0, 0)
   }

@@ -31,6 +31,7 @@ import { LegalInformationComponent } from './pages/legal-information/legal-infor
 import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-and-policy.component';
 import { SecurityPolicyComponent } from './pages/security-policy/security-policy.component';
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
+import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
 
 
 @NgModule({
@@ -68,6 +69,8 @@ import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data
     FloatingBarComponent,
     TopDestinationsComponent,
     SupportSectionComponent
+    // NgxHotjarModule.forRoot(environment.hotjar),
+    // NgxHotjarRouterModule
   ],
   bootstrap: [AppComponent],
   providers: [
