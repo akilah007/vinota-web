@@ -25,16 +25,7 @@ export class CallRatesComponent implements OnInit {
     constructor(private router: Router,   
       private metaService: Meta,
       private titleService: Title) {
-      console.log(isDevMode());
-      
-      this.router.events.subscribe(event => {
-        if (event instanceof NavigationEnd) {
-          // Notify Hotjar of the route change
-          if ((window as any).hj) {
-            (window as any).hj('stateChange', event.urlAfterRedirects);
-          }
-        }
-      });
+        
     }
   ngAfterViewInit() {
     window.scroll(0, 0)
