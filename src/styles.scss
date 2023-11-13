@@ -1123,66 +1123,65 @@ li{
 .sign-up-today-card {
   padding-bottom: 4em;
   margin: 0px 10px 0px 10px;
-}
-.sign-up-today-card .sign-up-today-card-bg {
-  position: relative;
-  text-align: center;
-  padding: 3em;
-}
-@media all and (max-width: 768px) {
-  .sign-up-today-card .sign-up-today-card-bg {
-    padding: 2em;
+  .content {
+    position: relative;
+    z-index: 2;
+  }
+  .sign-up-today-card-bg {
+    position: relative;
+    text-align: center;
+    padding: 3em;
+    @media all and (max-width: 768px) {
+        padding: 2em;
+    }
+    p {
+      color: white;
+    }
+    h6 {
+      margin: 0 0 15px;
+      color: white;
+      font-size: 2em;
+      line-height: 1.35;
+      font-weight: 400;
+      @media all and (max-width: 768px) {
+          font-size: 1.5em;
+    }
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    @media all and (max-width: 768px) {
+        flex-direction: column;
+      }
+    a {
+      display: block;
+      margin: 0 10px;
+      @media all and (max-width: 768px) {
+        margin: 0 0 1em;
+
+      }
+    }
+    @media all and (max-width: 768px) {
+      a:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+  }
+  .sign-up-today-card-bg::before {
+    content: "";
+    background: linear-gradient(315deg, transparent 61px 0px, var(--primary-color) 0);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
   }
 }
-.sign-up-today-card .sign-up-today-card-bg .content {
-  position: relative;
-  z-index: 2;
-}
-.sign-up-today-card .sign-up-today-card-bg h6 {
-  margin: 0 0 15px;
-  color: white;
-  font-size: 2em;
-  line-height: 1.35;
-  font-weight: 400;
-}
-@media all and (max-width: 768px) {
-  .sign-up-today-card .sign-up-today-card-bg h6 {
-    font-size: 1.5em;
-  }
-}
-.sign-up-today-card .sign-up-today-card-bg p {
-  color: white;
-}
-.sign-up-today-card .sign-up-today-card-bg .button-wrapper {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-.sign-up-today-card .sign-up-today-card-bg .button-wrapper a {
-  display: block;
-  margin: 0 10px;
-}
-@media all and (max-width: 768px) {
-  .sign-up-today-card .sign-up-today-card-bg .button-wrapper {
-    flex-direction: column;
-  }
-  .sign-up-today-card .sign-up-today-card-bg .button-wrapper a {
-    margin: 0 0 1em;
-  }
-  .sign-up-today-card .sign-up-today-card-bg .button-wrapper a:last-child {
-    margin-bottom: 0;
-  }
-}
-.sign-up-today-card .sign-up-today-card-bg::before {
-  content: "";
-  background: linear-gradient(315deg, transparent 61px 0px, var(--primary-color) 0);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-}
+
+
 
 
 // HOME PAGE GIRL WITH IMAGE
@@ -1375,8 +1374,6 @@ li{
 .footer .bottom-footer .sm-links a ion-icon {
   font-size: 1.25em;
 }
-
-
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

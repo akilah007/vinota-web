@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule,Meta  } from '@angular/platform-browser';
-
+import { CommonModule } from '@angular/common'; 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
@@ -68,9 +68,8 @@ import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
     HeaderComponent,
     FloatingBarComponent,
     TopDestinationsComponent,
-    SupportSectionComponent
-    // NgxHotjarModule.forRoot(environment.hotjar),
-    // NgxHotjarRouterModule
+    SupportSectionComponent,
+    CommonModule
   ],
   bootstrap: [AppComponent],
   providers: [

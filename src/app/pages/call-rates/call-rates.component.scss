@@ -103,8 +103,6 @@
 
 }
 
-
-
 .letters-section {
   padding-top: 3em;
   padding-bottom: 1em;
@@ -277,11 +275,9 @@
 }
 .input-country-name {
   font-weight: 600;
-  //display: block;
   line-height: 1;
 }
 .input-rate {
-  //display: block;
   line-height: 1;
   margin-left: 10px;
 }
@@ -298,3 +294,66 @@
 .not-active{
   display: none;
   }
+
+  .sign-up-today-card-new {
+    padding-bottom: 4em;
+    margin: 0px 10px 0px 10px;
+    .content {
+      position: relative;
+      z-index: 2;
+    }
+    .sign-up-today-card-bg {
+      position: relative;
+      text-align: center;
+      padding: 3em;
+      @media all and (max-width: 768px) {
+          padding: 2em;
+      }
+      p {
+        color: white;
+      }
+      h6 {
+        margin: 0 0 15px;
+        color: white;
+        font-size: 2em;
+        line-height: 1.35;
+        font-weight: 400;
+        @media all and (max-width: 768px) {
+            font-size: 1.5em;
+      }
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      @media all and (max-width: 768px) {
+          flex-direction: column;
+        }
+      a {
+        display: block;
+        margin: 0 10px;
+        @media all and (max-width: 768px) {
+          margin: 0 0 1em;
+  
+        }
+      }
+      @media all and (max-width: 768px) {
+        a:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+    }
+    .sign-up-today-card-bg::before {
+      content: "";
+      background: linear-gradient(315deg, rgba(255,255,255,0) 20%,
+      rgba(255,255,255,1)), url("../../../assets/images/56.png");
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50px;
+    }
+  }
+  

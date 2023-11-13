@@ -1,6 +1,7 @@
-import {AfterViewInit, Component, ElementRef} from '@angular/core';
-import {ViewportScroller} from "@angular/common";
-import { Router, Event, NavigationStart, NavigationEnd, NavigationError,RouterLink } from '@angular/router';
+import { AfterViewInit, Component, ElementRef } from '@angular/core';
+import { ViewportScroller } from "@angular/common";
+import { Router, Event, NavigationStart, RouterLink } from '@angular/router';
+import { CommonFunctionsService } from "../../services/common-functions.service";
 
 @Component({
   selector: 'app-header',
@@ -11,34 +12,42 @@ import { Router, Event, NavigationStart, NavigationEnd, NavigationError,RouterLi
   ],
   standalone: true
 })
-export class HeaderComponent implements AfterViewInit {
-  public changeClass = true;
 
+export class HeaderComponent implements AfterViewInit {
+
+  public show_hide_support: boolean = false;
   navIcon: any;
   navBar: any;
-  constructor(private viewportScroller: ViewportScroller,
-              private el: ElementRef,private router: Router) {
+
+  constructor(
+    private commonFunctionsService: CommonFunctionsService,
+    private el: ElementRef) {
   }
+
   ngOnInit() {
-    this.router.events.subscribe((event: Event) => {
-      if (event instanceof NavigationStart) {
-        this.changeClass = true
-      }
-  });
   }
+
   ngAfterViewInit() {
     this.navIcon = this.el.nativeElement.querySelector('.nav-icon');
     this.navBar = this.el.nativeElement.querySelector('.nav-bar');
   }
+
+  // mobile view menu
   toggleNav() {
     this.navBar.classList.toggle('active');
     this.navIcon.classList.toggle('active');
   }
-  public navigateToSection(elementId: string): void {
-    this.viewportScroller.scrollToAnchor(elementId);
-    this.changeClass = !this.changeClass;
+
+  // show and hide support section
+  showSupportSection(value:any) {
+    if (this.show_hide_support == true) {
+      this.commonFunctionsService.send_data.next(true);
+    } else {
+      this.commonFunctionsService.send_data.next(false);
+    }
   }
+
   ngOnDestroy(): void {
-  
+
   }
 }

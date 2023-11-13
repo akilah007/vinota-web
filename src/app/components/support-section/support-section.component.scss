@@ -1,8 +1,35 @@
-.support-section{
-    display: none;
-    }
-  
+.support-box {
+  max-height: 0px;
+  overflow-y: hidden;
+  transition: ease-in-out 400ms max-height;
 
-  .support a{
+  .a {
     color: rgb(255, 255, 255);
   }
+}
+
+.support-box.opened {
+  margin-top: 150px;
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  transition: ease-in-out 600ms max-height;
+  @media all and (max-width: 768px) {
+      padding: 1em;
+  max-height: 500px;
+  margin-top: 70px;
+
+  }
+}
+.support-box-content{
+  background: linear-gradient(315deg, transparent 50px 0px, var(--primary-color) 0);
+  border-radius: 50px;
+  padding:3em 0em 1em 4em;
+  a{
+    color: #ffff;
+  }
+  .support-description{
+    color: #ffff;
+
+  }
+}
