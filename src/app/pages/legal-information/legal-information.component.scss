@@ -1,24 +1,28 @@
+.banner-wrapper {
+  position: relative;
+  overflow: hidden;
+  background-color: #20a7ff33;
+  text-align: center;
+}
+
 .content-wrapper {
   max-width: 980px;
   padding: 15px;
   margin: 0 auto;
 }
+
 p {
   font-size: 1em;
   line-height: 1;
   margin-bottom: 0.5rem !important;
 }
+
 li {
   line-height: 1.4;
 }
-td, th {
+
+td,
+th {
   font-size: .85em;
   line-height: 1.25;
 }
- .banner-wrapper {
-   position: relative;
-   overflow: hidden;
-   background-color: #20a7ff33;
-   text-align: center;
- }
-

@@ -14,10 +14,12 @@ import { LegalInformationComponent } from './pages/legal-information/legal-infor
 import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-and-policy.component';
 import { SecurityPolicyComponent } from './pages/security-policy/security-policy.component';
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
+import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
 
 const routes: Routes = [
-  { path: 'terms-&-conditions', component: TermsAndConditionsComponent },
-  { path: 'legal-information/terms-&-conditions', component: TermsAndConditionsComponent },
+  { path: 'calling-eritra', component: CallingEritraComponent },
+  { path: 'vinota-terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'legal-information/vinota-terms-and-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information', component: LegalInformationComponent },
   { path: 'privacy-policy', component: PrivacyAndPolicyComponent },
   { path: 'legal-information/privacy-policy', component: PrivacyAndPolicyComponent },
@@ -28,10 +30,10 @@ const routes: Routes = [
   { path: 'about-us', component: AboutUsComponent },
   { path: 'why-vinota', component: WhyVinotaComponent },
   { path: 'contact-us', component: ContactUsComponent },
-  { path: 'faqs', component: FaqComponent },
+  { path: 'vinota-frquently-asked-questions-faq', component: FaqComponent },
   { path: 'knowledge-base', component: KnowledgeBaseComponent },
   { path: 'call-rates/:id', component: AboutCountryComponent },
-  { path: 'apps', component: AppsComponent },
+  { path: 'get-vinota-apps', component: AppsComponent },
   { path: '**', redirectTo: '/', pathMatch: 'full'}
 ];
 

@@ -32,6 +32,7 @@ import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-an
 import { SecurityPolicyComponent } from './pages/security-policy/security-policy.component';
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
+import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
 
 
 @NgModule({
@@ -51,7 +52,8 @@ import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
     LegalInformationComponent,
     PrivacyAndPolicyComponent,
     SecurityPolicyComponent,
-    DataDepletionPolicyComponent
+    DataDepletionPolicyComponent,
+    CallingEritraComponent
   ],
   imports: [
     BrowserModule,

@@ -44,7 +44,6 @@ export class SupportSectionComponent {
 
   ngAfterContentInit() {
    this.commonFunctionsService.send_data.subscribe((data) => {
-      console.log(data);
       this.viewportScroller.scrollToAnchor('support_section');
       this.show_hide_suport_div = data;
     });

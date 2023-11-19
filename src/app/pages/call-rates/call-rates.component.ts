@@ -25,14 +25,13 @@ export class CallRatesComponent implements OnInit {
     constructor(private router: Router,   
       private metaService: Meta,
       private titleService: Title) {
-        
     }
+
   ngAfterViewInit() {
     window.scroll(0, 0)
   }
 
   ngOnInit(): void {
-
     this.titleService.setTitle("Vinota Call Rates | Affordable International Calling");
     this.metaService.updateTag({ name: 'keywords', content: 'Vinota Call Rates,Affordable International Calling' });
     this.metaService.updateTag({ name: 'description', content: 'Explore Vinota`s competitive call rates for global connections. Save on  international calls. Enjoy cheap rates and exceptional call quality. Check our rates now.' });

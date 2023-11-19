@@ -44,6 +44,7 @@ export class HeaderComponent implements AfterViewInit {
       this.commonFunctionsService.send_data.next(true);
     } else {
       this.commonFunctionsService.send_data.next(false);
+    window.scroll(0, 0);
     }
   }
 

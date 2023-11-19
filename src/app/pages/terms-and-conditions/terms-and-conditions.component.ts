@@ -19,7 +19,7 @@ export class TermsAndConditionsComponent {
   }
 
   ngOnInit() {
-    this.titleService.setTitle("Vinota | Terms and Conditions");
+    this.titleService.setTitle("Vinota | Explore the Terms and Conditions");
     this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Terms and Conditions' });
     this.metaService.updateTag({ name: 'description', content: 'Explore Vinota`s Terms and Conditions for using our international calling app' });
   }

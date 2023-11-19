@@ -276,7 +276,7 @@ section,
 .bg--green-100 { background-color: #e9f8f2; }
 
 .bg--pink-500 { background-color: #ff149c; }
-.bg--pink-400 { background-color: #f74780; }
+.bg--pink-400 { background-color: red; }
 .bg--pink-300 { background-color: #fcb5cc; }
 .bg--pink-200 { background-color: #fee4ec; }
 .bg--pink-100 { background-color: #feecf2; }
@@ -2028,7 +2028,7 @@ p.video-txt-sm {
 .color--blue-400 li, 
 .color--blue-400 i, 
 .color--blue-400 span,
-.color--white .color--blue-400 { color: #1680fb!important; }
+.color--white .color--blue-400 { color:#20A7FF!important; }
 
 .color--blue-300, 
 .color--blue-300 h1, 
@@ -7933,7 +7933,7 @@ span.release-date span {
 }
 
 .blog-post-txt a {
-  color: #353f4f;
+  color: black;
 }
 
 .blog-post-txt a:hover {
@@ -10753,8 +10753,8 @@ body.theme--dark {
 
 .btn--theme {
   color: #fff!important;
-  border-color: #f74780!important;
-  background-color: #f74780!important;
+  border-color: var(--secondary-color) !important;
+  background-color:var(--secondary-color) !important;
 }
 
 .hover--theme:hover,
@@ -10848,8 +10848,8 @@ body.theme--dark {
 
 .theme-pagination .page-item.active .page-link {
   color: #fff!important;
-  background-color: #f74780;
-  border: 2px solid #f74780;
+  background-color:var(--secondary-color);
+  border: 2px solid var(--secondary-color);
 }
 
 

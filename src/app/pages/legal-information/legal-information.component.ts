@@ -19,7 +19,7 @@ export class LegalInformationComponent {
   }
 
   ngOnInit() {
-    this.titleService.setTitle("Vinota | Legal Information");
+    this.titleService.setTitle("Vinota | Our Legal Information");
     this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Legal Information' });
     this.metaService.updateTag({ name: 'description', content: 'Explore Vinota`s legal information, including company details.' });
   }

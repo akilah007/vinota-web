@@ -1,4 +1,25 @@
+.page-sub-title-blue-md {
+  margin: 10px;
+}
 
+
+
+.banner-wrapper {
+  @media all and (max-width: 768px) {
+    display: flex;
+    flex-direction: column-reverse;
+    height: fit-content;
+  }
+
+  .banner-content a {
+    margin-bottom: 0px;
+
+    @media all and (max-width: 768px) {
+      margin-bottom: 20px;
+    }
+  }
+
+}
 
 .fbox-txt {
   padding: 5px 0px 0px 0px;
@@ -6,40 +27,10 @@
 }
 
 
-@media all and (max-width: 768px) {
-  .banner-wrapper {
-    display: flex;
-    flex-direction: column-reverse;
-    height: fit-content;
-  }
-}
-.banner-wrapper .banner-content a {
-  margin-bottom: 0px;
-}
-@media all and (max-width: 768px) {
-  .banner-wrapper .banner-content a {
-    margin-bottom:20px;
-  }
-}
-.page-sub-title-blue-md {
-  margin: 10px;
-
-}
-.s-32 {
-  padding-bottom: 0.5em;
-}
-
 * {
   box-sizing: border-box
 }
 
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
 .prev,
 .next {
   margin-left: -20px;
@@ -56,41 +47,18 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
-// .sim-voice-image-section{
-//   -webkit-mask-size: cover;
-//   mask-size: cover;
-//   -webkit-mask-image: url(../../../assets/images/LGK0z701.svg);
-//   mask-image: url(https://url.of.svg/....svg);
-//   background-color: blue; /* Or any color of your choice. */
-//   width: 20px;
-//   height: 20px;
-//   // background: url("../../../assets/images/LGK0z701.svg");
-// }
-/* Position the "next button" to the right */
+
 .next {
   margin-right: -20px;
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   color: rgba(0, 0, 0, 0.8);
 }
 
-/* Caption text */
-.text {
-  color: #000000;
-  font-size: 15px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -102,14 +70,8 @@
   transition: background-color 0.6s ease;
 }
 
-.active,
-.dot:hover {
-  // background-color: var(--primary-color);
-
-}
-
-/* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -122,17 +84,19 @@
   height: max-content;
   width: 100%;
   position: relative;
+
+  @media all and (max-width: 768px) {
+    .sim-shape {
+      padding: 2em 1.5em;
+      margin: 4em 10px 2em;
+      max-width: 100%;
+      width: auto;
+      box-sizing: border-box;
+    }
+  }
 }
 
 @media all and (max-width: 768px) {
-  .sim-shape {
-    padding: 2em 1.5em;
-    margin: 4em 10px 2em;
-    max-width: 100%;
-    width: auto;
-    box-sizing: border-box;
-  }
-
   .sim-shape::after {
     display: none;
   }
@@ -165,46 +129,37 @@
 .sim-shape .sim-content {
   position: relative;
   z-index: 2;
+
+  .title {
+    margin-bottom: 15px;
+  }
 }
 
-.sim-shape .title {
-  margin-bottom: 15px;
-}
-
-.page-sub-title-gray-md {
-    margin-bottom: 25px;
- 
-}
 .sim-shape .title p {
   color: var(--primary-color);
   margin: 0;
   line-height: 1.3;
   font-weight: 600;
 }
+
 .sm-screen {
   padding-top: 1em;
 }
 
-// .lg-screen {
-//   padding-top: 0em;
-//   margin-bottom: 4em;
-// }
-
 .card-section-2 {
   margin-bottom: 10px;
-}
 
-.card-section-2 h3 {
-  color: var(--primary-color);
-  font-size: 1em;
-  margin: 0 0 10px;
-}
+  h3 {
+    color: var(--primary-color);
+    font-size: 1em;
+    margin: 0 0 10px;
+  }
 
-.card-section-2 p {
-  line-height: 1.25;
-  font-size: 1em;
+  p {
+    line-height: 1.25;
+    font-size: 1em;
+  }
 }
-
 
 @media all and (max-width: 768px) {
   .reviews-1-wrapper .review-author {
@@ -212,38 +167,29 @@
     padding: 0 0 0 0px
   }
 }
-.statistic-number {
-  padding-bottom: 0.5em;
-}
 
 .text-sim-under-section {
   padding-left: 5em;
-}
 
-@media all and (max-width: 768px) {
-  .text-sim-under-section {
+  @media all and (max-width: 768px) {
     padding-left: 0em;
+  }
 
+  .flex {
+    flex-wrap: wrap;
+    height: 100%;
+  }
+
+  .card-section-2 {
+    padding: 1em 2em;
+    flex: 1 1 50%;
+    height: 100%;
+
+    @media all and (max-width: 768px) {
+      flex: 1 1 100%;
+    }
   }
 }
-
-.text-sim-under-section .flex {
-  flex-wrap: wrap;
-  height: 100%;
-}
-
-.text-sim-under-section .card-section-2 {
-  padding: 1em 2em;
-  flex: 1 1 50%;
-  height: 100%;
-}
-
-@media all and (max-width: 768px) {
-  .text-sim-under-section .card-section-2 {
-    flex: 1 1 100%;
-  }
-}
-
 
 .download-img {
   width: 30%;
@@ -257,23 +203,25 @@
   border-radius: 15px;
   overflow: hidden;
   margin-inline-end: 25px;
-    @media all and (max-width: 768px) {
-      margin-inline-end: 10px;
-    }
-    &:hover {
-      transform: scale(1.15);
-      box-shadow: 0 0 15px rgba(0,0,0,.15);
-    }
-    img {
-      max-height: 56px;
-    }
-}
 
-@media all and (max-width: 768px) {
-  .download-img {
-    width:33%;
+  @media all and (max-width: 768px) {
+    margin-inline-end: 10px;
+  }
+
+  &:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15);
+  }
+
+  img {
+    max-height: 56px;
+  }
+
+  @media all and (max-width: 768px) {
+    width: 33%;
   }
 }
+
 
 
 .sim-card-img {
@@ -285,23 +233,22 @@
 .features-section {
   padding-top: 1em;
   padding-bottom: 8em;
-}
 
-@media all and (max-width: 768px) {
-  .features-section {
+  @media all and (max-width: 768px) {
     padding-top: 2em;
     padding-bottom: 0em;
-
   }
 }
+
 .one-call-card .one-call-card-bg {
   padding-top: 3em;
   padding-bottom: 4em;
 }
-.slide-text-sim{
+
+.slide-text-sim {
   padding-bottom: 4em;
 }
+
 .banner-content .banner-content-img {
- 
   height: 90%;
 }
