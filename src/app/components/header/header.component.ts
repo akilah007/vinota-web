@@ -39,12 +39,14 @@ export class HeaderComponent implements AfterViewInit {
   }
 
   // show and hide support section
-  showSupportSection(value:any) {
+  showSupportSection(value: any) {
     if (this.show_hide_support == true) {
+      this.toggleNav()
       this.commonFunctionsService.send_data.next(true);
     } else {
+      this.toggleNav()
       this.commonFunctionsService.send_data.next(false);
-    window.scroll(0, 0);
+      window.scroll(0, 0);
     }
   }
 
