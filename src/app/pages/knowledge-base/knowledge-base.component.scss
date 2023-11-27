@@ -264,9 +264,13 @@
   .content-section {
     padding: 0em 0em 3em 0em;
   }
-
+.fa-youtube{
+  margin: 0 !important;
+}
   p {
     margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: .95em;
   }
 
   .post-tag {
@@ -341,8 +345,8 @@
   }
   .review-card::before {
     content: "";
-    background: linear-gradient(315deg, transparent 61px 0px, white 0);
-    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    background: linear-gradient(315deg,transparent 75px 0px,white 0);
+    filter: drop-shadow(0px 0px 10px rgba(0,0,0,.05));
     position: absolute;
     left: 0;
     top: 0;
