@@ -15,8 +15,10 @@ import { PrivacyAndPolicyComponent } from './pages/privacy-and-policy/privacy-an
 import { SecurityPolicyComponent } from './pages/security-policy/security-policy.component';
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
+import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blog/best-international-calling-app/best-international-calling-app.component';
 
 const routes: Routes = [
+  { path: 'best-international-calling-app', component: BestInternationalCallingAppComponent },
   { path: 'calling-eritra', component: CallingEritraComponent },
   { path: 'vinota-terms-and-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information/vinota-terms-and-conditions', component: TermsAndConditionsComponent },

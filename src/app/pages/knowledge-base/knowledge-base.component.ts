@@ -17,8 +17,13 @@ export class KnowledgeBaseComponent {
     private router: Router
   ) { }
 
-  showMore() {
-    this.router.navigate(['/calling-eritra'])
+  showMore(url:any) {
+    if(url == 'cost-saving-guide'){
+      this.router.navigate(['/calling-eritra'])
+    }
+    if(url == 'best-calling-app'){
+      this.router.navigate(['/best-international-calling-app'])
+    }
   }
 
   ngAfterViewInit() {

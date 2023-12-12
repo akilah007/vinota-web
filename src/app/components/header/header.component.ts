@@ -1,5 +1,4 @@
 import { AfterViewInit, Component, ElementRef } from '@angular/core';
-import { ViewportScroller } from "@angular/common";
 import { Router, Event, NavigationStart, RouterLink } from '@angular/router';
 import { CommonFunctionsService } from "../../services/common-functions.service";
 

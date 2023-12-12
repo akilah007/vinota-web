@@ -32,7 +32,6 @@ export class IndexComponent implements OnInit {
   constructor(
     private router: Router,
     private metaService: Meta,
-    private viewportScroller: ViewportScroller,
     ) { }
 
   ngAfterViewInit() {
@@ -62,6 +61,7 @@ export class IndexComponent implements OnInit {
       clearInterval(this.timer);
     }, 60000);
   }
+
   trackItems = (index: number, itemObject: any) => itemObject.id;
   private _filterStates(value: string): any[] {
     let filterValue = value.toLowerCase();

@@ -7,6 +7,13 @@ import { Router } from '@angular/router';
   styleUrls: ['./calling-eritra.component.scss']
 })
 export class CallingEritraComponent {
+  constructor(
+    private router: Router
+  ) { }
 
-
+  showMore(url:any) {
+    if(url == 'best-calling-app'){
+      this.router.navigate(['/best-international-calling-app'])
+    }
+  }
 }

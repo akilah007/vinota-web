@@ -1,0 +1,256 @@
+.link-stripe {
+    height: 64px;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    z-index: 99;
+    transition: 0.3s all;
+  }
+  
+  .link-stripe.scroll {
+    width: 32%;
+  }
+  
+  @media all and (max-width: 768px) {
+    .link-stripe.scroll {
+      width: 100%;
+    }
+  }
+  
+  .link-stripe.scroll .pink-bar .icons span {
+    display: none;
+  }
+  
+  .link-stripe .pink-bar {
+    background-color: var(--primary-color);
+    height: 100%;
+    width: 50%;
+    border-radius: 0 16px 0 0;
+    overflow: hidden;
+    display: flex;
+    padding-right: 1em;
+    justify-content: flex-end;
+    transition: 0.3s all;
+    animation: animateDownloadBar 1s forwards;
+  }
+  
+  @media all and (max-width: 768px) {
+    .link-stripe .pink-bar {
+      width: 100%;
+      animation: unset;
+    }
+  }
+  
+  .link-stripe .pink-bar .w {
+    width: calc(var(--wapper-width) / 2);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @media all and (max-width: 768px) {
+    .link-stripe .pink-bar .w {
+      width: unset;
+    }
+  }
+  
+  .link-stripe .pink-bar .icons {
+    color: white;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .link-stripe .pink-bar .icons a {
+    margin: 0 8px;
+    animation-delay: 1.5s;
+  }
+  
+  .link-stripe .pink-bar .icons a img {
+    height: 50px;
+    @media all and (max-width: 768px) {
+        height: 32px;
+    }
+  }
+  
+  
+  .link-stripe .pink-bar .icons span {
+    font-size: 0.95em;
+    display: inline-block;
+    margin-right: 24px;
+    vertical-align: top;
+    animation-delay: 1.5s;
+  }
+  
+  @media all and (max-width: 768px) {
+    .link-stripe .pink-bar {
+      width: 100%;
+    }
+  
+    .link-stripe .pink-bar .w {
+      width: 100%;
+    }
+  }
+  
+  @keyframes animateDownloadBar {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 50%;
+    }
+  }
+  
+  @keyframes animateGreyBar {
+    0% {
+      width: 0;
+    }
+  
+    100% {
+      width: 160px;
+    }
+  }
+  
+  @keyframes widthAnimation {
+    0% {
+      width: 0;
+      opacity: 0;
+    }
+  
+    100% {
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  
+  p {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    font-size: .95em;
+  }
+  
+  .blog-page-section {
+    padding-top: 8em;
+    padding-bottom: 0em;
+    @media all and (max-width: 768px) {
+      padding-top: 6em;
+      padding-bottom: 0em;
+    }
+    .pickgradient img {
+      width: 100%;
+      height: 350px;
+      mask-image: linear-gradient(315deg, #0027ff(0, 0, 0, 0) 0%, rgba(255, 255, 255, 0.65) 100%);
+      -webkit-mask-image: linear-gradient(315deg, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.87) 10%);
+      border-radius: 20px;
+      object-fit: fill;
+      @media all and (max-width: 768px) {
+          width: 100%;
+          height: 210px;
+    }
+  }
+  }
+  .post-tag {
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+  
+  
+  .review-card-sm::before {
+    background: linear-gradient(315deg, transparent 77px 0px, white 0);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    @media all and (max-width: 768px) {
+      background: linear-gradient(315deg, transparent 50px 0px, white 0);
+      filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    }
+  }
+  
+  .review-card-sm .content {
+    padding: 1em 0.8em 1em 0.8em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  .blog-list-img {
+    width: 100%;
+    height: 210px;
+    object-fit: fill;
+  }
+  
+  .newsletter-overlay-align {
+    padding-top: 4em;
+    padding-bottom: 6em;
+  
+  }
+  
+  .svg-inline--fa {
+    vertical-align: 0em;
+    margin: -5px auto;
+  }
+  
+  .table-btm {
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+  
+  .posts-category {
+    color: var(--primary-color);
+  }
+  
+  .blog-post {
+    padding-bottom: 5em;
+  
+    .review-card {
+      position: relative;
+      height: 100%;
+  
+      @media all and (max-width: 768px) {
+        margin-bottom: 1.5em;
+      }
+  
+      .content {
+        padding: 20px 20px 20px;
+        position: relative;
+        z-index: 1;
+        height: 75%;
+  
+        .fbox-txt {
+          margin-top: 20px;
+  
+          p {
+            font-size: 0.9em;
+            line-height: 1.5;
+          }
+        }
+  
+        .blog-post-meta p {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  
+  .review-card::before {
+    content: "";
+    background: linear-gradient(315deg, transparent 61px 0px, white 0);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.05));
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+  }
+  .link-text{
+    text-decoration-line: underline;
+    color: #0027ff;
+  }
+  
+.get-vinota-text-bt {
+    font-weight: 700;
+    visibility: visible;
+    animation-name: fadeInUp;
+}
+.blog-post  h3,.post-tag{
+    cursor: pointer;
+  }

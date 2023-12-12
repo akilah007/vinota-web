@@ -33,7 +33,7 @@ import { SecurityPolicyComponent } from './pages/security-policy/security-policy
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
 import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
-
+import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blog/best-international-calling-app/best-international-calling-app.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +53,8 @@ import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-erit
     PrivacyAndPolicyComponent,
     SecurityPolicyComponent,
     DataDepletionPolicyComponent,
-    CallingEritraComponent
+    CallingEritraComponent,
+    BestInternationalCallingAppComponent
   ],
   imports: [
     BrowserModule,

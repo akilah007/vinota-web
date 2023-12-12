@@ -12,6 +12,30 @@
   }
 }
 
+.banner-wrapper .banner-bg {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+@media all and (max-width: 768px) {
+  .banner-wrapper .banner-bg {
+    position: relative;
+    aspect-ratio: 16/9;
+  }
+}
+
+.banner-wrapper .banner-content h2 {
+  font-size: 3em;
+  letter-spacing: 1px;
+  max-width: 100%;
+  font-weight: 700;
+  margin: 0 0 14px;
+  color: var(--primary-color);
+}
 .search-title {
   margin: 0 0 15px;
   font-family: var(--app-font-family);
@@ -33,14 +57,7 @@
   }
 }
 
-.banner-wrapper .banner-content h2 {
-  font-size: 3em;
-  letter-spacing: 1px;
-  max-width: 100%;
-  font-weight: 700;
-  margin: 0 0 14px;
-  color: var(--primary-color);
-}
+
 
 
 .all-list-button a {
@@ -67,21 +84,6 @@
 }
 
 
-.banner-wrapper .banner-bg {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1;
-  height: 100%;
-  width: 100%;
-}
-
-@media all and (max-width: 768px) {
-  .banner-wrapper .banner-bg {
-    position: relative;
-    aspect-ratio: 16/9;
-  }
-}
 
 .letters-section {
   padding-top: 3em;
