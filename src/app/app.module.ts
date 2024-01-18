@@ -34,6 +34,11 @@ import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data
 import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
 import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
 import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blog/best-international-calling-app/best-international-calling-app.component';
+import { VinotaTermsAndConditionsComponent } from './pages/vinota-terms-and-conditions/vinota-terms-and-conditions.component';
+import { VinotaSecurityPolicyComponent } from './pages/vinota-security-policy/vinota-security-policy.component';
+import { VinotaPrivacyAndPolicyComponent } from './pages/vinota-privacy-and-policy/vinota-privacy-and-policy.component'
+import { VinotaDataDepletionPolicyComponent } from './pages/vinota-data-depletion-policy/vinota-data-depletion-policy.component'
+import { VinotaLegalInformationComponent } from './pages/vinota-legal-information/vinota-legal-information.component'
 
 @NgModule({
   declarations: [
@@ -54,7 +59,12 @@ import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blo
     SecurityPolicyComponent,
     DataDepletionPolicyComponent,
     CallingEritraComponent,
-    BestInternationalCallingAppComponent
+    BestInternationalCallingAppComponent,
+    VinotaTermsAndConditionsComponent,
+    VinotaSecurityPolicyComponent,
+    VinotaPrivacyAndPolicyComponent,
+    VinotaDataDepletionPolicyComponent,
+    VinotaLegalInformationComponent
   ],
   imports: [
     BrowserModule,

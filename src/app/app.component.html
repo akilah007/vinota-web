@@ -1,10 +1,10 @@
-<app-header></app-header>
+<app-header *ngIf="all_sections!='hide'"></app-header>
 
-<router-outlet></router-outlet>
+<router-outlet ></router-outlet>
 
-<app-floating-bar></app-floating-bar>
+<app-floating-bar *ngIf="all_sections!='hide'"></app-floating-bar>
 
-<footer id="footer-3" class="pt-30 footer ft-3-ntr">
+<footer id="footer-3" class="pt-30 footer ft-3-ntr" *ngIf="all_sections!='hide'">
     <div class="container">
       <div class="row">
         <div class="col-sm-12 col-lg-2 col-xl-3">
@@ -32,10 +32,10 @@
             <h6>LEGAL</h6>
             <ul class="foo-links clearfix">
               <li><a routerLink="/vinota-terms-and-conditions" > TEAMS AND CONDITIONS</a></li>
-              <li><a routerLink="/legal-information">LEGAL INFORMATION </a></li>
-              <li><a routerLink="/privacy-policy">PRIVACY POLICY </a></li>
-              <li><a routerLink="/security-policy">SECURITY POLICY</a></li>
-              <li><a routerLink="/data-depletion-policy">DATA DEPLETION POLICY</a></li>
+              <li><a routerLink="/vinota-legal-information">LEGAL INFORMATION </a></li>
+              <li><a routerLink="/vinota-privacy-policy">PRIVACY POLICY </a></li>
+              <li><a routerLink="/vinota-security-policy">SECURITY POLICY</a></li>
+              <li><a routerLink="/vinota-data-depletion-policy">DATA DEPLETION POLICY</a></li>
             </ul>
           </div>
         </div>
@@ -50,7 +50,7 @@
         </div>
       </div>
     </div>
-    <div class="bottom-footer">
+    <div class="bottom-footer" >
       <p>Get connected us on social networks</p>
       <div class="sm-links">
           <a href="https://www.linkedin.com/company/vinota-networks/" target="_blank"> <img class="footer-social-img"

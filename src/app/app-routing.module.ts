@@ -16,17 +16,27 @@ import { SecurityPolicyComponent } from './pages/security-policy/security-policy
 import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data-depletion-policy.component';
 import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
 import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blog/best-international-calling-app/best-international-calling-app.component';
+import { VinotaTermsAndConditionsComponent } from './pages/vinota-terms-and-conditions/vinota-terms-and-conditions.component';
+import { VinotaSecurityPolicyComponent } from './pages/vinota-security-policy/vinota-security-policy.component';
+import { VinotaPrivacyAndPolicyComponent } from './pages/vinota-privacy-and-policy/vinota-privacy-and-policy.component'
+import { VinotaDataDepletionPolicyComponent } from './pages/vinota-data-depletion-policy/vinota-data-depletion-policy.component'
+import { VinotaLegalInformationComponent } from './pages/vinota-legal-information/vinota-legal-information.component'
 
 const routes: Routes = [
   { path: 'best-international-calling-app', component: BestInternationalCallingAppComponent },
   { path: 'calling-eritra', component: CallingEritraComponent },
-  { path: 'vinota-terms-and-conditions', component: TermsAndConditionsComponent },
-  { path: 'legal-information/vinota-terms-and-conditions', component: TermsAndConditionsComponent },
+  { path: 'vinota-terms-and-conditions', component: VinotaTermsAndConditionsComponent },
+  { path: 'terms-&-conditions', component: TermsAndConditionsComponent },
+  { path: 'legal-information/terms-&-conditions', component: TermsAndConditionsComponent },
   { path: 'legal-information', component: LegalInformationComponent },
+  { path: 'vinota-legal-information', component: VinotaLegalInformationComponent },
+  { path: 'vinota-privacy-policy', component: VinotaPrivacyAndPolicyComponent },
   { path: 'privacy-policy', component: PrivacyAndPolicyComponent },
   { path: 'legal-information/privacy-policy', component: PrivacyAndPolicyComponent },
   { path: 'security-policy', component: SecurityPolicyComponent },
+  { path: 'vinota-security-policy', component: VinotaSecurityPolicyComponent },
   { path: 'data-depletion-policy', component: DataDepletionPolicyComponent },
+  { path: 'vinota-data-depletion-policy', component: VinotaDataDepletionPolicyComponent },
   { path: '', component: IndexComponent },
   { path: 'call-rates', component: CallRatesComponent },
   { path: 'about-us', component: AboutUsComponent },
