@@ -18,7 +18,7 @@
                   <mat-autocomplete #auto="matAutocomplete">
                     <mat-option *ngFor="let country of filteredCountries | async; trackBy: trackItems" [value]="country.name" (click)="countrySelected(null)">
                       <div class="flex align-center">
-                        <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + country.iso + '.png'" height="44">
+                        <img alt="" class="input-option-img" [src]="'./assets/images/country_flags/' + country.iso + '.png'" height="44" width="50">
                         <div>
                           <span class="input-country-name">{{country.name}}</span>
                           <small class="input-rate">from {{country.rate | currency}}/minute</small>
@@ -77,7 +77,7 @@
   <div class="country-flags-list" *ngFor="let c of countriesList | filterByLetter: filterLetter; trackBy: trackItems">
     <h2>{{c.key}}</h2>
     <div class="flag-item" *ngFor="let x of c.countries"  (click)="countrySelected(x.name)">
-      <img [src]="'../../../assets/images/country_flags/' + x.iso + '.png'" alt="" height="40" />
+      <img [src]="'../../../assets/images/country_flags/' + x.iso + '.png'" alt="" height="40px"  width="40px" />
       <p>{{x.name}}</p>
     </div>
   </div>
