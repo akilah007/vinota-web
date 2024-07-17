@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule,Meta  } from '@angular/platform-browser';
-import { CommonModule } from '@angular/common'; 
+import { CommonModule } from '@angular/common';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { IndexComponent } from './pages/index/index.component';
@@ -34,11 +34,7 @@ import { DataDepletionPolicyComponent } from './pages/data-depletion-policy/data
 import { NgxHotjarRouterModule, NgxHotjarModule } from 'ngx-hotjar';
 import { CallingEritraComponent } from './pages/knowledge-base/blog/calling-eritra/calling-eritra.component';
 import { BestInternationalCallingAppComponent } from './pages/knowledge-base/blog/best-international-calling-app/best-international-calling-app.component';
-import { VinotaTermsAndConditionsComponent } from './pages/vinota-terms-and-conditions/vinota-terms-and-conditions.component';
-import { VinotaSecurityPolicyComponent } from './pages/vinota-security-policy/vinota-security-policy.component';
-import { VinotaPrivacyAndPolicyComponent } from './pages/vinota-privacy-and-policy/vinota-privacy-and-policy.component'
-import { VinotaDataDepletionPolicyComponent } from './pages/vinota-data-depletion-policy/vinota-data-depletion-policy.component'
-import { VinotaLegalInformationComponent } from './pages/vinota-legal-information/vinota-legal-information.component'
+import {CryptoPaymentsComponent} from "./pages/knowledge-base/blog/crypto-payments/crypto-payments.component";
 
 @NgModule({
   declarations: [
@@ -60,11 +56,7 @@ import { VinotaLegalInformationComponent } from './pages/vinota-legal-informatio
     DataDepletionPolicyComponent,
     CallingEritraComponent,
     BestInternationalCallingAppComponent,
-    VinotaTermsAndConditionsComponent,
-    VinotaSecurityPolicyComponent,
-    VinotaPrivacyAndPolicyComponent,
-    VinotaDataDepletionPolicyComponent,
-    VinotaLegalInformationComponent
+    CryptoPaymentsComponent
   ],
   imports: [
     BrowserModule,

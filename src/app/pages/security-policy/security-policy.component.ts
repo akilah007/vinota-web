@@ -19,7 +19,7 @@ export class SecurityPolicyComponent {
   }
 
   ngOnInit() {
-    this.titleService.setTitle("Vinota | Our Security Policy");
+    this.titleService.setTitle("Vinota | Explore Our Security Policy");
     this.metaService.updateTag({ name: 'keywords', content: 'Vinota,Security Policy' });
     this.metaService.updateTag({ name: 'description', content: 'Security is our priority. Learn about Vinota`s Security Policy and measures we take to ensure your safety while making international calls.' });
   }

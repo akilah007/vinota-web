@@ -19,7 +19,7 @@ export class PrivacyAndPolicyComponent {
   }
 
   ngOnInit() {
-    this.titleService.setTitle("Vinota | Our Privacy Policy");
+    this.titleService.setTitle("Vinota | Explore Our Privacy Policy");
     this.metaService.updateTag({ name: 'keywords', content: 'Vinota, Privacy Policy' });
     this.metaService.updateTag({ name: 'description', content: 'Your privacy matters to us. Read Vinota`s Privacy Policy to understand how we protect your data while using our international calling app.' });
   }

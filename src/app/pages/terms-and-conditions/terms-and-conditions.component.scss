@@ -28,16 +28,17 @@
 // .contact-info-card p {
 //   margin-top: 0;
 //   margin-bottom: 0.5rem !important;
-// } 
+// }
 
 // .hero-section {
-//   padding-top: 3em !important; 
+//   padding-top: 3em !important;
 //   padding-bottom: 2em;
 // }
 .wrapper{
+  max-width: 980px;
   color: black;
   line-height: 1.2;
-    padding: 15px;
+  padding: 120px 15px 15px;
   margin: 0 auto;
 }
 h1 {

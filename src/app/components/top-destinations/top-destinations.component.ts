@@ -54,7 +54,9 @@ export class TopDestinationsComponent implements OnInit {
       const d = snapshot.val();
       const countries = ['Mexico', 'United States', 'Australia', 'India', 'Pakistan', 'Bangladesh'];
       for (const x of countries) {
-        this.topDestinations.push({name: x, iso: d[x].iso.toLowerCase(), rate: d[x].rate, link: x});
+        if (x && d) {
+          this.topDestinations.push({name: x, iso: d[x].iso.toLowerCase(), rate: d[x].rate, link: x});
+        }
       }
     }, {onlyOnce: true})
   }
